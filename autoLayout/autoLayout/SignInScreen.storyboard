@@ -164,11 +164,11 @@
                                 <rect key="frame" x="20" y="540" width="353" height="80"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWe-PW-9y8">
-                                        <rect key="frame" x="245.66666666666674" y="0.0" width="107.33333333333334" height="80"/>
+                                        <rect key="frame" x="245.66666666666671" y="0.0" width="107.33333333333334" height="80"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wL-EI-fOE">
-                                        <rect key="frame" x="116.33333333333331" y="0.0" width="129.33333333333337" height="80"/>
+                                        <rect key="frame" x="116.33333333333333" y="0.0" width="129.33333333333337" height="80"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DbF-yi-DES">
@@ -291,7 +291,7 @@
                                 <rect key="frame" x="95" y="123" width="202" height="138"/>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cVx-Pw-B3C">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="koala" translatesAutoresizingMaskIntoConstraints="NO" id="cVx-Pw-B3C">
                                 <rect key="frame" x="161.66666666666666" y="229" width="69" height="64"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNr-tT-LpY">
@@ -314,7 +314,7 @@
                                 <rect key="frame" x="0.0" y="629.66666666666663" width="107" height="101"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ggl-j7-Yx1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elephant" translatesAutoresizingMaskIntoConstraints="NO" id="ggl-j7-Yx1">
                                 <rect key="frame" x="133.66666666666666" y="609" width="125.99999999999997" height="142"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zci-W6-dgY">
@@ -332,10 +332,10 @@
                                 <rect key="frame" x="297" y="469" width="96" height="89"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H4m-pD-Otq">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fox" translatesAutoresizingMaskIntoConstraints="NO" id="H4m-pD-Otq">
                                 <rect key="frame" x="0.0" y="447.66666666666669" width="73" height="66.000000000000057"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gzl-ZD-oK1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lion" translatesAutoresizingMaskIntoConstraints="NO" id="gzl-ZD-oK1">
                                 <rect key="frame" x="320" y="363.66666666666669" width="73" height="66"/>
                             </imageView>
                         </subviews>
@@ -390,7 +390,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="elephant" width="512" height="512"/>
+        <image name="fox" width="512" height="512"/>
         <image name="golficon" width="512" height="512"/>
+        <image name="koala" width="512" height="512"/>
+        <image name="lion" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
