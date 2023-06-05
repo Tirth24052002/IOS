@@ -20,6 +20,16 @@
 		AF4D68DB2A25BEE900FDF011 /* ContentPriority.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4D68DA2A25BEE900FDF011 /* ContentPriority.storyboard */; };
 		AF56170E2A25D44100B6F8CE /* Screens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF56170D2A25D44100B6F8CE /* Screens.storyboard */; };
 		AF7EAC852A28951F0090E90F /* FoodItems.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7EAC832A2892CA0090E90F /* FoodItems.storyboard */; };
+		AF96E57C2A2DDBEF00EA3353 /* UIButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF96E57B2A2DDBEF00EA3353 /* UIButton.storyboard */; };
+		AF96E57E2A2DDC0800EA3353 /* UIButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96E57D2A2DDC0800EA3353 /* UIButtonVC.swift */; };
+		AF96E5802A2DE9F300EA3353 /* UITextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF96E57F2A2DE9F300EA3353 /* UITextField.storyboard */; };
+		AF96E5822A2DEA1200EA3353 /* UITextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96E5812A2DEA1200EA3353 /* UITextFieldVC.swift */; };
+		AF96E5852A2DEAC900EA3353 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96E5842A2DEAC900EA3353 /* CustomTextField.swift */; };
+		AF96E5872A2DF28B00EA3353 /* UITextView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF96E5862A2DF28B00EA3353 /* UITextView.storyboard */; };
+		AF96E5892A2DF2CF00EA3353 /* UITextViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96E5882A2DF2CF00EA3353 /* UITextViewVC.swift */; };
+		AF96E58E2A2DFBD300EA3353 /* DoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96E58D2A2DFBD300EA3353 /* DoneButton.swift */; };
+		AF983BE92A2DB92C00B86BE1 /* UILabel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF983BE82A2DB92C00B86BE1 /* UILabel.storyboard */; };
+		AF983BEB2A2DB95B00B86BE1 /* UILabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF983BEA2A2DB95B00B86BE1 /* UILabelVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +48,16 @@
 		AF4D68DA2A25BEE900FDF011 /* ContentPriority.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContentPriority.storyboard; sourceTree = "<group>"; };
 		AF56170D2A25D44100B6F8CE /* Screens.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Screens.storyboard; sourceTree = "<group>"; };
 		AF7EAC832A2892CA0090E90F /* FoodItems.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FoodItems.storyboard; sourceTree = "<group>"; };
+		AF96E57B2A2DDBEF00EA3353 /* UIButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIButton.storyboard; sourceTree = "<group>"; };
+		AF96E57D2A2DDC0800EA3353 /* UIButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonVC.swift; sourceTree = "<group>"; };
+		AF96E57F2A2DE9F300EA3353 /* UITextField.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextField.storyboard; sourceTree = "<group>"; };
+		AF96E5812A2DEA1200EA3353 /* UITextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldVC.swift; sourceTree = "<group>"; };
+		AF96E5842A2DEAC900EA3353 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		AF96E5862A2DF28B00EA3353 /* UITextView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextView.storyboard; sourceTree = "<group>"; };
+		AF96E5882A2DF2CF00EA3353 /* UITextViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewVC.swift; sourceTree = "<group>"; };
+		AF96E58D2A2DFBD300EA3353 /* DoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneButton.swift; sourceTree = "<group>"; };
+		AF983BE82A2DB92C00B86BE1 /* UILabel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UILabel.storyboard; sourceTree = "<group>"; };
+		AF983BEA2A2DB95B00B86BE1 /* UILabelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,22 +90,88 @@
 		AF0CFC2A2A246CB900F684A1 /* IOS */ = {
 			isa = PBXGroup;
 			children = (
+				AF983BE22A2DB55F00B86BE1 /* AutoLayout */,
+				AF983BE32A2DB79F00B86BE1 /* UIComponents */,
+				AF0CFC342A246CBD00F684A1 /* Assets.xcassets */,
+				AF0CFC392A246CBD00F684A1 /* Info.plist */,
+			);
+			path = IOS;
+			sourceTree = "<group>";
+		};
+		AF96E5832A2DEA8C00EA3353 /* CutomClass */ = {
+			isa = PBXGroup;
+			children = (
+				AF96E5842A2DEAC900EA3353 /* CustomTextField.swift */,
+				AF96E58D2A2DFBD300EA3353 /* DoneButton.swift */,
+			);
+			path = CutomClass;
+			sourceTree = "<group>";
+		};
+		AF983BE22A2DB55F00B86BE1 /* AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				AF983BE52A2DB80E00B86BE1 /* Storyboard */,
+				AF983BE42A2DB7E200B86BE1 /* ViewController */,
+			);
+			path = AutoLayout;
+			sourceTree = "<group>";
+		};
+		AF983BE32A2DB79F00B86BE1 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				AF96E5832A2DEA8C00EA3353 /* CutomClass */,
+				AF983BE72A2DB87D00B86BE1 /* Storyboard */,
+				AF983BE62A2DB87100B86BE1 /* ViewController */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		AF983BE42A2DB7E200B86BE1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
 				AF0CFC2B2A246CB900F684A1 /* AppDelegate.swift */,
 				AF0CFC2D2A246CB900F684A1 /* SceneDelegate.swift */,
 				AF0CFC2F2A246CB900F684A1 /* ViewController.swift */,
 				AF0CFC3F2A249C0600F684A1 /* WelcomePageVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AF983BE52A2DB80E00B86BE1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
 				AF0CFC362A246CBD00F684A1 /* LaunchScreen.storyboard */,
 				AF0CFC312A246CB900F684A1 /* Main.storyboard */,
-				AF427C172A25AF5400A83CA3 /* SignInScreen.storyboard */,
-				AF4D68DA2A25BEE900FDF011 /* ContentPriority.storyboard */,
 				AF56170D2A25D44100B6F8CE /* Screens.storyboard */,
+				AF4D68DA2A25BEE900FDF011 /* ContentPriority.storyboard */,
 				AF7EAC832A2892CA0090E90F /* FoodItems.storyboard */,
 				AF0FD64F2A2704B100143869 /* SizeClasses.storyboard */,
-				AF0CFC342A246CBD00F684A1 /* Assets.xcassets */,
+				AF427C172A25AF5400A83CA3 /* SignInScreen.storyboard */,
 				AF1C712E2A29BEE40025E0F9 /* Pago.storyboard */,
-				AF0CFC392A246CBD00F684A1 /* Info.plist */,
 			);
-			path = IOS;
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		AF983BE62A2DB87100B86BE1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AF983BEA2A2DB95B00B86BE1 /* UILabelVC.swift */,
+				AF96E57D2A2DDC0800EA3353 /* UIButtonVC.swift */,
+				AF96E5812A2DEA1200EA3353 /* UITextFieldVC.swift */,
+				AF96E5882A2DF2CF00EA3353 /* UITextViewVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AF983BE72A2DB87D00B86BE1 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AF983BE82A2DB92C00B86BE1 /* UILabel.storyboard */,
+				AF96E57B2A2DDBEF00EA3353 /* UIButton.storyboard */,
+				AF96E57F2A2DE9F300EA3353 /* UITextField.storyboard */,
+				AF96E5862A2DF28B00EA3353 /* UITextView.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,12 +233,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF1C712F2A29BEE40025E0F9 /* Pago.storyboard in Resources */,
+				AF96E5872A2DF28B00EA3353 /* UITextView.storyboard in Resources */,
 				AF7EAC852A28951F0090E90F /* FoodItems.storyboard in Resources */,
 				AF0CFC382A246CBD00F684A1 /* LaunchScreen.storyboard in Resources */,
+				AF983BE92A2DB92C00B86BE1 /* UILabel.storyboard in Resources */,
+				AF96E5802A2DE9F300EA3353 /* UITextField.storyboard in Resources */,
 				AF0CFC352A246CBD00F684A1 /* Assets.xcassets in Resources */,
 				AF427C182A25AF5500A83CA3 /* SignInScreen.storyboard in Resources */,
 				AF0CFC332A246CB900F684A1 /* Main.storyboard in Resources */,
 				AF0FD6502A2704B100143869 /* SizeClasses.storyboard in Resources */,
+				AF96E57C2A2DDBEF00EA3353 /* UIButton.storyboard in Resources */,
 				AF56170E2A25D44100B6F8CE /* Screens.storyboard in Resources */,
 				AF4D68DB2A25BEE900FDF011 /* ContentPriority.storyboard in Resources */,
 			);
@@ -169,6 +259,12 @@
 				AF0CFC302A246CB900F684A1 /* ViewController.swift in Sources */,
 				AF0CFC2C2A246CB900F684A1 /* AppDelegate.swift in Sources */,
 				AF0CFC2E2A246CB900F684A1 /* SceneDelegate.swift in Sources */,
+				AF96E5852A2DEAC900EA3353 /* CustomTextField.swift in Sources */,
+				AF96E58E2A2DFBD300EA3353 /* DoneButton.swift in Sources */,
+				AF96E57E2A2DDC0800EA3353 /* UIButtonVC.swift in Sources */,
+				AF983BEB2A2DB95B00B86BE1 /* UILabelVC.swift in Sources */,
+				AF96E5822A2DEA1200EA3353 /* UITextFieldVC.swift in Sources */,
+				AF96E5892A2DF2CF00EA3353 /* UITextViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

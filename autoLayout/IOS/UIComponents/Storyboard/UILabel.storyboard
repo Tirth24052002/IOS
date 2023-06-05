@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3KB-IM-nyg">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="f8m-Ox-NNE">
+            <objects>
+                <navigationController id="3KB-IM-nyg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xt5-99-mIB">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="byU-ou-1ph"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ruq-ep-G10" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-595" y="-35"/>
+        </scene>
+        <!--LabelVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="UILabelVC" id="Y6W-OH-hqX" customClass="UILabelVC" customModule="IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="UILabelVC" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vt1-ax-4at">
+                                <rect key="frame" x="0.0" y="450.33333333333331" width="393" height="20.333333333333314"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Click here to confirm the details ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Confirm Details ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97263234853744507" green="0.97380548715591431" blue="0.92546373605728149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16O-mE-P8V">
+                                <rect key="frame" x="175.66666666666666" y="312" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CmJ-uS-Xe1">
+                                <rect key="frame" x="178.66666666666666" y="634.33333333333337" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CmJ-uS-Xe1" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="22K-MB-Dcx"/>
+                            <constraint firstItem="16O-mE-P8V" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Czn-X1-dx0"/>
+                            <constraint firstItem="CmJ-uS-Xe1" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.4" id="FeT-wi-3ay"/>
+                            <constraint firstItem="Vt1-ax-4at" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="Pl4-GL-lIV"/>
+                            <constraint firstItem="Vt1-ax-4at" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="RxG-GK-Jq8"/>
+                            <constraint firstItem="16O-mE-P8V" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.7" id="XGW-JQ-J8D"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Vt1-ax-4at" secondAttribute="trailing" id="fOT-8N-8hO"/>
+                            <constraint firstItem="Vt1-ax-4at" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zW2-Fu-2Z1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qUY-Nf-LUT"/>
+                    <connections>
+                        <outlet property="lblCustom" destination="CmJ-uS-Xe1" id="pXA-iS-BoK"/>
+                        <outlet property="lblEdit" destination="CmJ-uS-Xe1" id="jDK-hT-gRK"/>
+                        <outlet property="lblName" destination="16O-mE-P8V" id="r43-e4-UnB"/>
+                        <outlet property="lblWelcome" destination="Vt1-ax-4at" id="3r3-j3-EEj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
