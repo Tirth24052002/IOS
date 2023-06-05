@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AF0CFC282A246CB900F684A1 /* autoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = autoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF0CFC282A246CB900F684A1 /* IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0CFC2B2A246CB900F684A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF0CFC2D2A246CB900F684A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AF0CFC2F2A246CB900F684A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		AF0CFC1F2A246CB900F684A1 = {
 			isa = PBXGroup;
 			children = (
-				AF0CFC2A2A246CB900F684A1 /* autoLayout */,
+				AF0CFC2A2A246CB900F684A1 /* IOS */,
 				AF0CFC292A246CB900F684A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,12 +62,12 @@
 		AF0CFC292A246CB900F684A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF0CFC282A246CB900F684A1 /* autoLayout.app */,
+				AF0CFC282A246CB900F684A1 /* IOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AF0CFC2A2A246CB900F684A1 /* autoLayout */ = {
+		AF0CFC2A2A246CB900F684A1 /* IOS */ = {
 			isa = PBXGroup;
 			children = (
 				AF0CFC2B2A246CB900F684A1 /* AppDelegate.swift */,
@@ -81,19 +81,19 @@
 				AF56170D2A25D44100B6F8CE /* Screens.storyboard */,
 				AF7EAC832A2892CA0090E90F /* FoodItems.storyboard */,
 				AF0FD64F2A2704B100143869 /* SizeClasses.storyboard */,
-				AF1C712E2A29BEE40025E0F9 /* Pago.storyboard */,
 				AF0CFC342A246CBD00F684A1 /* Assets.xcassets */,
+				AF1C712E2A29BEE40025E0F9 /* Pago.storyboard */,
 				AF0CFC392A246CBD00F684A1 /* Info.plist */,
 			);
-			path = autoLayout;
+			path = IOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AF0CFC272A246CB900F684A1 /* autoLayout */ = {
+		AF0CFC272A246CB900F684A1 /* IOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF0CFC3C2A246CBD00F684A1 /* Build configuration list for PBXNativeTarget "autoLayout" */;
+			buildConfigurationList = AF0CFC3C2A246CBD00F684A1 /* Build configuration list for PBXNativeTarget "IOS" */;
 			buildPhases = (
 				AF0CFC242A246CB900F684A1 /* Sources */,
 				AF0CFC252A246CB900F684A1 /* Frameworks */,
@@ -103,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = autoLayout;
+			name = IOS;
 			productName = autoLayout;
-			productReference = AF0CFC282A246CB900F684A1 /* autoLayout.app */;
+			productReference = AF0CFC282A246CB900F684A1 /* IOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -123,7 +123,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AF0CFC232A246CB900F684A1 /* Build configuration list for PBXProject "autoLayout" */;
+			buildConfigurationList = AF0CFC232A246CB900F684A1 /* Build configuration list for PBXProject "IOS" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -136,7 +136,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF0CFC272A246CB900F684A1 /* autoLayout */,
+				AF0CFC272A246CB900F684A1 /* IOS */,
 			);
 		};
 /* End PBXProject section */
@@ -316,7 +316,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = autoLayout/Info.plist;
+				INFOPLIST_FILE = IOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IOS;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -343,7 +344,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = autoLayout/Info.plist;
+				INFOPLIST_FILE = IOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IOS;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -365,7 +367,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AF0CFC232A246CB900F684A1 /* Build configuration list for PBXProject "autoLayout" */ = {
+		AF0CFC232A246CB900F684A1 /* Build configuration list for PBXProject "IOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF0CFC3A2A246CBD00F684A1 /* Debug */,
@@ -374,7 +376,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF0CFC3C2A246CBD00F684A1 /* Build configuration list for PBXNativeTarget "autoLayout" */ = {
+		AF0CFC3C2A246CBD00F684A1 /* Build configuration list for PBXNativeTarget "IOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF0CFC3D2A246CBD00F684A1 /* Debug */,

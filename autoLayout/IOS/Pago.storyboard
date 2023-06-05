@@ -19,15 +19,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sER-4A-qLf">
                                 <rect key="frame" x="0.0" y="58.999999999999993" width="393" height="87.333333333333314"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pago" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONQ-Yt-UFy">
-                                        <rect key="frame" x="18.333333333333332" y="28.333333333333329" width="61.333333333333343" height="31"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                        <nil key="textColor"/>
-                                        <color key="highlightedColor" red="0.1243341491" green="0.14453196530000001" blue="0.27348235250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
-                                        </variation>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67W-tK-qgI">
                                         <rect key="frame" x="36" y="52.5" width="65" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -60,6 +51,15 @@
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pago" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONQ-Yt-UFy">
+                                        <rect key="frame" x="18.333333333333332" y="28.333333333333329" width="61.333333333333343" height="31"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <color key="highlightedColor" red="0.1243341491" green="0.14453196530000001" blue="0.27348235250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                        </variation>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7v-u6-JDm">
                                         <rect key="frame" x="1104" y="52.5" width="73" height="42"/>
                                         <color key="backgroundColor" red="1" green="0.97959309819999996" blue="0.98669046159999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -133,12 +133,12 @@
                                         <exclude reference="wTB-aM-itC"/>
                                         <exclude reference="bwi-qD-dZV"/>
                                         <exclude reference="zna-VW-mCa"/>
+                                        <exclude reference="513-Ef-NJz"/>
+                                        <exclude reference="cc0-8m-CKM"/>
                                         <exclude reference="11a-Vw-98H"/>
                                         <exclude reference="R0R-sf-lXh"/>
                                         <exclude reference="FyW-9h-wz5"/>
                                         <exclude reference="qkR-d9-wiz"/>
-                                        <exclude reference="513-Ef-NJz"/>
-                                        <exclude reference="cc0-8m-CKM"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
@@ -161,20 +161,20 @@
                                         <include reference="wTB-aM-itC"/>
                                         <include reference="bwi-qD-dZV"/>
                                         <include reference="zna-VW-mCa"/>
-                                        <include reference="11a-Vw-98H"/>
-                                        <include reference="R0R-sf-lXh"/>
-                                        <include reference="FyW-9h-wz5"/>
-                                        <include reference="qkR-d9-wiz"/>
-                                        <exclude reference="88b-dN-we3"/>
-                                        <exclude reference="Bug-lE-cGw"/>
-                                        <exclude reference="QfO-ub-igo"/>
-                                        <exclude reference="nM7-Nk-f4H"/>
                                         <exclude reference="1o4-uG-4ir"/>
                                         <exclude reference="2xv-t5-Cj1"/>
                                         <include reference="513-Ef-NJz"/>
                                         <exclude reference="BHs-Nf-yPU"/>
                                         <exclude reference="ZFQ-9V-Uak"/>
                                         <include reference="cc0-8m-CKM"/>
+                                        <include reference="11a-Vw-98H"/>
+                                        <include reference="R0R-sf-lXh"/>
+                                        <exclude reference="88b-dN-we3"/>
+                                        <exclude reference="Bug-lE-cGw"/>
+                                        <exclude reference="QfO-ub-igo"/>
+                                        <exclude reference="nM7-Nk-f4H"/>
+                                        <include reference="FyW-9h-wz5"/>
+                                        <include reference="qkR-d9-wiz"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -408,7 +408,6 @@
                                 <exclude reference="Pcu-OD-0gQ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="OJn-L5-alh"/>
                                 <exclude reference="hgY-nu-ZWI"/>
                                 <exclude reference="NTM-ms-axJ"/>
                                 <exclude reference="f6y-LO-YUS"/>
@@ -423,6 +422,7 @@
                                 <exclude reference="qDp-Io-3Rk"/>
                                 <exclude reference="LtQ-0W-P3A"/>
                                 <exclude reference="Z1G-Jf-RX2"/>
+                                <exclude reference="OJn-L5-alh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -432,7 +432,6 @@
                                 <include reference="Pcu-OD-0gQ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="OJn-L5-alh"/>
                                 <exclude reference="V5a-L5-azL"/>
                                 <include reference="hgY-nu-ZWI"/>
                                 <include reference="NTM-ms-axJ"/>
@@ -446,12 +445,12 @@
                                 <exclude reference="Q3e-fI-EO0"/>
                                 <include reference="mTa-vt-sAG"/>
                                 <exclude reference="oiC-Ny-2IU"/>
-                                <exclude reference="0k8-0A-GCu"/>
-                                <exclude reference="WOk-bI-uPg"/>
                                 <include reference="1ZE-XX-xk6"/>
                                 <include reference="aJc-Qr-z4q"/>
                                 <exclude reference="aj9-yj-3J7"/>
                                 <exclude reference="pFJ-Le-oUa"/>
+                                <exclude reference="0k8-0A-GCu"/>
+                                <exclude reference="WOk-bI-uPg"/>
                                 <exclude reference="5hd-nc-3Pa"/>
                                 <include reference="QpR-Ad-Dvp"/>
                                 <include reference="aez-ow-hBc"/>
@@ -469,6 +468,7 @@
                                 <include reference="Z1G-Jf-RX2"/>
                                 <exclude reference="cr9-sX-NQd"/>
                                 <exclude reference="uxw-6s-1jp"/>
+                                <include reference="OJn-L5-alh"/>
                             </mask>
                         </variation>
                     </view>
@@ -477,32 +477,6 @@
             </objects>
             <point key="canvasLocation" x="69.140625" y="-28.98975109809663"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="25D-hF-hy1">
-            <objects>
-                <viewController id="vT5-fv-GlK" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qDX-hB-KNh">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabLayout" translatesAutoresizingMaskIntoConstraints="NO" id="0Tp-zg-IXx">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="xDk-bC-GRo"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="xDk-bC-GRo" firstAttribute="trailing" secondItem="0Tp-zg-IXx" secondAttribute="trailing" id="0Nf-77-jdG"/>
-                            <constraint firstItem="xDk-bC-GRo" firstAttribute="bottom" secondItem="0Tp-zg-IXx" secondAttribute="bottom" id="7yT-K1-vzQ"/>
-                            <constraint firstItem="0Tp-zg-IXx" firstAttribute="top" secondItem="xDk-bC-GRo" secondAttribute="top" id="DzH-P8-hSy"/>
-                            <constraint firstItem="0Tp-zg-IXx" firstAttribute="leading" secondItem="xDk-bC-GRo" secondAttribute="leading" id="tjk-df-sp7"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pSy-Vh-SNY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="787" y="-27"/>
-        </scene>
     </scenes>
     <resources>
         <image name="MenuImage" width="84" height="85"/>
@@ -510,7 +484,6 @@
         <image name="appleIcon" width="32" height="32"/>
         <image name="paymentIcon" width="88" height="81"/>
         <image name="playStoreIcon" width="32" height="32"/>
-        <image name="tabLayout" width="2266" height="1488"/>
         <image name="userActivity" width="86" height="76"/>
         <image name="withdrawIcon" width="89" height="72"/>
         <systemColor name="labelColor">
