@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Papirus-Team-Papirus-Apps-Google.32.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
