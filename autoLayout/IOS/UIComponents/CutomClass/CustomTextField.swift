@@ -9,13 +9,15 @@ import UIKit
 
 class CustomTextField: UITextField {
     
+    // MARK: - IB Instactable
     @IBInspectable
     public var textPadding: CGFloat = 2.0 {
         didSet{
         }
     }
     let padding = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
-
+    
+    // MARK: - Funtion  
     override open func textRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.inset(by: padding)
     }

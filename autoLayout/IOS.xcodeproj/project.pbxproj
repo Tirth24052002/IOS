@@ -19,6 +19,18 @@
 		AF427C182A25AF5500A83CA3 /* SignInScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF427C172A25AF5400A83CA3 /* SignInScreen.storyboard */; };
 		AF4D68DB2A25BEE900FDF011 /* ContentPriority.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4D68DA2A25BEE900FDF011 /* ContentPriority.storyboard */; };
 		AF56170E2A25D44100B6F8CE /* Screens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF56170D2A25D44100B6F8CE /* Screens.storyboard */; };
+		AF781D3B2A2EEA1C00FC8132 /* UISwitch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF781D3A2A2EEA1C00FC8132 /* UISwitch.storyboard */; };
+		AF781D3F2A2EEACF00FC8132 /* UISwitchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF781D3E2A2EEACF00FC8132 /* UISwitchVC.swift */; };
+		AF781D412A2EF9BC00FC8132 /* UIComponents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF781D402A2EF9BC00FC8132 /* UIComponents.storyboard */; };
+		AF781D432A2EF9E200FC8132 /* UIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF781D422A2EF9E200FC8132 /* UIComponents.swift */; };
+		AF781D452A2F49F300FC8132 /* UISlider.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF781D442A2F49F300FC8132 /* UISlider.storyboard */; };
+		AF781D472A2F4A0B00FC8132 /* UISliderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF781D462A2F4A0B00FC8132 /* UISliderVC.swift */; };
+		AF781D492A2F518100FC8132 /* UIProgressView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF781D482A2F518100FC8132 /* UIProgressView.storyboard */; };
+		AF781D4B2A2F51A200FC8132 /* UIProgressViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF781D4A2A2F51A200FC8132 /* UIProgressViewVC.swift */; };
+		AF781D4D2A2F570700FC8132 /* UISegmentedControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF781D4C2A2F570700FC8132 /* UISegmentedControl.storyboard */; };
+		AF781D4F2A2F571800FC8132 /* UISegmentedControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF781D4E2A2F571800FC8132 /* UISegmentedControlVC.swift */; };
+		AF781D512A2F574600FC8132 /* UIPageControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF781D502A2F574600FC8132 /* UIPageControl.storyboard */; };
+		AF781D532A2F575800FC8132 /* UIPageControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF781D522A2F575800FC8132 /* UIPageControlVC.swift */; };
 		AF7EAC852A28951F0090E90F /* FoodItems.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7EAC832A2892CA0090E90F /* FoodItems.storyboard */; };
 		AF96E57C2A2DDBEF00EA3353 /* UIButton.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF96E57B2A2DDBEF00EA3353 /* UIButton.storyboard */; };
 		AF96E57E2A2DDC0800EA3353 /* UIButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96E57D2A2DDC0800EA3353 /* UIButtonVC.swift */; };
@@ -47,6 +59,18 @@
 		AF427C172A25AF5400A83CA3 /* SignInScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInScreen.storyboard; sourceTree = "<group>"; };
 		AF4D68DA2A25BEE900FDF011 /* ContentPriority.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContentPriority.storyboard; sourceTree = "<group>"; };
 		AF56170D2A25D44100B6F8CE /* Screens.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Screens.storyboard; sourceTree = "<group>"; };
+		AF781D3A2A2EEA1C00FC8132 /* UISwitch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISwitch.storyboard; sourceTree = "<group>"; };
+		AF781D3E2A2EEACF00FC8132 /* UISwitchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISwitchVC.swift; sourceTree = "<group>"; };
+		AF781D402A2EF9BC00FC8132 /* UIComponents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIComponents.storyboard; sourceTree = "<group>"; };
+		AF781D422A2EF9E200FC8132 /* UIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponents.swift; sourceTree = "<group>"; };
+		AF781D442A2F49F300FC8132 /* UISlider.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISlider.storyboard; sourceTree = "<group>"; };
+		AF781D462A2F4A0B00FC8132 /* UISliderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderVC.swift; sourceTree = "<group>"; };
+		AF781D482A2F518100FC8132 /* UIProgressView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIProgressView.storyboard; sourceTree = "<group>"; };
+		AF781D4A2A2F51A200FC8132 /* UIProgressViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProgressViewVC.swift; sourceTree = "<group>"; };
+		AF781D4C2A2F570700FC8132 /* UISegmentedControl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISegmentedControl.storyboard; sourceTree = "<group>"; };
+		AF781D4E2A2F571800FC8132 /* UISegmentedControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlVC.swift; sourceTree = "<group>"; };
+		AF781D502A2F574600FC8132 /* UIPageControl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIPageControl.storyboard; sourceTree = "<group>"; };
+		AF781D522A2F575800FC8132 /* UIPageControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageControlVC.swift; sourceTree = "<group>"; };
 		AF7EAC832A2892CA0090E90F /* FoodItems.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FoodItems.storyboard; sourceTree = "<group>"; };
 		AF96E57B2A2DDBEF00EA3353 /* UIButton.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIButton.storyboard; sourceTree = "<group>"; };
 		AF96E57D2A2DDC0800EA3353 /* UIButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonVC.swift; sourceTree = "<group>"; };
@@ -155,10 +179,16 @@
 		AF983BE62A2DB87100B86BE1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AF781D422A2EF9E200FC8132 /* UIComponents.swift */,
 				AF983BEA2A2DB95B00B86BE1 /* UILabelVC.swift */,
 				AF96E57D2A2DDC0800EA3353 /* UIButtonVC.swift */,
 				AF96E5812A2DEA1200EA3353 /* UITextFieldVC.swift */,
 				AF96E5882A2DF2CF00EA3353 /* UITextViewVC.swift */,
+				AF781D3E2A2EEACF00FC8132 /* UISwitchVC.swift */,
+				AF781D462A2F4A0B00FC8132 /* UISliderVC.swift */,
+				AF781D4A2A2F51A200FC8132 /* UIProgressViewVC.swift */,
+				AF781D4E2A2F571800FC8132 /* UISegmentedControlVC.swift */,
+				AF781D522A2F575800FC8132 /* UIPageControlVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -166,10 +196,16 @@
 		AF983BE72A2DB87D00B86BE1 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				AF781D402A2EF9BC00FC8132 /* UIComponents.storyboard */,
 				AF983BE82A2DB92C00B86BE1 /* UILabel.storyboard */,
 				AF96E57B2A2DDBEF00EA3353 /* UIButton.storyboard */,
 				AF96E57F2A2DE9F300EA3353 /* UITextField.storyboard */,
 				AF96E5862A2DF28B00EA3353 /* UITextView.storyboard */,
+				AF781D3A2A2EEA1C00FC8132 /* UISwitch.storyboard */,
+				AF781D442A2F49F300FC8132 /* UISlider.storyboard */,
+				AF781D482A2F518100FC8132 /* UIProgressView.storyboard */,
+				AF781D4C2A2F570700FC8132 /* UISegmentedControl.storyboard */,
+				AF781D502A2F574600FC8132 /* UIPageControl.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -232,16 +268,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF781D512A2F574600FC8132 /* UIPageControl.storyboard in Resources */,
 				AF1C712F2A29BEE40025E0F9 /* Pago.storyboard in Resources */,
 				AF96E5872A2DF28B00EA3353 /* UITextView.storyboard in Resources */,
 				AF7EAC852A28951F0090E90F /* FoodItems.storyboard in Resources */,
+				AF781D4D2A2F570700FC8132 /* UISegmentedControl.storyboard in Resources */,
 				AF0CFC382A246CBD00F684A1 /* LaunchScreen.storyboard in Resources */,
 				AF983BE92A2DB92C00B86BE1 /* UILabel.storyboard in Resources */,
 				AF96E5802A2DE9F300EA3353 /* UITextField.storyboard in Resources */,
+				AF781D412A2EF9BC00FC8132 /* UIComponents.storyboard in Resources */,
 				AF0CFC352A246CBD00F684A1 /* Assets.xcassets in Resources */,
 				AF427C182A25AF5500A83CA3 /* SignInScreen.storyboard in Resources */,
+				AF781D492A2F518100FC8132 /* UIProgressView.storyboard in Resources */,
 				AF0CFC332A246CB900F684A1 /* Main.storyboard in Resources */,
 				AF0FD6502A2704B100143869 /* SizeClasses.storyboard in Resources */,
+				AF781D452A2F49F300FC8132 /* UISlider.storyboard in Resources */,
+				AF781D3B2A2EEA1C00FC8132 /* UISwitch.storyboard in Resources */,
 				AF96E57C2A2DDBEF00EA3353 /* UIButton.storyboard in Resources */,
 				AF56170E2A25D44100B6F8CE /* Screens.storyboard in Resources */,
 				AF4D68DB2A25BEE900FDF011 /* ContentPriority.storyboard in Resources */,
@@ -255,16 +297,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF781D4F2A2F571800FC8132 /* UISegmentedControlVC.swift in Sources */,
 				AF0CFC412A249C0600F684A1 /* WelcomePageVC.swift in Sources */,
+				AF781D432A2EF9E200FC8132 /* UIComponents.swift in Sources */,
 				AF0CFC302A246CB900F684A1 /* ViewController.swift in Sources */,
 				AF0CFC2C2A246CB900F684A1 /* AppDelegate.swift in Sources */,
+				AF781D532A2F575800FC8132 /* UIPageControlVC.swift in Sources */,
+				AF781D4B2A2F51A200FC8132 /* UIProgressViewVC.swift in Sources */,
 				AF0CFC2E2A246CB900F684A1 /* SceneDelegate.swift in Sources */,
 				AF96E5852A2DEAC900EA3353 /* CustomTextField.swift in Sources */,
 				AF96E58E2A2DFBD300EA3353 /* DoneButton.swift in Sources */,
 				AF96E57E2A2DDC0800EA3353 /* UIButtonVC.swift in Sources */,
 				AF983BEB2A2DB95B00B86BE1 /* UILabelVC.swift in Sources */,
 				AF96E5822A2DEA1200EA3353 /* UITextFieldVC.swift in Sources */,
+				AF781D472A2F4A0B00FC8132 /* UISliderVC.swift in Sources */,
 				AF96E5892A2DF2CF00EA3353 /* UITextViewVC.swift in Sources */,
+				AF781D3F2A2EEACF00FC8132 /* UISwitchVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

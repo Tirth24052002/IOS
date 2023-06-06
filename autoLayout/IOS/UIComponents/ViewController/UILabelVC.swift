@@ -12,8 +12,10 @@ class UILabelVC: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var lblWelcome: UILabel!
     @IBOutlet weak var lblName: UILabel!
-    @IBOutlet weak var lblEdit: UILabel!
+    @IBOutlet weak var lblAddAtrribute: UILabel!
     @IBOutlet weak var lblCustom: UILabel!
+    @IBOutlet weak var lblStr: UILabel!
+    
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,27 +42,33 @@ class UILabelVC: UIViewController {
         super.viewDidDisappear(animated)
         print("viewDidDisappear")
     }
+}
     
+// MARK: - Function
+extension UILabelVC {
     func setupViews() {
         let quote = "Hello World!"
-        let font = UIFont.systemFont(ofSize: 50)
+        let font = UIFont.italicSystemFont(ofSize: 50)
         let attributes = [NSAttributedString.Key.font: font]
         let attributedQuote = NSAttributedString(string: quote, attributes: attributes)
         lblName.attributedText = attributedQuote
-        
-        let myString = "Swift Attributed String"
-        let myAttribute = [ NSAttributedString.Key.foregroundColor: UIColor.blue ]
-  
-        
         
         let myCutom = "The Cutomized String"
         let colorSet = [NSAttributedString.Key.foregroundColor: UIColor.red]
         let addColor = NSAttributedString(string: myCutom, attributes: colorSet)
         lblCustom.attributedText = addColor
         
-        let fontChange = [NSAttributedString.Key.font : UIFont(name: "Chalkduster" , size: 20) ]
+        //let fontChange = [NSAttributedString.Key.font: UIFont(name: "Chalkduster", size: 20)]
+    
         
-        let myAttrString = NSAttributedString(string: myCutom, attributes: fontChange)
-        lblEdit.attributedText = myAttrString
+        let redString = "Programatic string with red color and underline \nform 0 to 18 position"
+              let attrs = [NSAttributedString.Key.foregroundColor: UIColor.red]
+              let attrMyString = NSMutableAttributedString(string: redString, attributes: attrs)
+        let myRange = NSRange(location: 0, length: 18)
+        attrMyString.addAttributes(
+            [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.thick.rawValue,
+             NSAttributedString.Key.underlineColor: UIColor.systemBrown],
+            range: myRange)
+        lblAddAtrribute.attributedText = attrMyString
     }
 }
