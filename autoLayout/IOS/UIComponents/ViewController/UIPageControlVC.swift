@@ -11,6 +11,7 @@ class UIPageControlVC: UIViewController {
     
     // MARK: - Variables
     var pageControlIndex = 0
+    var lastindex = 10
     
     // MARK: - IB Outlet
     @IBOutlet weak var pageControler: UIPageControl!
@@ -19,12 +20,17 @@ class UIPageControlVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     // MARK: - IB Action
     @IBAction func btnPageControl(_ sender: Any) {
         pageControler.currentPage = 0
         pageControler.numberOfPages = 10
-        pageControlIndex = pageControlIndex + 1
         pageControler.currentPage = pageControlIndex
+        pageControlIndex = pageControlIndex + 1
+//        if pageControlIndex < pageControler.numberOfPages {
+//            pageControlIndex = pageControlIndex + 1
+//        } else if pageControlIndex == 10 {
+//            pageControler.currentPage = 0
+//        }
     }
 }

@@ -9,7 +9,7 @@ import UIKit
 
 class UILabelVC: UIViewController {
     
-    // MARK: - Outlets
+    // MARK: - IB Outlets
     @IBOutlet weak var lblWelcome: UILabel!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblAddAtrribute: UILabel!
@@ -44,7 +44,7 @@ class UILabelVC: UIViewController {
     }
 }
     
-// MARK: - Function
+// MARK: - Extension
 extension UILabelVC {
     func setupViews() {
         let quote = "Hello World!"
@@ -59,8 +59,6 @@ extension UILabelVC {
         lblCustom.attributedText = addColor
         
         //let fontChange = [NSAttributedString.Key.font: UIFont(name: "Chalkduster", size: 20)]
-    
-        
         let redString = "Programatic string with red color and underline \nform 0 to 18 position"
               let attrs = [NSAttributedString.Key.foregroundColor: UIColor.red]
               let attrMyString = NSMutableAttributedString(string: redString, attributes: attrs)

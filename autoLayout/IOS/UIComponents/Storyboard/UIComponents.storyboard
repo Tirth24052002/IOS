@@ -107,33 +107,77 @@
                                     <action selector="btnPageControl:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="US7-B4-2Zw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pj2-jm-vuo">
+                                <rect key="frame" x="12.333333333333329" y="558" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Scroll View"/>
+                                <connections>
+                                    <action selector="btnScrollView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="VOl-r6-j8h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXh-Vr-eLN">
+                                <rect key="frame" x="12.333333333333329" y="604.33333333333337" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Page VC"/>
+                                <connections>
+                                    <action selector="btnPageViewController:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nbB-kc-7PP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWI-vI-hyY">
+                                <rect key="frame" x="12.333333333333329" y="512" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Stepper"/>
+                                <connections>
+                                    <action selector="btnStepper:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2qz-B5-Jy4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNb-C3-ABZ">
+                                <rect key="frame" x="12.333333333333329" y="650.33333333333337" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Table View"/>
+                                <connections>
+                                    <action selector="btnTableView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8aZ-7G-NFs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="GH6-2d-8Cm" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="1zV-Pb-Jmh"/>
                             <constraint firstItem="unF-lD-7gG" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.25" id="2Tj-AB-pfb"/>
+                            <constraint firstItem="Pj2-jm-vuo" firstAttribute="trailing" secondItem="jTd-ug-XAQ" secondAttribute="trailing" id="2r7-Fx-52b"/>
+                            <constraint firstItem="lWI-vI-hyY" firstAttribute="trailing" secondItem="TXh-Vr-eLN" secondAttribute="trailing" id="4so-Az-jJF"/>
                             <constraint firstItem="UBw-id-pOa" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.85" id="80g-b7-IMc"/>
                             <constraint firstItem="uv0-yh-NSa" firstAttribute="leading" secondItem="UBw-id-pOa" secondAttribute="leading" id="9aA-i9-2F3"/>
                             <constraint firstItem="jTd-ug-XAQ" firstAttribute="trailing" secondItem="uv0-yh-NSa" secondAttribute="trailing" id="BGu-Kx-ulU"/>
                             <constraint firstItem="Zmz-XU-kQ5" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.45" id="DNl-PF-bp0"/>
+                            <constraint firstItem="TXh-Vr-eLN" firstAttribute="leading" secondItem="Pj2-jm-vuo" secondAttribute="leading" id="GfD-ek-pzg"/>
                             <constraint firstItem="jTd-ug-XAQ" firstAttribute="leading" secondItem="uv0-yh-NSa" secondAttribute="leading" id="GhH-nS-13a"/>
+                            <constraint firstItem="TXh-Vr-eLN" firstAttribute="trailing" secondItem="Pj2-jm-vuo" secondAttribute="trailing" id="H50-ap-prl"/>
                             <constraint firstItem="zmK-UM-BXw" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.55" id="IH9-cN-LLa"/>
                             <constraint firstItem="GH6-2d-8Cm" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.65" id="Jtm-tR-bgQ"/>
+                            <constraint firstItem="lWI-vI-hyY" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="LA6-dC-oYk"/>
+                            <constraint firstItem="lWI-vI-hyY" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.15" id="NnK-i3-Pbg"/>
                             <constraint firstItem="jTd-ug-XAQ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="O5Y-qd-KiI"/>
                             <constraint firstItem="Zmz-XU-kQ5" firstAttribute="leading" secondItem="ofq-E8-bQH" secondAttribute="leading" id="P3V-cz-iUU"/>
+                            <constraint firstItem="uNb-C3-ABZ" firstAttribute="trailing" secondItem="lWI-vI-hyY" secondAttribute="trailing" id="Pw9-BO-fpe"/>
                             <constraint firstItem="ofq-E8-bQH" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.35" id="QVY-BM-dw6"/>
                             <constraint firstItem="ofq-E8-bQH" firstAttribute="leading" secondItem="unF-lD-7gG" secondAttribute="leading" id="QcO-rL-1pe"/>
+                            <constraint firstItem="TXh-Vr-eLN" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="Re2-AQ-bFh"/>
                             <constraint firstItem="UBw-id-pOa" firstAttribute="leading" secondItem="3NE-BV-A8o" secondAttribute="leading" id="Rs9-oT-c39"/>
                             <constraint firstItem="3NE-BV-A8o" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="SLR-3U-HKE"/>
                             <constraint firstItem="uv0-yh-NSa" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.95" id="Sl6-bD-Ohh"/>
+                            <constraint firstItem="Pj2-jm-vuo" firstAttribute="leading" secondItem="jTd-ug-XAQ" secondAttribute="leading" id="UCT-ln-MD4"/>
                             <constraint firstItem="3NE-BV-A8o" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.75" id="UyG-Ld-BTC"/>
                             <constraint firstItem="ofq-E8-bQH" firstAttribute="trailing" secondItem="unF-lD-7gG" secondAttribute="trailing" id="VdW-f8-CCy"/>
+                            <constraint firstItem="Pj2-jm-vuo" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="WQ4-da-Tgj"/>
                             <constraint firstItem="3NE-BV-A8o" firstAttribute="trailing" secondItem="GH6-2d-8Cm" secondAttribute="trailing" id="WSb-9W-3vn"/>
+                            <constraint firstItem="TXh-Vr-eLN" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.35" id="X6O-co-3yA"/>
                             <constraint firstItem="UBw-id-pOa" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="XC7-Wm-RJz"/>
                             <constraint firstItem="unF-lD-7gG" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="Ywc-cA-fCR"/>
                             <constraint firstItem="uv0-yh-NSa" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="b4G-My-bJd"/>
                             <constraint firstItem="3NE-BV-A8o" firstAttribute="leading" secondItem="GH6-2d-8Cm" secondAttribute="leading" id="bgP-GV-B3C"/>
+                            <constraint firstItem="uNb-C3-ABZ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="bnz-db-tDb"/>
                             <constraint firstItem="jTd-ug-XAQ" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.05" id="fqk-9J-VBS"/>
                             <constraint firstItem="zmK-UM-BXw" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="gTw-om-2NB"/>
                             <constraint firstItem="GH6-2d-8Cm" firstAttribute="trailing" secondItem="zmK-UM-BXw" secondAttribute="trailing" id="jNS-45-6xa"/>
@@ -143,8 +187,12 @@
                             <constraint firstItem="UBw-id-pOa" firstAttribute="trailing" secondItem="3NE-BV-A8o" secondAttribute="trailing" id="r9c-vb-6sb"/>
                             <constraint firstItem="uv0-yh-NSa" firstAttribute="trailing" secondItem="UBw-id-pOa" secondAttribute="trailing" id="srX-RM-Jpp"/>
                             <constraint firstItem="ofq-E8-bQH" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="tMQ-gW-z4J"/>
+                            <constraint firstItem="Pj2-jm-vuo" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.25" id="tSZ-ke-1J7"/>
+                            <constraint firstItem="uNb-C3-ABZ" firstAttribute="leading" secondItem="lWI-vI-hyY" secondAttribute="leading" id="ttC-4y-54a"/>
                             <constraint firstItem="zmK-UM-BXw" firstAttribute="trailing" secondItem="Zmz-XU-kQ5" secondAttribute="trailing" id="u9a-cQ-1Gv"/>
+                            <constraint firstItem="lWI-vI-hyY" firstAttribute="leading" secondItem="TXh-Vr-eLN" secondAttribute="leading" id="ufw-UZ-xA5"/>
                             <constraint firstItem="Zmz-XU-kQ5" firstAttribute="trailing" secondItem="ofq-E8-bQH" secondAttribute="trailing" id="vBm-8W-B2s"/>
+                            <constraint firstItem="uNb-C3-ABZ" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.45" id="y5x-aQ-Rkg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="UI Components" id="Vlf-iX-imC"/>

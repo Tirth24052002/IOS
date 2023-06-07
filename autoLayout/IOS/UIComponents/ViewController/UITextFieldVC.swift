@@ -8,6 +8,7 @@
 import UIKit
 
 class UITextFieldVC: UIViewController {
+    
     // MARK: - Outlets
     @IBOutlet weak var txtFieldName: CustomTextField!
     @IBOutlet weak var imgAdd: UIImageView!

@@ -13,7 +13,8 @@ class UIComponents: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+   
+
 }
 
 // MARK: - Extension
@@ -73,7 +74,7 @@ extension UIComponents {
     @IBAction func btnSlider(_ sender: Any) {
         let sliderStoryboard = UIStoryboard(name: "UISlider", bundle: nil)
         guard let sliderVC =  sliderStoryboard.instantiateViewController(withIdentifier:
-                                                                        "UISliderVC")
+                                                                            "UISliderVC")
                 as? UISliderVC else {
             return
         }
@@ -83,7 +84,7 @@ extension UIComponents {
     @IBAction func btnProgressView(_ sender: UIButton) {
         let progressViewStoryboard = UIStoryboard(name: "UIProgressView", bundle: nil)
         guard let progressViewVC =  progressViewStoryboard.instantiateViewController(withIdentifier:
-                                                                        "UIProgressViewVC")
+                                                                                        "UIProgressViewVC")
                 as? UIProgressViewVC else {
             return
         }
@@ -93,7 +94,7 @@ extension UIComponents {
     @IBAction func btnSegmentedControl(_ sender: UIButton) {
         let segmentedControlStoryboard = UIStoryboard(name: "UISegmentedControl", bundle: nil)
         guard let segmentedControlVC =  segmentedControlStoryboard.instantiateViewController(withIdentifier:
-                                                                        "UISegmentedControlVC")
+                                                                                                "UISegmentedControlVC")
                 as? UISegmentedControlVC else {
             return
         }
@@ -103,10 +104,51 @@ extension UIComponents {
     @IBAction func btnPageControl(_ sender: UIButton) {
         let pageControlStoryboard = UIStoryboard(name: "UIPageControl", bundle: nil)
         guard let pageControlVC =  pageControlStoryboard.instantiateViewController(withIdentifier:
-                                                                        "UIPageControlVC")
+                                                                                    "UIPageControlVC")
                 as? UIPageControlVC else {
             return
         }
         navigationController?.pushViewController(pageControlVC , animated: true)
+    }
+    
+    @IBAction func btnScrollView(_ sender: UIButton) {
+        let scrollViewStoryboard = UIStoryboard(name: "UIScrollView", bundle: nil)
+        guard let scrollViewVC =  scrollViewStoryboard.instantiateViewController(withIdentifier:
+                                                                                    "UIScrollViewVC")
+                as? UIScrollViewVC else {
+            return
+        }
+        navigationController?.pushViewController(scrollViewVC , animated: true)
+    }
+    
+    @IBAction func btnPageViewController(_ sender: UIButton) {
+        let pageViewControllerStoryboard = UIStoryboard(name: "MainPageViewController", bundle: nil)
+        guard let pageViewControllerVC =  pageViewControllerStoryboard.instantiateViewController(withIdentifier:
+                                                                        "MainPageViewController")
+                as? MainPageViewController else {
+            return
+        }
+        navigationController?.pushViewController(pageViewControllerVC , animated: true)
+    }
+    
+    @IBAction func btnStepper(_ sender: UIButton) {
+        let stepperStoryboard = UIStoryboard(name: "UIStepper", bundle: nil)
+        guard let stepperVC =  stepperStoryboard.instantiateViewController(withIdentifier:
+                                                                        "UIStepperVC")
+                as? UIStepperVC else {
+            return
+        }
+        navigationController?.pushViewController(stepperVC , animated: true)
+        
+    }
+    
+    @IBAction func btnTableView(_ sender: UIButton) {
+        let tableViewStoryboard = UIStoryboard(name: "UITableView", bundle: nil)
+        guard let tableViewVC =  tableViewStoryboard.instantiateViewController(withIdentifier:
+                                                                        "UITableViewVC")
+                as? UITableViewVC else {
+            return
+        }
+        navigationController?.pushViewController(tableViewVC , animated: true)
     }
 }

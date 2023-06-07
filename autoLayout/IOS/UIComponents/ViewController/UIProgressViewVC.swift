@@ -16,6 +16,8 @@ class UIProgressViewVC: UIViewController {
     @IBAction func btnProgress(_ sender: Any) {
         sliderProgress.setProgress(sliderProgress.progress + 0.1, animated: true)
     }
+    
+    // MARK: - View life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }

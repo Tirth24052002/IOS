@@ -22,21 +22,21 @@ class UISegmentedControlVC: UIViewController {
         switch sender.selectedSegmentIndex {
         case 0:
             imageView.image = UIImage(named: "lion")
-            sender.selectedSegmentTintColor = .orange
+            sender.selectedSegmentTintColor = .brown
             break
         case 1:
             imageView.image = UIImage(named: "koala")
-            sender.selectedSegmentTintColor = .systemCyan
+            sender.selectedSegmentTintColor = .gray
             break
         case 2:
             imageView.image = UIImage(named: "elephant")
-            sender.selectedSegmentTintColor = .blue
+            sender.selectedSegmentTintColor = .systemBlue
         case 3:
             imageView.image = UIImage(named: "fox")
-            sender.selectedSegmentTintColor = .yellow
+            sender.selectedSegmentTintColor = .orange
         default:
             imageView.image = UIImage(named: "koala")
-            sender.selectedSegmentTintColor = .gray
+            sender.selectedSegmentTintColor = .brown
         break
         }
     }

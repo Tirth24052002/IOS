@@ -10,12 +10,14 @@ import UIKit
 class UISwitchVC: UIViewController {
 
     @IBOutlet weak var swtColor: UISwitch!
+    
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
-        // MARK: - View Life Cycle  
         super.viewDidLoad()
     }
+    
     // MARK: - IB Action
-    @IBAction func switchDidChange(_ sender: UISwitch){
+    @IBAction func switchDidChange(_ sender: UISwitch) {
         if sender.isOn {
             view.backgroundColor = .red
         } else {
