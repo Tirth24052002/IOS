@@ -17,6 +17,9 @@
 		AF0FD6502A2704B100143869 /* SizeClasses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0FD64F2A2704B100143869 /* SizeClasses.storyboard */; };
 		AF1C712F2A29BEE40025E0F9 /* Pago.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1C712E2A29BEE40025E0F9 /* Pago.storyboard */; };
 		AF427C182A25AF5500A83CA3 /* SignInScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF427C172A25AF5400A83CA3 /* SignInScreen.storyboard */; };
+		AF4A70722A31C8E50000BDC2 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4A70702A31C8E50000BDC2 /* CompanyTableViewCell.swift */; };
+		AF4A70732A31C8E50000BDC2 /* CompanyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4A70712A31C8E50000BDC2 /* CompanyTableViewCell.xib */; };
+		AF4A70752A31C9660000BDC2 /* FindJobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4A70742A31C9660000BDC2 /* FindJobModel.swift */; };
 		AF4D68DB2A25BEE900FDF011 /* ContentPriority.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4D68DA2A25BEE900FDF011 /* ContentPriority.storyboard */; };
 		AF5407A92A308D5A0062F629 /* UIStepper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5407A82A308D5A0062F629 /* UIStepper.storyboard */; };
 		AF5407AB2A308D7A0062F629 /* UIStepperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5407AA2A308D7A0062F629 /* UIStepperVC.swift */; };
@@ -35,7 +38,6 @@
 		AF781D4B2A2F51A200FC8132 /* UIProgressViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF781D4A2A2F51A200FC8132 /* UIProgressViewVC.swift */; };
 		AF781D4D2A2F570700FC8132 /* UISegmentedControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF781D4C2A2F570700FC8132 /* UISegmentedControl.storyboard */; };
 		AF781D4F2A2F571800FC8132 /* UISegmentedControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF781D4E2A2F571800FC8132 /* UISegmentedControlVC.swift */; };
-		AF781D512A2F574600FC8132 /* UIPageControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF781D502A2F574600FC8132 /* UIPageControl.storyboard */; };
 		AF781D532A2F575800FC8132 /* UIPageControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF781D522A2F575800FC8132 /* UIPageControlVC.swift */; };
 		AF7EAC852A28951F0090E90F /* FoodItems.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7EAC832A2892CA0090E90F /* FoodItems.storyboard */; };
 		AF81DD192A305EF700BADAAE /* MainPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF81DD182A305EF700BADAAE /* MainPageViewController.storyboard */; };
@@ -47,15 +49,20 @@
 		AF96E5802A2DE9F300EA3353 /* UITextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF96E57F2A2DE9F300EA3353 /* UITextField.storyboard */; };
 		AF96E5822A2DEA1200EA3353 /* UITextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96E5812A2DEA1200EA3353 /* UITextFieldVC.swift */; };
 		AF96E5852A2DEAC900EA3353 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96E5842A2DEAC900EA3353 /* CustomTextField.swift */; };
-		AF96E5872A2DF28B00EA3353 /* UITextView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF96E5862A2DF28B00EA3353 /* UITextView.storyboard */; };
 		AF96E5892A2DF2CF00EA3353 /* UITextViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96E5882A2DF2CF00EA3353 /* UITextViewVC.swift */; };
 		AF96E58E2A2DFBD300EA3353 /* DoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96E58D2A2DFBD300EA3353 /* DoneButton.swift */; };
 		AF983BE92A2DB92C00B86BE1 /* UILabel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF983BE82A2DB92C00B86BE1 /* UILabel.storyboard */; };
 		AF983BEB2A2DB95B00B86BE1 /* UILabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF983BEA2A2DB95B00B86BE1 /* UILabelVC.swift */; };
+		AFC9908B2A318DF70071C98E /* UIScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC9908A2A318DF70071C98E /* UIScrollView.storyboard */; };
+		AFC9908D2A318E4B0071C98E /* UITextView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC9908C2A318E4B0071C98E /* UITextView.storyboard */; };
+		AFC990902A31A1BB0071C98E /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC9908E2A31A1BB0071C98E /* EventTableViewCell.swift */; };
+		AFC990912A31A1BB0071C98E /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC9908F2A31A1BB0071C98E /* EventTableViewCell.xib */; };
+		AFDAECA92A3209C20078AF27 /* ImagViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDAECA72A3209C20078AF27 /* ImagViewCell.swift */; };
+		AFDAECAA2A3209C20078AF27 /* ImagViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFDAECA82A3209C20078AF27 /* ImagViewCell.xib */; };
 		AFE9703E2A3087800002A5F0 /* GreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9703D2A3087800002A5F0 /* GreenVC.swift */; };
 		AFE970402A3087F90002A5F0 /* YellowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9703F2A3087F90002A5F0 /* YellowVC.swift */; };
-		AFEC93612A303F080025DA52 /* UIScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFEC93602A303F080025DA52 /* UIScrollView.storyboard */; };
 		AFEC93632A303F2F0025DA52 /* UIScrollViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEC93622A303F2F0025DA52 /* UIScrollViewVC.swift */; };
+		AFFAD7AF2A318BDF0072E871 /* UIPageControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFAD7AE2A318BDF0072E871 /* UIPageControl.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +78,9 @@
 		AF0FD64F2A2704B100143869 /* SizeClasses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SizeClasses.storyboard; sourceTree = "<group>"; };
 		AF1C712E2A29BEE40025E0F9 /* Pago.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pago.storyboard; sourceTree = "<group>"; };
 		AF427C172A25AF5400A83CA3 /* SignInScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInScreen.storyboard; sourceTree = "<group>"; };
+		AF4A70702A31C8E50000BDC2 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
+		AF4A70712A31C8E50000BDC2 /* CompanyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyTableViewCell.xib; sourceTree = "<group>"; };
+		AF4A70742A31C9660000BDC2 /* FindJobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindJobModel.swift; sourceTree = "<group>"; };
 		AF4D68DA2A25BEE900FDF011 /* ContentPriority.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContentPriority.storyboard; sourceTree = "<group>"; };
 		AF5407A82A308D5A0062F629 /* UIStepper.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIStepper.storyboard; sourceTree = "<group>"; };
 		AF5407AA2A308D7A0062F629 /* UIStepperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStepperVC.swift; sourceTree = "<group>"; };
@@ -89,7 +99,6 @@
 		AF781D4A2A2F51A200FC8132 /* UIProgressViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProgressViewVC.swift; sourceTree = "<group>"; };
 		AF781D4C2A2F570700FC8132 /* UISegmentedControl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISegmentedControl.storyboard; sourceTree = "<group>"; };
 		AF781D4E2A2F571800FC8132 /* UISegmentedControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlVC.swift; sourceTree = "<group>"; };
-		AF781D502A2F574600FC8132 /* UIPageControl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIPageControl.storyboard; sourceTree = "<group>"; };
 		AF781D522A2F575800FC8132 /* UIPageControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageControlVC.swift; sourceTree = "<group>"; };
 		AF7EAC832A2892CA0090E90F /* FoodItems.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FoodItems.storyboard; sourceTree = "<group>"; };
 		AF81DD182A305EF700BADAAE /* MainPageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainPageViewController.storyboard; sourceTree = "<group>"; };
@@ -101,15 +110,20 @@
 		AF96E57F2A2DE9F300EA3353 /* UITextField.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextField.storyboard; sourceTree = "<group>"; };
 		AF96E5812A2DEA1200EA3353 /* UITextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldVC.swift; sourceTree = "<group>"; };
 		AF96E5842A2DEAC900EA3353 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		AF96E5862A2DF28B00EA3353 /* UITextView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextView.storyboard; sourceTree = "<group>"; };
 		AF96E5882A2DF2CF00EA3353 /* UITextViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewVC.swift; sourceTree = "<group>"; };
 		AF96E58D2A2DFBD300EA3353 /* DoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneButton.swift; sourceTree = "<group>"; };
 		AF983BE82A2DB92C00B86BE1 /* UILabel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UILabel.storyboard; sourceTree = "<group>"; };
 		AF983BEA2A2DB95B00B86BE1 /* UILabelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelVC.swift; sourceTree = "<group>"; };
+		AFC9908A2A318DF70071C98E /* UIScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIScrollView.storyboard; sourceTree = "<group>"; };
+		AFC9908C2A318E4B0071C98E /* UITextView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextView.storyboard; sourceTree = "<group>"; };
+		AFC9908E2A31A1BB0071C98E /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		AFC9908F2A31A1BB0071C98E /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		AFDAECA72A3209C20078AF27 /* ImagViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagViewCell.swift; sourceTree = "<group>"; };
+		AFDAECA82A3209C20078AF27 /* ImagViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagViewCell.xib; sourceTree = "<group>"; };
 		AFE9703D2A3087800002A5F0 /* GreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenVC.swift; sourceTree = "<group>"; };
 		AFE9703F2A3087F90002A5F0 /* YellowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowVC.swift; sourceTree = "<group>"; };
-		AFEC93602A303F080025DA52 /* UIScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIScrollView.storyboard; sourceTree = "<group>"; };
 		AFEC93622A303F2F0025DA52 /* UIScrollViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewVC.swift; sourceTree = "<group>"; };
+		AFFAD7AE2A318BDF0072E871 /* UIPageControl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = UIPageControl.storyboard; path = ../Storyboard/UIPageControl.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +158,8 @@
 			children = (
 				AF983BE22A2DB55F00B86BE1 /* AutoLayout */,
 				AF983BE32A2DB79F00B86BE1 /* UIComponents */,
+				AF0CFC2D2A246CB900F684A1 /* SceneDelegate.swift */,
+				AF0CFC2B2A246CB900F684A1 /* AppDelegate.swift */,
 				AF0CFC342A246CBD00F684A1 /* Assets.xcassets */,
 				AF0CFC392A246CBD00F684A1 /* Info.plist */,
 			);
@@ -155,8 +171,145 @@
 			children = (
 				AF5407B02A30AA2C0062F629 /* IndexTableViewCell.swift */,
 				AF5407B12A30AA2C0062F629 /* IndexTableViewCell.xib */,
+				AFC9908E2A31A1BB0071C98E /* EventTableViewCell.swift */,
+				AFC9908F2A31A1BB0071C98E /* EventTableViewCell.xib */,
+				AF4A70702A31C8E50000BDC2 /* CompanyTableViewCell.swift */,
+				AF4A70712A31C8E50000BDC2 /* CompanyTableViewCell.xib */,
+				AFDAECA72A3209C20078AF27 /* ImagViewCell.swift */,
+				AFDAECA82A3209C20078AF27 /* ImagViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		AF80D69F2A31870000CCD33A /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				AF781D422A2EF9E200FC8132 /* UIComponents.swift */,
+				AF781D402A2EF9BC00FC8132 /* UIComponents.storyboard */,
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		AF80D6A02A31874800CCD33A /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				AF983BE82A2DB92C00B86BE1 /* UILabel.storyboard */,
+				AF983BEA2A2DB95B00B86BE1 /* UILabelVC.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		AF80D6A12A31876C00CCD33A /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				AF96E57D2A2DDC0800EA3353 /* UIButtonVC.swift */,
+				AF96E57B2A2DDBEF00EA3353 /* UIButton.storyboard */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		AF80D6A22A31877B00CCD33A /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				AF96E57F2A2DE9F300EA3353 /* UITextField.storyboard */,
+				AF96E5812A2DEA1200EA3353 /* UITextFieldVC.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		AF80D6A32A31878600CCD33A /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				AF96E5882A2DF2CF00EA3353 /* UITextViewVC.swift */,
+				AFC9908C2A318E4B0071C98E /* UITextView.storyboard */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		AF80D6A42A31879200CCD33A /* UISwitch */ = {
+			isa = PBXGroup;
+			children = (
+				AF781D3A2A2EEA1C00FC8132 /* UISwitch.storyboard */,
+				AF781D3E2A2EEACF00FC8132 /* UISwitchVC.swift */,
+			);
+			path = UISwitch;
+			sourceTree = "<group>";
+		};
+		AF80D6A62A3187C600CCD33A /* UISlider */ = {
+			isa = PBXGroup;
+			children = (
+				AF781D442A2F49F300FC8132 /* UISlider.storyboard */,
+				AF781D462A2F4A0B00FC8132 /* UISliderVC.swift */,
+			);
+			path = UISlider;
+			sourceTree = "<group>";
+		};
+		AF80D6A72A3187D700CCD33A /* UIProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				AF781D482A2F518100FC8132 /* UIProgressView.storyboard */,
+				AF781D4A2A2F51A200FC8132 /* UIProgressViewVC.swift */,
+			);
+			path = UIProgressView;
+			sourceTree = "<group>";
+		};
+		AF80D6A82A3187E600CCD33A /* UISegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				AF781D4C2A2F570700FC8132 /* UISegmentedControl.storyboard */,
+				AF781D4E2A2F571800FC8132 /* UISegmentedControlVC.swift */,
+			);
+			path = UISegmentedControl;
+			sourceTree = "<group>";
+		};
+		AF80D6A92A3187F400CCD33A /* UIPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				AFFAD7AE2A318BDF0072E871 /* UIPageControl.storyboard */,
+				AF781D522A2F575800FC8132 /* UIPageControlVC.swift */,
+			);
+			path = UIPageControl;
+			sourceTree = "<group>";
+		};
+		AF80D6AA2A3187FD00CCD33A /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				AFEC93622A303F2F0025DA52 /* UIScrollViewVC.swift */,
+				AFC9908A2A318DF70071C98E /* UIScrollView.storyboard */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		AF80D6AB2A31880800CCD33A /* UIPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AF81DD182A305EF700BADAAE /* MainPageViewController.storyboard */,
+				AF81DD1C2A30603900BADAAE /* MainPageViewController.swift */,
+				AFE9703F2A3087F90002A5F0 /* YellowVC.swift */,
+				AFE9703D2A3087800002A5F0 /* GreenVC.swift */,
+				AF81DD222A30615C00BADAAE /* BlueVC.swift */,
+				AF81DD202A30613E00BADAAE /* RedVC.swift */,
+			);
+			path = UIPageViewController;
+			sourceTree = "<group>";
+		};
+		AF80D6AC2A31881A00CCD33A /* UIStepper */ = {
+			isa = PBXGroup;
+			children = (
+				AF5407A82A308D5A0062F629 /* UIStepper.storyboard */,
+				AF5407AA2A308D7A0062F629 /* UIStepperVC.swift */,
+			);
+			path = UIStepper;
+			sourceTree = "<group>";
+		};
+		AF80D6AD2A31882200CCD33A /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				AF5407AC2A30A0E20062F629 /* UITableView.storyboard */,
+				AF5407AE2A30A0F50062F629 /* UITableViewVC.swift */,
+				AF4A70742A31C9660000BDC2 /* FindJobModel.swift */,
+			);
+			path = UITableView;
 			sourceTree = "<group>";
 		};
 		AF96E5832A2DEA8C00EA3353 /* CutomClass */ = {
@@ -180,10 +333,22 @@
 		AF983BE32A2DB79F00B86BE1 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				AF80D69F2A31870000CCD33A /* UIComponent */,
+				AF80D6A02A31874800CCD33A /* UILabel */,
+				AF80D6AD2A31882200CCD33A /* UITableView */,
+				AF80D6AC2A31881A00CCD33A /* UIStepper */,
+				AF80D6AB2A31880800CCD33A /* UIPageViewController */,
+				AF80D6AA2A3187FD00CCD33A /* UIScrollView */,
+				AF80D6A92A3187F400CCD33A /* UIPageControl */,
+				AF80D6A82A3187E600CCD33A /* UISegmentedControl */,
+				AF80D6A72A3187D700CCD33A /* UIProgressView */,
+				AF80D6A62A3187C600CCD33A /* UISlider */,
+				AF80D6A42A31879200CCD33A /* UISwitch */,
+				AF80D6A32A31878600CCD33A /* UITextView */,
+				AF80D6A22A31877B00CCD33A /* UITextField */,
+				AF80D6A12A31876C00CCD33A /* UIButton */,
 				AF5407B42A30AA650062F629 /* Cells */,
 				AF96E5832A2DEA8C00EA3353 /* CutomClass */,
-				AF983BE72A2DB87D00B86BE1 /* Storyboard */,
-				AF983BE62A2DB87100B86BE1 /* ViewController */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -191,8 +356,6 @@
 		AF983BE42A2DB7E200B86BE1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				AF0CFC2B2A246CB900F684A1 /* AppDelegate.swift */,
-				AF0CFC2D2A246CB900F684A1 /* SceneDelegate.swift */,
 				AF0CFC2F2A246CB900F684A1 /* ViewController.swift */,
 				AF0CFC3F2A249C0600F684A1 /* WelcomePageVC.swift */,
 			);
@@ -210,52 +373,6 @@
 				AF0FD64F2A2704B100143869 /* SizeClasses.storyboard */,
 				AF427C172A25AF5400A83CA3 /* SignInScreen.storyboard */,
 				AF1C712E2A29BEE40025E0F9 /* Pago.storyboard */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		AF983BE62A2DB87100B86BE1 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				AF781D422A2EF9E200FC8132 /* UIComponents.swift */,
-				AF983BEA2A2DB95B00B86BE1 /* UILabelVC.swift */,
-				AF96E57D2A2DDC0800EA3353 /* UIButtonVC.swift */,
-				AF96E5812A2DEA1200EA3353 /* UITextFieldVC.swift */,
-				AF96E5882A2DF2CF00EA3353 /* UITextViewVC.swift */,
-				AF781D3E2A2EEACF00FC8132 /* UISwitchVC.swift */,
-				AF781D462A2F4A0B00FC8132 /* UISliderVC.swift */,
-				AF781D4A2A2F51A200FC8132 /* UIProgressViewVC.swift */,
-				AF781D4E2A2F571800FC8132 /* UISegmentedControlVC.swift */,
-				AF781D522A2F575800FC8132 /* UIPageControlVC.swift */,
-				AFEC93622A303F2F0025DA52 /* UIScrollViewVC.swift */,
-				AF81DD1C2A30603900BADAAE /* MainPageViewController.swift */,
-				AF81DD202A30613E00BADAAE /* RedVC.swift */,
-				AF81DD222A30615C00BADAAE /* BlueVC.swift */,
-				AFE9703D2A3087800002A5F0 /* GreenVC.swift */,
-				AFE9703F2A3087F90002A5F0 /* YellowVC.swift */,
-				AF5407AA2A308D7A0062F629 /* UIStepperVC.swift */,
-				AF5407AE2A30A0F50062F629 /* UITableViewVC.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		AF983BE72A2DB87D00B86BE1 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				AF781D402A2EF9BC00FC8132 /* UIComponents.storyboard */,
-				AF983BE82A2DB92C00B86BE1 /* UILabel.storyboard */,
-				AF96E57B2A2DDBEF00EA3353 /* UIButton.storyboard */,
-				AF96E57F2A2DE9F300EA3353 /* UITextField.storyboard */,
-				AF96E5862A2DF28B00EA3353 /* UITextView.storyboard */,
-				AF781D3A2A2EEA1C00FC8132 /* UISwitch.storyboard */,
-				AF781D442A2F49F300FC8132 /* UISlider.storyboard */,
-				AF781D482A2F518100FC8132 /* UIProgressView.storyboard */,
-				AF781D4C2A2F570700FC8132 /* UISegmentedControl.storyboard */,
-				AF781D502A2F574600FC8132 /* UIPageControl.storyboard */,
-				AFEC93602A303F080025DA52 /* UIScrollView.storyboard */,
-				AF81DD182A305EF700BADAAE /* MainPageViewController.storyboard */,
-				AF5407A82A308D5A0062F629 /* UIStepper.storyboard */,
-				AF5407AC2A30A0E20062F629 /* UITableView.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -318,21 +435,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF781D512A2F574600FC8132 /* UIPageControl.storyboard in Resources */,
 				AF1C712F2A29BEE40025E0F9 /* Pago.storyboard in Resources */,
 				AF5407B32A30AA2C0062F629 /* IndexTableViewCell.xib in Resources */,
-				AF96E5872A2DF28B00EA3353 /* UITextView.storyboard in Resources */,
+				AFC9908D2A318E4B0071C98E /* UITextView.storyboard in Resources */,
 				AF7EAC852A28951F0090E90F /* FoodItems.storyboard in Resources */,
 				AF781D4D2A2F570700FC8132 /* UISegmentedControl.storyboard in Resources */,
 				AF0CFC382A246CBD00F684A1 /* LaunchScreen.storyboard in Resources */,
 				AF983BE92A2DB92C00B86BE1 /* UILabel.storyboard in Resources */,
 				AF96E5802A2DE9F300EA3353 /* UITextField.storyboard in Resources */,
+				AFFAD7AF2A318BDF0072E871 /* UIPageControl.storyboard in Resources */,
 				AF781D412A2EF9BC00FC8132 /* UIComponents.storyboard in Resources */,
 				AF0CFC352A246CBD00F684A1 /* Assets.xcassets in Resources */,
-				AFEC93612A303F080025DA52 /* UIScrollView.storyboard in Resources */,
 				AF427C182A25AF5500A83CA3 /* SignInScreen.storyboard in Resources */,
 				AF5407A92A308D5A0062F629 /* UIStepper.storyboard in Resources */,
+				AF4A70732A31C8E50000BDC2 /* CompanyTableViewCell.xib in Resources */,
 				AF781D492A2F518100FC8132 /* UIProgressView.storyboard in Resources */,
+				AFC9908B2A318DF70071C98E /* UIScrollView.storyboard in Resources */,
+				AFC990912A31A1BB0071C98E /* EventTableViewCell.xib in Resources */,
 				AF0CFC332A246CB900F684A1 /* Main.storyboard in Resources */,
 				AF0FD6502A2704B100143869 /* SizeClasses.storyboard in Resources */,
 				AF81DD192A305EF700BADAAE /* MainPageViewController.storyboard in Resources */,
@@ -340,6 +459,7 @@
 				AF781D452A2F49F300FC8132 /* UISlider.storyboard in Resources */,
 				AF781D3B2A2EEA1C00FC8132 /* UISwitch.storyboard in Resources */,
 				AF96E57C2A2DDBEF00EA3353 /* UIButton.storyboard in Resources */,
+				AFDAECAA2A3209C20078AF27 /* ImagViewCell.xib in Resources */,
 				AF56170E2A25D44100B6F8CE /* Screens.storyboard in Resources */,
 				AF4D68DB2A25BEE900FDF011 /* ContentPriority.storyboard in Resources */,
 			);
@@ -356,6 +476,7 @@
 				AF0CFC412A249C0600F684A1 /* WelcomePageVC.swift in Sources */,
 				AF5407AB2A308D7A0062F629 /* UIStepperVC.swift in Sources */,
 				AF781D432A2EF9E200FC8132 /* UIComponents.swift in Sources */,
+				AFC990902A31A1BB0071C98E /* EventTableViewCell.swift in Sources */,
 				AF0CFC302A246CB900F684A1 /* ViewController.swift in Sources */,
 				AF81DD212A30613E00BADAAE /* RedVC.swift in Sources */,
 				AFEC93632A303F2F0025DA52 /* UIScrollViewVC.swift in Sources */,
@@ -367,6 +488,7 @@
 				AF781D4B2A2F51A200FC8132 /* UIProgressViewVC.swift in Sources */,
 				AF5407B22A30AA2C0062F629 /* IndexTableViewCell.swift in Sources */,
 				AF0CFC2E2A246CB900F684A1 /* SceneDelegate.swift in Sources */,
+				AF4A70722A31C8E50000BDC2 /* CompanyTableViewCell.swift in Sources */,
 				AF96E5852A2DEAC900EA3353 /* CustomTextField.swift in Sources */,
 				AF96E58E2A2DFBD300EA3353 /* DoneButton.swift in Sources */,
 				AF5407AF2A30A0F50062F629 /* UITableViewVC.swift in Sources */,
@@ -376,7 +498,9 @@
 				AF781D472A2F4A0B00FC8132 /* UISliderVC.swift in Sources */,
 				AF96E5892A2DF2CF00EA3353 /* UITextViewVC.swift in Sources */,
 				AF781D3F2A2EEACF00FC8132 /* UISwitchVC.swift in Sources */,
+				AF4A70752A31C9660000BDC2 /* FindJobModel.swift in Sources */,
 				AF81DD232A30615C00BADAAE /* BlueVC.swift in Sources */,
+				AFDAECA92A3209C20078AF27 /* ImagViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

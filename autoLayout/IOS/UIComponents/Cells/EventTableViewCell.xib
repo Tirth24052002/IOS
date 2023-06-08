@@ -9,32 +9,32 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IndexTableViewCell" rowHeight="116" id="KGk-i7-Jjw" customClass="IndexTableViewCell" customModule="IOS" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="228" height="110"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventTableViewCell" id="KGk-i7-Jjw" customClass="EventTableViewCell" customModule="IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="228" height="110"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cov-7p-Pwa">
-                        <rect key="frame" x="8" y="8" width="212" height="87"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDq-QN-lf7">
+                        <rect key="frame" x="8" y="8" width="304" height="28"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Cov-7p-Pwa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Mh8-dF-Q6S"/>
-                    <constraint firstAttribute="trailing" secondItem="Cov-7p-Pwa" secondAttribute="trailing" constant="8" id="rFo-Ew-kT5"/>
-                    <constraint firstItem="Cov-7p-Pwa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="x9l-Rt-feY"/>
-                    <constraint firstAttribute="bottom" secondItem="Cov-7p-Pwa" secondAttribute="bottom" constant="15" id="xSJ-7p-5aZ"/>
+                    <constraint firstAttribute="bottom" secondItem="VDq-QN-lf7" secondAttribute="bottom" constant="8" id="Nfl-v7-tEd"/>
+                    <constraint firstItem="VDq-QN-lf7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="YvM-kp-pwg"/>
+                    <constraint firstAttribute="trailing" secondItem="VDq-QN-lf7" secondAttribute="trailing" constant="8" id="ejm-Ak-SeX"/>
+                    <constraint firstItem="VDq-QN-lf7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ugN-Bh-0sI"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="lblIndx" destination="Cov-7p-Pwa" id="r3n-eH-ZWf"/>
+                <outlet property="lblText" destination="VDq-QN-lf7" id="rDH-9L-l1S"/>
             </connections>
-            <point key="canvasLocation" x="-53.435114503816791" y="11.971830985915494"/>
+            <point key="canvasLocation" x="60" y="-11"/>
         </tableViewCell>
     </objects>
 </document>

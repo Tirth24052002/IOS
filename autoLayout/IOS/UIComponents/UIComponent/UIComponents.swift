@@ -12,9 +12,8 @@ class UIComponents: UIViewController {
     // MARK: - View Life Cycle   
     override func viewDidLoad() {
         super.viewDidLoad()
+        //UITableView.appearance().sectionHeaderTopPadding = 0.0
     }
-   
-
 }
 
 // MARK: - Extension
@@ -41,7 +40,8 @@ extension UIComponents {
     @IBAction func btnTextfield(_ sender: UIButton) {
         let textFieldStoryboard = UIStoryboard(name: "UITextField",
                                                bundle: nil)
-        guard let textFieldVC =  textFieldStoryboard.instantiateViewController(withIdentifier: "UITextFieldVC")
+        guard let textFieldVC =  textFieldStoryboard.instantiateViewController(withIdentifier:
+                                                                                "UITextFieldVC")
                 as? UITextFieldVC else {
             return
         }
@@ -52,7 +52,8 @@ extension UIComponents {
     @IBAction func btnTextView(_ sender: UIButton) {
         let textViewStoryboard = UIStoryboard(name: "UITextView",
                                               bundle: nil)
-        guard let textViewVC =  textViewStoryboard.instantiateViewController(withIdentifier: "UITextViewVC")
+        guard let textViewVC =  textViewStoryboard.instantiateViewController(withIdentifier:
+                                                                                "UITextViewVC")
                 as? UITextViewVC else {
             return
         }
@@ -63,7 +64,8 @@ extension UIComponents {
     @IBAction func btnSwitch(_ sender: Any) {
         let switchStoryboard = UIStoryboard(name: "UISwitch",
                                             bundle: nil)
-        guard let switchVC =  switchStoryboard.instantiateViewController(withIdentifier: "UISwitchVC")
+        guard let switchVC =  switchStoryboard.instantiateViewController(withIdentifier:
+                                                                            "UISwitchVC")
                 as? UISwitchVC else {
             return
         }

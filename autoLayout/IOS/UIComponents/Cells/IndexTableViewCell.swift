@@ -15,6 +15,7 @@ class IndexTableViewCell: UITableViewCell {
     // MARK: - View Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        print("awake from nib")
+        
     }
 }
