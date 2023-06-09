@@ -12,8 +12,9 @@ class UIComponents: UIViewController {
     // MARK: - View Life Cycle   
     override func viewDidLoad() {
         super.viewDidLoad()
-        //UITableView.appearance().sectionHeaderTopPadding = 0.0
+
     }
+
 }
 
 // MARK: - Extension
@@ -147,10 +148,20 @@ extension UIComponents {
     @IBAction func btnTableView(_ sender: UIButton) {
         let tableViewStoryboard = UIStoryboard(name: "UITableView", bundle: nil)
         guard let tableViewVC =  tableViewStoryboard.instantiateViewController(withIdentifier:
-                                                                        "UITableViewVC")
-                as? UITableViewVC else {
+                                                                        "ImageTabelView")
+                as? ImageTabelView else {
             return
         }
         navigationController?.pushViewController(tableViewVC , animated: true)
+    }
+    
+    @IBAction func btnRegistrationPage(_ sender: UIButton) {
+        let registrationPageStoryboard = UIStoryboard(name: "RegistrationPage", bundle: nil)
+        guard let registrationPageVC =  registrationPageStoryboard.instantiateViewController(withIdentifier:
+                                                                        "RegistrationPageVC")
+                as? RegistrationPageVC else {
+            return
+        }
+        navigationController?.pushViewController(registrationPageVC , animated: true)
     }
 }

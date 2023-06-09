@@ -62,6 +62,12 @@
 		AFE9703E2A3087800002A5F0 /* GreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9703D2A3087800002A5F0 /* GreenVC.swift */; };
 		AFE970402A3087F90002A5F0 /* YellowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE9703F2A3087F90002A5F0 /* YellowVC.swift */; };
 		AFEC93632A303F2F0025DA52 /* UIScrollViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEC93622A303F2F0025DA52 /* UIScrollViewVC.swift */; };
+		AFF6C0D22A32DCD800500C08 /* ImageTabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF6C0D12A32DCD800500C08 /* ImageTabelView.swift */; };
+		AFF6C0D52A32F7F500500C08 /* RegistrationPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF6C0D42A32F7F500500C08 /* RegistrationPage.storyboard */; };
+		AFF6C0D72A32F80F00500C08 /* RegistrationPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF6C0D62A32F80F00500C08 /* RegistrationPageVC.swift */; };
+		AFF6C0D92A3308FA00500C08 /* RegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF6C0D82A3308FA00500C08 /* RegistrationModel.swift */; };
+		AFF6C0DC2A33179A00500C08 /* RegistrationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF6C0DA2A33179A00500C08 /* RegistrationTableViewCell.swift */; };
+		AFF6C0DD2A33179A00500C08 /* RegistrationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF6C0DB2A33179A00500C08 /* RegistrationTableViewCell.xib */; };
 		AFFAD7AF2A318BDF0072E871 /* UIPageControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFAD7AE2A318BDF0072E871 /* UIPageControl.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +129,12 @@
 		AFE9703D2A3087800002A5F0 /* GreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenVC.swift; sourceTree = "<group>"; };
 		AFE9703F2A3087F90002A5F0 /* YellowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowVC.swift; sourceTree = "<group>"; };
 		AFEC93622A303F2F0025DA52 /* UIScrollViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewVC.swift; sourceTree = "<group>"; };
+		AFF6C0D12A32DCD800500C08 /* ImageTabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTabelView.swift; sourceTree = "<group>"; };
+		AFF6C0D42A32F7F500500C08 /* RegistrationPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegistrationPage.storyboard; sourceTree = "<group>"; };
+		AFF6C0D62A32F80F00500C08 /* RegistrationPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPageVC.swift; sourceTree = "<group>"; };
+		AFF6C0D82A3308FA00500C08 /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
+		AFF6C0DA2A33179A00500C08 /* RegistrationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewCell.swift; sourceTree = "<group>"; };
+		AFF6C0DB2A33179A00500C08 /* RegistrationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationTableViewCell.xib; sourceTree = "<group>"; };
 		AFFAD7AE2A318BDF0072E871 /* UIPageControl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = UIPageControl.storyboard; path = ../Storyboard/UIPageControl.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +189,8 @@
 				AF4A70712A31C8E50000BDC2 /* CompanyTableViewCell.xib */,
 				AFDAECA72A3209C20078AF27 /* ImagViewCell.swift */,
 				AFDAECA82A3209C20078AF27 /* ImagViewCell.xib */,
+				AFF6C0DA2A33179A00500C08 /* RegistrationTableViewCell.swift */,
+				AFF6C0DB2A33179A00500C08 /* RegistrationTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -308,6 +322,7 @@
 				AF5407AC2A30A0E20062F629 /* UITableView.storyboard */,
 				AF5407AE2A30A0F50062F629 /* UITableViewVC.swift */,
 				AF4A70742A31C9660000BDC2 /* FindJobModel.swift */,
+				AFF6C0D12A32DCD800500C08 /* ImageTabelView.swift */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -334,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				AF80D69F2A31870000CCD33A /* UIComponent */,
+				AFF6C0D32A32F7C100500C08 /* RegistrationPageTableView */,
 				AF80D6A02A31874800CCD33A /* UILabel */,
 				AF80D6AD2A31882200CCD33A /* UITableView */,
 				AF80D6AC2A31881A00CCD33A /* UIStepper */,
@@ -375,6 +391,16 @@
 				AF1C712E2A29BEE40025E0F9 /* Pago.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		AFF6C0D32A32F7C100500C08 /* RegistrationPageTableView */ = {
+			isa = PBXGroup;
+			children = (
+				AFF6C0D42A32F7F500500C08 /* RegistrationPage.storyboard */,
+				AFF6C0D62A32F80F00500C08 /* RegistrationPageVC.swift */,
+				AFF6C0D82A3308FA00500C08 /* RegistrationModel.swift */,
+			);
+			path = RegistrationPageTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,6 +476,7 @@
 				AF5407A92A308D5A0062F629 /* UIStepper.storyboard in Resources */,
 				AF4A70732A31C8E50000BDC2 /* CompanyTableViewCell.xib in Resources */,
 				AF781D492A2F518100FC8132 /* UIProgressView.storyboard in Resources */,
+				AFF6C0DD2A33179A00500C08 /* RegistrationTableViewCell.xib in Resources */,
 				AFC9908B2A318DF70071C98E /* UIScrollView.storyboard in Resources */,
 				AFC990912A31A1BB0071C98E /* EventTableViewCell.xib in Resources */,
 				AF0CFC332A246CB900F684A1 /* Main.storyboard in Resources */,
@@ -461,6 +488,7 @@
 				AF96E57C2A2DDBEF00EA3353 /* UIButton.storyboard in Resources */,
 				AFDAECAA2A3209C20078AF27 /* ImagViewCell.xib in Resources */,
 				AF56170E2A25D44100B6F8CE /* Screens.storyboard in Resources */,
+				AFF6C0D52A32F7F500500C08 /* RegistrationPage.storyboard in Resources */,
 				AF4D68DB2A25BEE900FDF011 /* ContentPriority.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,13 +507,17 @@
 				AFC990902A31A1BB0071C98E /* EventTableViewCell.swift in Sources */,
 				AF0CFC302A246CB900F684A1 /* ViewController.swift in Sources */,
 				AF81DD212A30613E00BADAAE /* RedVC.swift in Sources */,
+				AFF6C0DC2A33179A00500C08 /* RegistrationTableViewCell.swift in Sources */,
+				AFF6C0D22A32DCD800500C08 /* ImageTabelView.swift in Sources */,
 				AFEC93632A303F2F0025DA52 /* UIScrollViewVC.swift in Sources */,
+				AFF6C0D92A3308FA00500C08 /* RegistrationModel.swift in Sources */,
 				AFE9703E2A3087800002A5F0 /* GreenVC.swift in Sources */,
 				AF0CFC2C2A246CB900F684A1 /* AppDelegate.swift in Sources */,
 				AF781D532A2F575800FC8132 /* UIPageControlVC.swift in Sources */,
 				AF81DD1D2A30603900BADAAE /* MainPageViewController.swift in Sources */,
 				AFE970402A3087F90002A5F0 /* YellowVC.swift in Sources */,
 				AF781D4B2A2F51A200FC8132 /* UIProgressViewVC.swift in Sources */,
+				AFF6C0D72A32F80F00500C08 /* RegistrationPageVC.swift in Sources */,
 				AF5407B22A30AA2C0062F629 /* IndexTableViewCell.swift in Sources */,
 				AF0CFC2E2A246CB900F684A1 /* SceneDelegate.swift in Sources */,
 				AF4A70722A31C8E50000BDC2 /* CompanyTableViewCell.swift in Sources */,
