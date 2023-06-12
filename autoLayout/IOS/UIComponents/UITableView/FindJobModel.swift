@@ -30,7 +30,7 @@ class FindJobModel: NSObject {
 // MARK: - Extension
 extension FindJobModel {
     static func getCurrentOpening() -> [FindJobModel] {
-        return[FindJobModel("microsoft", "Microsoft", "Full Stack developer"),
+        return [FindJobModel("microsoft", "Microsoft", "Full Stack developer"),
                FindJobModel("google", "Google LLC", "Seniorr UI/UX Designer"),
                FindJobModel("dribble", "Dribble", "Interaction Designer"),
                FindJobModel("dropbox", "Dropbox Inc.", "Mobile App Developer"),

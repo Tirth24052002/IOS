@@ -147,6 +147,14 @@
                                     <action selector="btnRegistrationPage:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="aYP-vf-wrv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biq-gi-Shh">
+                                <rect key="frame" x="12.333333333333329" y="742.33333333333337" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Collection View"/>
+                                <connections>
+                                    <action selector="btnOptionTableView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="y19-xL-vMI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -167,8 +175,10 @@
                             <constraint firstItem="zmK-UM-BXw" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.55" id="IH9-cN-LLa"/>
                             <constraint firstItem="Izl-e1-t0o" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.55" id="Izq-fa-loJ"/>
                             <constraint firstItem="GH6-2d-8Cm" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.65" id="Jtm-tR-bgQ"/>
+                            <constraint firstItem="biq-gi-Shh" firstAttribute="trailing" secondItem="Izl-e1-t0o" secondAttribute="trailing" id="L27-HC-fnm"/>
                             <constraint firstItem="lWI-vI-hyY" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="LA6-dC-oYk"/>
                             <constraint firstItem="lWI-vI-hyY" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.15" id="NnK-i3-Pbg"/>
+                            <constraint firstItem="biq-gi-Shh" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.65" id="O3H-gK-oIh"/>
                             <constraint firstItem="jTd-ug-XAQ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="O5Y-qd-KiI"/>
                             <constraint firstItem="Zmz-XU-kQ5" firstAttribute="leading" secondItem="ofq-E8-bQH" secondAttribute="leading" id="P3V-cz-iUU"/>
                             <constraint firstItem="uNb-C3-ABZ" firstAttribute="trailing" secondItem="lWI-vI-hyY" secondAttribute="trailing" id="Pw9-BO-fpe"/>
@@ -176,6 +186,7 @@
                             <constraint firstItem="ofq-E8-bQH" firstAttribute="leading" secondItem="unF-lD-7gG" secondAttribute="leading" id="QcO-rL-1pe"/>
                             <constraint firstItem="TXh-Vr-eLN" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="Re2-AQ-bFh"/>
                             <constraint firstItem="UBw-id-pOa" firstAttribute="leading" secondItem="3NE-BV-A8o" secondAttribute="leading" id="Rs9-oT-c39"/>
+                            <constraint firstItem="biq-gi-Shh" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="SGp-Pg-z33"/>
                             <constraint firstItem="3NE-BV-A8o" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="SLR-3U-HKE"/>
                             <constraint firstItem="uv0-yh-NSa" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.95" id="Sl6-bD-Ohh"/>
                             <constraint firstItem="Izl-e1-t0o" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="THi-OI-UHE"/>
@@ -204,6 +215,7 @@
                             <constraint firstItem="zmK-UM-BXw" firstAttribute="trailing" secondItem="Zmz-XU-kQ5" secondAttribute="trailing" id="u9a-cQ-1Gv"/>
                             <constraint firstItem="lWI-vI-hyY" firstAttribute="leading" secondItem="TXh-Vr-eLN" secondAttribute="leading" id="ufw-UZ-xA5"/>
                             <constraint firstItem="Zmz-XU-kQ5" firstAttribute="trailing" secondItem="ofq-E8-bQH" secondAttribute="trailing" id="vBm-8W-B2s"/>
+                            <constraint firstItem="biq-gi-Shh" firstAttribute="leading" secondItem="Izl-e1-t0o" secondAttribute="leading" id="xNT-8g-UOo"/>
                             <constraint firstItem="uNb-C3-ABZ" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.45" id="y5x-aQ-Rkg"/>
                         </constraints>
                     </view>

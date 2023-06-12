@@ -20,7 +20,6 @@ class ImageTabelView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tblContents.dataSource = self
-        tblContents.delegate = self
         
         tblContents.register(UINib(nibName: "ImagViewCell", bundle: nil),
                              forCellReuseIdentifier: "ImagViewCell")
@@ -32,6 +31,7 @@ class ImageTabelView: UIViewController {
     }
 }
 
+// MARK: - Extension Image Table View Data Source
 extension ImageTabelView: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -53,7 +53,4 @@ extension ImageTabelView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
-}
-extension ImageTabelView: UITableViewDelegate {
-    
 }

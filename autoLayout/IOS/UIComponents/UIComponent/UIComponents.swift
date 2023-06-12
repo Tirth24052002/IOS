@@ -12,13 +12,15 @@ class UIComponents: UIViewController {
     // MARK: - View Life Cycle   
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
+
 
 }
 
 // MARK: - Extension
 extension UIComponents {
+    
+    // MARK: - IB Action Label
     @IBAction func btnlabel(_ sender: Any) {
         let labelStoryboard = UIStoryboard(name: "UILabel", bundle: nil)
         guard let labelVC =  labelStoryboard.instantiateViewController(withIdentifier:
@@ -29,6 +31,7 @@ extension UIComponents {
         navigationController?.pushViewController(labelVC , animated: true)
     }
     
+    // MARK: - IB Action Button
     @IBAction func btnButton(_ sender: UIButton) {
         let buttonStoryBoard = UIStoryboard(name: "UIButton", bundle: nil)
         guard let btnVc = buttonStoryBoard.instantiateViewController(withIdentifier: "UIButtonVC")
@@ -38,6 +41,7 @@ extension UIComponents {
         navigationController?.pushViewController(btnVc, animated: true)
     }
     
+    // MARK: - IB Action Text Field
     @IBAction func btnTextfield(_ sender: UIButton) {
         let textFieldStoryboard = UIStoryboard(name: "UITextField",
                                                bundle: nil)
@@ -50,6 +54,7 @@ extension UIComponents {
                                                  animated: true)
     }
     
+    // MARK: - IB Action Text View
     @IBAction func btnTextView(_ sender: UIButton) {
         let textViewStoryboard = UIStoryboard(name: "UITextView",
                                               bundle: nil)
@@ -62,6 +67,7 @@ extension UIComponents {
                                                  animated: true)
     }
     
+    // MARK: - IB Action Switch
     @IBAction func btnSwitch(_ sender: Any) {
         let switchStoryboard = UIStoryboard(name: "UISwitch",
                                             bundle: nil)
@@ -74,6 +80,7 @@ extension UIComponents {
                                                  animated: true)
     }
     
+    // MARK: - IB Action Slider
     @IBAction func btnSlider(_ sender: Any) {
         let sliderStoryboard = UIStoryboard(name: "UISlider", bundle: nil)
         guard let sliderVC =  sliderStoryboard.instantiateViewController(withIdentifier:
@@ -84,6 +91,7 @@ extension UIComponents {
         navigationController?.pushViewController(sliderVC , animated: true)
     }
     
+    // MARK: - IB Action Progress View
     @IBAction func btnProgressView(_ sender: UIButton) {
         let progressViewStoryboard = UIStoryboard(name: "UIProgressView", bundle: nil)
         guard let progressViewVC =  progressViewStoryboard.instantiateViewController(withIdentifier:
@@ -94,6 +102,7 @@ extension UIComponents {
         navigationController?.pushViewController(progressViewVC , animated: true)
     }
     
+    // MARK: - IB Action Segmented Control
     @IBAction func btnSegmentedControl(_ sender: UIButton) {
         let segmentedControlStoryboard = UIStoryboard(name: "UISegmentedControl", bundle: nil)
         guard let segmentedControlVC =  segmentedControlStoryboard.instantiateViewController(withIdentifier:
@@ -104,6 +113,7 @@ extension UIComponents {
         navigationController?.pushViewController(segmentedControlVC , animated: true)
     }
     
+    // MARK: - IB Action Page Control
     @IBAction func btnPageControl(_ sender: UIButton) {
         let pageControlStoryboard = UIStoryboard(name: "UIPageControl", bundle: nil)
         guard let pageControlVC =  pageControlStoryboard.instantiateViewController(withIdentifier:
@@ -114,6 +124,7 @@ extension UIComponents {
         navigationController?.pushViewController(pageControlVC , animated: true)
     }
     
+    // MARK: - IB Action Scroll View
     @IBAction func btnScrollView(_ sender: UIButton) {
         let scrollViewStoryboard = UIStoryboard(name: "UIScrollView", bundle: nil)
         guard let scrollViewVC =  scrollViewStoryboard.instantiateViewController(withIdentifier:
@@ -124,6 +135,7 @@ extension UIComponents {
         navigationController?.pushViewController(scrollViewVC , animated: true)
     }
     
+    // MARK: - IB Action Page View Controller
     @IBAction func btnPageViewController(_ sender: UIButton) {
         let pageViewControllerStoryboard = UIStoryboard(name: "MainPageViewController", bundle: nil)
         guard let pageViewControllerVC =  pageViewControllerStoryboard.instantiateViewController(withIdentifier:
@@ -134,6 +146,7 @@ extension UIComponents {
         navigationController?.pushViewController(pageViewControllerVC , animated: true)
     }
     
+    // MARK: - Ib Action Stepper
     @IBAction func btnStepper(_ sender: UIButton) {
         let stepperStoryboard = UIStoryboard(name: "UIStepper", bundle: nil)
         guard let stepperVC =  stepperStoryboard.instantiateViewController(withIdentifier:
@@ -145,16 +158,18 @@ extension UIComponents {
         
     }
     
+    // MARK: - IB Action Table View
     @IBAction func btnTableView(_ sender: UIButton) {
         let tableViewStoryboard = UIStoryboard(name: "UITableView", bundle: nil)
         guard let tableViewVC =  tableViewStoryboard.instantiateViewController(withIdentifier:
-                                                                        "ImageTabelView")
-                as? ImageTabelView else {
+                                                                        "UITableViewVC")
+                as? UITableViewVC else {
             return
         }
         navigationController?.pushViewController(tableViewVC , animated: true)
     }
     
+    // MARK: - IB Action Registration Page
     @IBAction func btnRegistrationPage(_ sender: UIButton) {
         let registrationPageStoryboard = UIStoryboard(name: "RegistrationPage", bundle: nil)
         guard let registrationPageVC =  registrationPageStoryboard.instantiateViewController(withIdentifier:
@@ -163,5 +178,16 @@ extension UIComponents {
             return
         }
         navigationController?.pushViewController(registrationPageVC , animated: true)
+    }
+    
+    // MARK: - IB Action Collection View
+    @IBAction func btnOptionTableView(_ sender: Any) {
+        let optionTableViewStoryboard = UIStoryboard(name: "UICollectionView", bundle: nil)
+        guard let tableViewVC =  optionTableViewStoryboard.instantiateViewController(withIdentifier:
+                                                                        "UICollectionViewVC")
+                as? UICollectionViewVC else {
+            return
+        }
+        navigationController?.pushViewController(tableViewVC , animated: true)
     }
 }

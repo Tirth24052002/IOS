@@ -22,7 +22,7 @@ class RegistrationModel: NSObject {
         super.init()
     }
     
-    init(_ field: String, _ name: String, _ credit: String?, _ time: String, _ address: String) {
+    private init(_ field: String, _ name: String, _ credit: String?, _ time: String, _ address: String) {
         personField = field
         personName = name
         credits = credit

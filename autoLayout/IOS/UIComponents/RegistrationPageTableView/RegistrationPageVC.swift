@@ -8,27 +8,32 @@
 import UIKit
 
 class RegistrationPageVC: UIViewController {
-
+    
     // MARK: - Variables
-    var dataModel = RegistrationModel.getUserData()
+    private var dataModel = RegistrationModel.getUserData()
     
     // MARK: - IB Outlets
-    @IBOutlet var viewHeader: UIView!
-    @IBOutlet weak var tblContents: UITableView!
-    @IBOutlet weak var viewInHeader: UIView!
-    @IBOutlet weak var lblHeader: UILabel!
+    @IBOutlet private var viewHeader: UIView!
+    @IBOutlet private weak var tblContents: UITableView!
+    @IBOutlet private weak var viewInHeader: UIView!
+    @IBOutlet private weak var lblHeader: UILabel!
     
-    // MARK: - View Life Cycle
+    // MARK: - View Life Cycle.
     override func viewDidLoad() {
         super.viewDidLoad()
         initialSetup()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
     }
 }
 
 // MARK: - Functions
 extension RegistrationPageVC {
-    func initialSetup() {
+    private func initialSetup() {
         tblContents.dataSource = self
+        tblContents.delegate = self
         tblContents.tableHeaderView = viewHeader
         tblContents.register(UINib(nibName: "RegistrationTableViewCell",
                                    bundle: nil),
@@ -60,12 +65,26 @@ extension RegistrationPageVC: UITableViewDataSource {
     }
 }
 
+// MARK: -  Table View Delegate
 extension RegistrationPageVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let filteredData = dataModel.filter({$0.isSelected == true})
-        print(filteredData)
+        print(indexPath.row)
         print(filteredData.count)
+//        print(indexPath.description)
         
+        let detailsPageStoryboard = UIStoryboard(name: "RegistrationPage", bundle: nil)
+        guard let detailsPageVC =  detailsPageStoryboard.instantiateViewController(withIdentifier:
+                                                                                "DetailsPageVC")
+                as? DetailsPageVC else {
+            return
+        }
+        let indexData = dataModel[indexPath.row]
+        detailsPageVC.perName =  indexData.personName ?? ""
+        detailsPageVC.location = indexData.timePeriod ?? ""
+        detailsPageVC.credits = indexData.credits ?? ""
+        detailsPageVC.titleoffield = indexData.personField ?? ""
+        navigationController?.pushViewController(detailsPageVC , animated: true)
     }
 }
