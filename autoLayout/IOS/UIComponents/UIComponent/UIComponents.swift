@@ -14,7 +14,16 @@ class UIComponents: UIViewController {
         super.viewDidLoad()
     }
 
-
+    @IBAction func btnTaskAddScreen(_ sender: Any) {
+        let taskAddStoryboard = UIStoryboard(name: "TaskAdditionPage", bundle: nil)
+        guard let taskAddVC =  taskAddStoryboard.instantiateViewController(withIdentifier:
+                                                                        "TaskAdditionPageVC")
+                as? TaskAdditionPageVC else {
+            return
+        }
+        navigationController?.pushViewController(taskAddVC , animated: true)
+    }
+    
 }
 
 // MARK: - Extension

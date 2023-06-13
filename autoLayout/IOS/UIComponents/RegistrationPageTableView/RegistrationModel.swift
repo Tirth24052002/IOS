@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RegistrationModel: NSObject {
+struct RegistrationModel {
     
     // MARK: - Variables
     var personField: String?
@@ -18,11 +18,11 @@ class RegistrationModel: NSObject {
     var isSelected: Bool = false
     
     // MARK: - Initializer
-    override init() {
-        super.init()
-    }
-    
-    private init(_ field: String, _ name: String, _ credit: String?, _ time: String, _ address: String) {
+//    override init() {
+//        super.init()
+//    }
+//
+    init(_ field: String, _ name: String, _ credit: String?, _ time: String, _ address: String) {
         personField = field
         personName = name
         credits = credit

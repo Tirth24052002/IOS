@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Document Verification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXx-MH-KhL">
+                        <rect key="frame" x="20" y="21" width="181.66666666666666" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T87-Wf-jd7">
+                        <rect key="frame" x="20" y="62" width="43" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.57983702420000005" green="0.58426719900000001" blue="0.55975252389999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bld-PS-SEi">
+                        <rect key="frame" x="292.33333333333331" y="34.666666666666664" width="40" height="39.999999999999993"/>
+                        <color key="backgroundColor" red="0.96946460010000002" green="0.96311849360000001" blue="0.9409726262" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="B7F-je-NQ0"/>
+                            <constraint firstAttribute="height" constant="40" id="syU-tN-Ne2"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="plusbuttonImage" cornerStyle="capsule">
+                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="btnPlusButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Vbn-Ry-QwM"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.96946460010000002" green="0.96311849360000001" blue="0.9409726262" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="T87-Wf-jd7" firstAttribute="leading" secondItem="hXx-MH-KhL" secondAttribute="leading" id="7X5-r8-rYW"/>
+                    <constraint firstItem="bld-PS-SEi" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.75" id="Ent-10-yIq"/>
+                    <constraint firstItem="hXx-MH-KhL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="Go1-7P-egN"/>
+                    <constraint firstAttribute="bottom" secondItem="T87-Wf-jd7" secondAttribute="bottom" constant="26" id="dfE-pq-G3R"/>
+                    <constraint firstItem="T87-Wf-jd7" firstAttribute="top" secondItem="hXx-MH-KhL" secondAttribute="bottom" constant="20" id="fdH-NU-J2Y"/>
+                    <constraint firstItem="bld-PS-SEi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wol-w7-m7B"/>
+                    <constraint firstItem="hXx-MH-KhL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="xhE-Ny-J2O"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblFieldName" destination="hXx-MH-KhL" id="dQC-10-TyP"/>
+                <outlet property="lblPlusBtn" destination="bld-PS-SEi" id="M2u-pD-4sC"/>
+                <outlet property="lblTableViewContent" destination="H2p-sc-9uM" id="gNC-6E-dqy"/>
+                <outlet property="lblTime" destination="T87-Wf-jd7" id="Ats-id-3fU"/>
+            </connections>
+            <point key="canvasLocation" x="83.206106870229007" y="11.619718309859156"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="plusbuttonImage" width="48" height="48"/>
+    </resources>
+</document>

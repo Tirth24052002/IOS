@@ -15,7 +15,5 @@ class CollectionViewCell: UICollectionViewCell {
     
 }
 extension CollectionViewCell {
-    func config() {
-        
-    }
+
 }

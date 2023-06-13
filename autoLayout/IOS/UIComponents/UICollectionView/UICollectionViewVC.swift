@@ -10,8 +10,6 @@ import UIKit
 class UICollectionViewVC: UIViewController {
     
     // MARK: - Variables
-    private var  gridData = ["Zero", "One", "Two", "Three","Four", "Five", "Six", "Seven", "Eight", "Nine"]
-    private var gridImage = ["lion", "fox", "elephant", "koala"]
     
     // MARK: - IB Outlets
     @IBOutlet weak var gridCollection: UICollectionView!
@@ -24,20 +22,17 @@ class UICollectionViewVC: UIViewController {
     }
 }
 
-// MARK: - Extension Collection View Data Source
+ // MARK: - Extension Collection View Data Source
 extension UICollectionViewVC: UICollectionViewDataSource {
-    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return gridData.count
-    }
-    
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = self.gridCollection.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
-        cell.lblCollectionText.text = gridData[indexPath.row]
-        cell.lblCollectionText.textColor = .green
-        cell.lblCollectionText.shadowOffset = CGSize(width: 6, height: 6)
-        cell.lblCollectionText.shadowColor = .black
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = self.gridCollection.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath)
         return cell
     }
+    
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+
 }
 
 // MARK: - Extension Colleciton View Delegate
