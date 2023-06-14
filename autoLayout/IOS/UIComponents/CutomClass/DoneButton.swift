@@ -58,7 +58,7 @@ extension UITextField{
             }
         }
     }
-    // MARK: - Funtion Done button
+    // MARK: - Function Done button
     func addDoneButtonOnKeyboard()
     {
         let doneToolbar: UIToolbar = UIToolbar(frame: CGRect.init(x: 0,

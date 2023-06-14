@@ -225,6 +225,11 @@
                             <constraint firstItem="gXF-TM-Fiz" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="So9-Fc-g5y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblEmai" destination="62T-j1-bMn" id="Mwk-HO-lAv"/>
+                        <outlet property="lblName" destination="g6m-DO-Sjo" id="S6R-ny-fQ1"/>
+                        <outlet property="lblPassword" destination="aOe-v3-Vpc" id="lzZ-md-fLu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

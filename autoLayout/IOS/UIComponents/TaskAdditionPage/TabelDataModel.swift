@@ -25,8 +25,12 @@ extension TabelDataModel {
 static func getTableData() -> [TabelDataModel] {
     return [TabelDataModel("Document Verification", "3 min ago"),
             TabelDataModel("Newbie Onboarding", "5 days ago"),
-            TabelDataModel("Positon Opening", "1 week ago "),
-            TabelDataModel("Salary Raise ", "2 days ago"),
+            TabelDataModel("Designer Opening", "1 week ago "),
+            TabelDataModel("Web  Opening", "10 days ago"),
+            TabelDataModel("Mobile App Opening", "2 weeks ago"),
+            TabelDataModel("ReackJS Opening", "4 days ago"),
+            TabelDataModel("Manager Opening", "1 month ago"),
+            TabelDataModel("Salary Raise ", "6 days ago"),
             TabelDataModel("Promated Employee", "3 days ago"),
            ]
 }

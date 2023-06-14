@@ -17,23 +17,30 @@ class TaskAdditionPageVC: UIViewController {
     @IBOutlet weak var lblWelcomeBack: UILabel!
     @IBOutlet weak var lblPersonName: UILabel!
     @IBOutlet weak var imgPersonImage: UIImageView!
-    @IBOutlet weak var lblSearchBar: UISearchBar!
     @IBOutlet weak var lblcollectionView: UICollectionView!
     @IBOutlet weak var lblTableViewContents: UITableView!
+    @IBOutlet weak var textFieldSearchBar: UITextField!
+    @IBOutlet weak var tblViewHeader: UIView!
 
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        lblcollectionView.dataSource = self
-        lblcollectionView.delegate = self
-        
-        lblTableViewContents.dataSource = self
-       // lblTableViewContents.delegate = self
-        lblTableViewContents.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
-            implementation()
+
+        implementation()
     }
     
+    func addlestImageTo(txtField: UITextField, andImage img: UIImage) {
+        let leftImageView = UIImageView(frame: CGRect(x: 0.0, y: 0.0,
+                                                      width: img.size.width,
+                                                      height: img.size.height))
+        leftImageView.image = img
+        txtField.leftView = leftImageView
+        txtField.leftViewMode = .always
+        leftImageView.frame = CGRectMake(20, 0, 0, 0)
+        
+    }
+     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
     }
@@ -42,18 +49,38 @@ class TaskAdditionPageVC: UIViewController {
     @IBAction func btnBackButton(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
-    
 }
+
+// MARK: - Extension
 extension TaskAdditionPageVC {
     func implementation() {
-        lblSearchBar.searchTextField.backgroundColor = .white
-        lblSearchBar.barTintColor = .systemYellow
-        lblSearchBar.layer.shadowColor = UIColor.black.cgColor
-        lblSearchBar.layer.shadowOpacity = 0.25
-        lblSearchBar.layer.shadowOffset = CGSize(width: 2, height: 2)
-        lblSearchBar.layer.shadowRadius = 5
+        textFieldSearchBar.addDoneButtonOnKeyboard()
+        tblViewHeader.frame = CGRect(x: 0.0,
+                                     y: 0.0,
+                                     width: lblTableViewContents.frame.size.width ,
+                                     height: tblViewHeader.frame.size.height)
+        lblTableViewContents.tableHeaderView = tblViewHeader
+        guard let lestImage = UIImage(named: "searchIcon") else { return  }
+        addlestImageTo(txtField: textFieldSearchBar, andImage: lestImage)
+        lblcollectionView.dataSource = self
+        lblcollectionView.delegate = self
+        lblTableViewContents.dataSource = self
+        lblTableViewContents.delegate = self
+        lblTableViewContents.register(UINib(nibName: "TableViewCell", bundle: nil),
+                                      forCellReuseIdentifier: "TableViewCell")
+        textFieldSearchBar.layer.cornerRadius = textFieldSearchBar.frame.height/2
+        textFieldSearchBar.clipsToBounds = true
         
-       // btnReviewButton.layer.
+//        textFieldSearchBar.layer.shadowColor = UIColor.black.cgColor
+//        textFieldSearchBar.layer.shadowOpacity = 0.15
+//        textFieldSearchBar.layer.shadowOffset = CGSize(width: 2, height: 2)
+//        textFieldSearchBar.layer.shadowRadius = 2.5
+//        textFieldSearchBar.backgroundColor = UIColor.white
+//        textFieldSearchBar.attributedPlaceholder = NSAttributedString(
+//            string: "Try to find...",
+//            attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray]
+//        )
+       // lblcollectionView.layer.cornerRadius = 10
     }
 }
 
@@ -66,8 +93,12 @@ extension TaskAdditionPageVC: UICollectionViewDataSource {
 
 // MARK: - Collection View Delegate
 extension TaskAdditionPageVC: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = self.lblcollectionView.dequeueReusableCell(withReuseIdentifier: "DataCollectionViewCell", for: indexPath) as? DataCollectionViewCell else {
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = self.lblcollectionView.dequeueReusableCell(withReuseIdentifier:
+                                                                        "DataCollectionViewCell",
+                                                                    for: indexPath)
+                as? DataCollectionViewCell else {
             return UICollectionViewCell()
         }
         let indexData = arrdata[indexPath.row]
@@ -79,18 +110,23 @@ extension TaskAdditionPageVC: UICollectionViewDelegate {
 
 // MARK: - Collection View Flow Layout
 extension TaskAdditionPageVC: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 200, height: 125)
+    func collectionView(_ collectionView:
+                        UICollectionView,
+                        layout collectionViewLayout:UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 200, height: 150)
     }
 }
 
 // MARK: - Table View Data Source
 extension TaskAdditionPageVC: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
         return arrTableData.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let additionCell = tableView.dequeueReusableCell(
             withIdentifier: "TableViewCell") as? TableViewCell else {
             return UITableViewCell()
@@ -105,3 +141,9 @@ extension TaskAdditionPageVC: UITableViewDataSource {
     }
 }
 
+// MARK: - Table View Delegate
+extension TaskAdditionPageVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+}

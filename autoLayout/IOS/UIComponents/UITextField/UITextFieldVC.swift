@@ -18,6 +18,7 @@ class UITextFieldVC: UIViewController {
         super.viewDidLoad()
         txtFieldName.layer.borderColor = UIColor.red.cgColor
         txtFieldName.layer.borderWidth = 1
+        txtFieldName.addDoneButtonOnKeyboard()
         let imageName = "lion"
         let image = UIImage(named: imageName)
 //        let imageView = UIImageView(image: image!)
