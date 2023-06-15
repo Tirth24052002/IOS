@@ -23,9 +23,10 @@ struct CollectionDataModel {
 extension CollectionDataModel {
     static func collectionData() -> [CollectionDataModel] {
         return [ CollectionDataModel(data: "Verification Process with the Team"),
-                 CollectionDataModel(data: "Verification Process is pending"),
-                 CollectionDataModel(data: "Verification Process is completed"),
-                 CollectionDataModel(data: "Verification is denied"),
+                 CollectionDataModel(data: "Onboarding Process is Completed"),
+                 CollectionDataModel(data: "Leave Request Approved"),
+                 CollectionDataModel(data: "Event Bid Approved"),
+                 
         ]
     }
 }

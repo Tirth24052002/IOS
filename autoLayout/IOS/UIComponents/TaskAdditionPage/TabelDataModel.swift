@@ -8,16 +8,17 @@
 import Foundation
 
 struct TabelDataModel {
-// MARK: - Variables
-var fieldName: String?
-var pertime: String?
-var isSelected: Bool = false
-
-// MARK: - Initializer
-init(_ field: String, _ time: String) {
-    fieldName = field
-    pertime = time
-}
+    
+    // MARK: - Variables
+    var fieldName: String?
+    var pertime: String?
+    public var isSelected: Bool = false
+    
+    // MARK: - Initializer
+    init(_ field: String, _ time: String) {
+        fieldName = field
+        pertime = time
+    }
 }
 
 // MARK: - Extension

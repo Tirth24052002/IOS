@@ -28,5 +28,8 @@ extension DataCollectionViewCell {
         collectionViewContents.layer.cornerRadius = 10
         collectionViewContents.backgroundColor = .white
         //collectionViewContents.backgroundColor = .red
+        if data.isSlected {
+            collectionViewContents.backgroundColor = .black
+        }
     }
 }

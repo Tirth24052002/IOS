@@ -7,11 +7,35 @@
 
 import UIKit
 
+// MARK: - Text Field Padding
+class TextFieldWithPadding: UITextField {
+    var textPadding = UIEdgeInsets(
+        top: 5,
+        left: 20,
+        bottom: 5,
+        right: 20
+    )
+
+    override func textRect(forBounds bounds: CGRect) -> CGRect {
+        let rect = super.textRect(forBounds: bounds)
+        return rect.inset(by: textPadding)
+    }
+
+    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+        let rect = super.editingRect(forBounds: bounds)
+        return rect.inset(by: textPadding)
+    }
+}
+
+// MARK: - View Controller
 class TaskAdditionPageVC: UIViewController {
     
     // MARK: - Variables
-    private var arrdata = CollectionDataModel.collectionData()
-    private var arrTableData = TabelDataModel.getTableData()
+    var arrdata = CollectionDataModel.collectionData()
+    var arrTableData = TabelDataModel.getTableData()
+    var searchResult: [Any] = []
+    var isSearchActive: Bool = false
+    var seachResultForTableView: [TabelDataModel] = []
     
     // MARK: - IB Outlets
     @IBOutlet weak var lblWelcomeBack: UILabel!
@@ -21,26 +45,27 @@ class TaskAdditionPageVC: UIViewController {
     @IBOutlet weak var lblTableViewContents: UITableView!
     @IBOutlet weak var textFieldSearchBar: UITextField!
     @IBOutlet weak var tblViewHeader: UIView!
-
+    
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
         implementation()
     }
     
+    // MARK: - Function
     func addlestImageTo(txtField: UITextField, andImage img: UIImage) {
-        let leftImageView = UIImageView(frame: CGRect(x: 0.0, y: 0.0,
-                                                      width: img.size.width,
-                                                      height: img.size.height))
-        leftImageView.image = img
-        txtField.leftView = leftImageView
-        txtField.leftViewMode = .always
-        leftImageView.frame = CGRectMake(20, 0, 0, 0)
-        
+        let leftImage = UIImageView()
+        let image1 = UIImage(named: "searchIcon")
+        leftImage.image = image1
+        let contentView = UIView()
+        contentView.addSubview(leftImage)
+        contentView.frame = CGRectMake(0, 0, 15, 15)
+        leftImage.frame = CGRectMake(20, 0, 15, 15)
+        txtField.leftView = contentView
+        txtField.leftViewMode = UITextField.ViewMode.always
     }
-     
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
     }
@@ -48,6 +73,14 @@ class TaskAdditionPageVC: UIViewController {
     // MARK: - IB Action
     @IBAction func btnBackButton(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func searchHandler(_ sender: UITextField) {
+//        if let searchText = sender.text {
+//           // searchResult = arrdata.filter { $0.data?.lowercased().contains(searchText.lowercased()) ?? false}
+//          //  searchResult = arrdata.filter { $0.data?.contains(searchText.l)}
+//            lblTableViewContents.reloadData()
+//        }
     }
 }
 
@@ -70,24 +103,26 @@ extension TaskAdditionPageVC {
                                       forCellReuseIdentifier: "TableViewCell")
         textFieldSearchBar.layer.cornerRadius = textFieldSearchBar.frame.height/2
         textFieldSearchBar.clipsToBounds = true
-        
-//        textFieldSearchBar.layer.shadowColor = UIColor.black.cgColor
-//        textFieldSearchBar.layer.shadowOpacity = 0.15
-//        textFieldSearchBar.layer.shadowOffset = CGSize(width: 2, height: 2)
-//        textFieldSearchBar.layer.shadowRadius = 2.5
-//        textFieldSearchBar.backgroundColor = UIColor.white
-//        textFieldSearchBar.attributedPlaceholder = NSAttributedString(
-//            string: "Try to find...",
-//            attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray]
-//        )
-       // lblcollectionView.layer.cornerRadius = 10
+        textFieldSearchBar.layer.shadowColor = UIColor.black.cgColor
+        textFieldSearchBar.layer.shadowOpacity = 0.35
+        textFieldSearchBar.layer.shadowOffset = CGSize(width: 2, height: 2)
+        textFieldSearchBar.layer.shadowRadius = 2.5
+        textFieldSearchBar.backgroundColor = UIColor.white
+        textFieldSearchBar.attributedPlaceholder = NSAttributedString(
+            string: "Try to find...",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray]
+        )
+        lblcollectionView.layer.cornerRadius = 10
+        textFieldSearchBar.delegate = self
     }
 }
 
 // MARK: - Collection View Data Source
 extension TaskAdditionPageVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrdata.count
+       // arrdata.append(arrTableData.)
+    
+        return isSearchActive == true ? searchResult.count : arrdata.count
     }
 }
 
@@ -95,13 +130,15 @@ extension TaskAdditionPageVC: UICollectionViewDataSource {
 extension TaskAdditionPageVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = self.lblcollectionView.dequeueReusableCell(withReuseIdentifier:
-                                                                        "DataCollectionViewCell",
-                                                                    for: indexPath)
-                as? DataCollectionViewCell else {
+        guard let cell = self.lblcollectionView.dequeueReusableCell(
+            withReuseIdentifier: "DataCollectionViewCell",
+            for: indexPath) as? DataCollectionViewCell else {
             return UICollectionViewCell()
         }
-        let indexData = arrdata[indexPath.row]
+        guard let indexData = isSearchActive == true ? searchResult[indexPath.row]
+                as? CollectionDataModel : arrdata[indexPath.row] else {
+            return UICollectionViewCell()
+        }
         cell.configCell(data: indexData)
         return cell
     }
@@ -122,7 +159,7 @@ extension TaskAdditionPageVC: UICollectionViewDelegateFlowLayout {
 extension TaskAdditionPageVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        return arrTableData.count
+        return isSearchActive == true ? seachResultForTableView.count : arrTableData.count
     }
     
     func tableView(_ tableView: UITableView,
@@ -131,7 +168,9 @@ extension TaskAdditionPageVC: UITableViewDataSource {
             withIdentifier: "TableViewCell") as? TableViewCell else {
             return UITableViewCell()
         }
-        let indexData = arrTableData[indexPath.row]
+        let indexData = isSearchActive == true
+        ? seachResultForTableView[indexPath.row]
+        : arrTableData[indexPath.row]
         additionCell.configCell(indexData)
         return additionCell
     }
@@ -141,9 +180,32 @@ extension TaskAdditionPageVC: UITableViewDataSource {
     }
 }
 
-// MARK: - Table View Delegate
+// MARK: - Text Field Delegate
+extension TaskAdditionPageVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchResult = textField.text?.isEmpty ?? false ? arrdata : arrdata.filter { $0.data?.lowercased().contains(textField.text?.lowercased() ?? "" )
+            ?? false }
+        if textField.text?.isEmpty ?? true {
+            isSearchActive = false
+        } else {
+            isSearchActive = true
+        }
+        print(searchResult.count)
+        seachResultForTableView = textField.text?.isEmpty ?? false ? arrTableData : arrTableData.filter { $0.fieldName?.lowercased().contains(textField.text?.lowercased() ?? "") ?? false }
+//        if seachResultForTableView.isEmpty {
+//            isSearchActive = false
+//        } else {
+//            isSearchActive = true
+//        }
+        print(seachResultForTableView.count)
+        self.lblcollectionView.reloadData()
+        self.lblTableViewContents.reloadData()
+        print(textField.text ?? "")
+        return true
+    }
+}
 extension TaskAdditionPageVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        //arrdata.append(contentsOf: arrTableData)
     }
 }

@@ -22,18 +22,22 @@ class TableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-    }
-    
-    @IBAction func btnPlusButton(_ sender: UIButton) {
         
     }
     
+    // MARK: - IB Action
+    @IBAction func btnPlusButton(_ sender: UIButton) {
+        
+       // lblFieldName.text = CollectionDataModel.collectionData().append(CollectionDataModel.collectionData().)
+    }
 }
 
 // MARK: - Extension
 extension TableViewCell {
-    func configCell(_ data: TabelDataModel) {
+    func configCell(_ data: TabelDataModel) { //, _ arr: [TabelDataModel]) {
         lblFieldName.text = data.fieldName
         lblTime.text = data.pertime
+      //  var arrDar = [CollectionDataModel]
+       //arr[0].data?.append(lblFieldName.text ?? "")
     }
 }
