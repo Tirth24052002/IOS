@@ -31,11 +31,12 @@ class TextFieldWithPadding: UITextField {
 class TaskAdditionPageVC: UIViewController {
     
     // MARK: - Variables
-    var arrdata = CollectionDataModel.collectionData()
-    var arrTableData = TabelDataModel.getTableData()
-    var searchResult: [Any] = []
-    var isSearchActive: Bool = false
-    var seachResultForTableView: [TabelDataModel] = []
+    private var refreshData: UIRefreshControl!
+    private var arrdata = CollectionDataModel.collectionData()
+    private var arrTableData = TabelDataModel.getTableData()
+    private var searchResult: [Any] = []
+    private var isSearchActive: Bool = false
+    private var seachResultForTableView: [TabelDataModel] = []
     
     // MARK: - IB Outlets
     @IBOutlet weak var lblWelcomeBack: UILabel!
@@ -50,9 +51,14 @@ class TaskAdditionPageVC: UIViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+
         implementation()
     }
     
+    @objc func loadApi() {
+        print("The data refershed")
+        self.refreshData.endRefreshing()
+    }
     // MARK: - Function
     func addlestImageTo(txtField: UITextField, andImage img: UIImage) {
         let leftImage = UIImageView()
@@ -82,11 +88,16 @@ class TaskAdditionPageVC: UIViewController {
 //            lblTableViewContents.reloadData()
 //        }
     }
+    
 }
 
 // MARK: - Extension
 extension TaskAdditionPageVC {
     func implementation() {
+        self.refreshData = UIRefreshControl()
+        self.refreshData.tintColor = .systemYellow
+        self.refreshData.addTarget(self, action: #selector(loadApi), for: .valueChanged)
+        self.lblTableViewContents.addSubview(refreshData)
         textFieldSearchBar.addDoneButtonOnKeyboard()
         tblViewHeader.frame = CGRect(x: 0.0,
                                      y: 0.0,
@@ -204,6 +215,8 @@ extension TaskAdditionPageVC: UITextFieldDelegate {
         return true
     }
 }
+
+// MARK: - Table View Delegate 
 extension TaskAdditionPageVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //arrdata.append(contentsOf: arrTableData)

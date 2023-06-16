@@ -163,6 +163,30 @@
                                     <action selector="btnTaskAddScreen:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pck-XE-1za"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emf-NL-u3z">
+                                <rect key="frame" x="208.66666666666663" y="97.666666666666671" width="172" height="35.000000000000014"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Image Picker"/>
+                                <connections>
+                                    <action selector="btnImagePicker:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RNO-Ed-3we"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQ2-57-KEK">
+                                <rect key="frame" x="208.66666666666663" y="143.66666666666666" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Activity Indicator"/>
+                                <connections>
+                                    <action selector="btnActivityIndicator:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xOZ-Ba-fhJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63Z-Lb-ERm">
+                                <rect key="frame" x="208.66666666666663" y="189.66666666666666" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Web View"/>
+                                <connections>
+                                    <action selector="btnWebView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eKm-2z-0U9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -172,12 +196,15 @@
                             <constraint firstItem="Pj2-jm-vuo" firstAttribute="trailing" secondItem="jTd-ug-XAQ" secondAttribute="trailing" id="2r7-Fx-52b"/>
                             <constraint firstItem="Izl-e1-t0o" firstAttribute="trailing" secondItem="uNb-C3-ABZ" secondAttribute="trailing" id="3OA-OT-plY"/>
                             <constraint firstItem="lWI-vI-hyY" firstAttribute="trailing" secondItem="TXh-Vr-eLN" secondAttribute="trailing" id="4so-Az-jJF"/>
+                            <constraint firstItem="emf-NL-u3z" firstAttribute="centerY" secondItem="unF-lD-7gG" secondAttribute="centerY" id="6B1-ND-axy"/>
+                            <constraint firstItem="BQ2-57-KEK" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="1.5" id="7HB-Px-8x3"/>
                             <constraint firstItem="UBw-id-pOa" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.85" id="80g-b7-IMc"/>
                             <constraint firstItem="aln-5L-dAl" firstAttribute="leading" secondItem="biq-gi-Shh" secondAttribute="leading" id="8bY-kn-xGZ"/>
                             <constraint firstItem="uv0-yh-NSa" firstAttribute="leading" secondItem="UBw-id-pOa" secondAttribute="leading" id="9aA-i9-2F3"/>
                             <constraint firstItem="jTd-ug-XAQ" firstAttribute="trailing" secondItem="uv0-yh-NSa" secondAttribute="trailing" id="BGu-Kx-ulU"/>
                             <constraint firstItem="Zmz-XU-kQ5" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.45" id="DNl-PF-bp0"/>
                             <constraint firstItem="Izl-e1-t0o" firstAttribute="leading" secondItem="uNb-C3-ABZ" secondAttribute="leading" id="FDi-Cq-xgN"/>
+                            <constraint firstItem="63Z-Lb-ERm" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="1.5" id="GTA-FL-VVi"/>
                             <constraint firstItem="TXh-Vr-eLN" firstAttribute="leading" secondItem="Pj2-jm-vuo" secondAttribute="leading" id="GfD-ek-pzg"/>
                             <constraint firstItem="jTd-ug-XAQ" firstAttribute="leading" secondItem="uv0-yh-NSa" secondAttribute="leading" id="GhH-nS-13a"/>
                             <constraint firstItem="TXh-Vr-eLN" firstAttribute="trailing" secondItem="Pj2-jm-vuo" secondAttribute="trailing" id="H50-ap-prl"/>
@@ -186,13 +213,18 @@
                             <constraint firstItem="GH6-2d-8Cm" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.65" id="Jtm-tR-bgQ"/>
                             <constraint firstItem="biq-gi-Shh" firstAttribute="trailing" secondItem="Izl-e1-t0o" secondAttribute="trailing" id="L27-HC-fnm"/>
                             <constraint firstItem="lWI-vI-hyY" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="LA6-dC-oYk"/>
+                            <constraint firstItem="BQ2-57-KEK" firstAttribute="leading" secondItem="emf-NL-u3z" secondAttribute="leading" id="MEM-qX-sfT"/>
+                            <constraint firstItem="63Z-Lb-ERm" firstAttribute="leading" secondItem="BQ2-57-KEK" secondAttribute="leading" id="Maw-4p-lQ9"/>
                             <constraint firstItem="lWI-vI-hyY" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.15" id="NnK-i3-Pbg"/>
                             <constraint firstItem="biq-gi-Shh" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.65" id="O3H-gK-oIh"/>
                             <constraint firstItem="jTd-ug-XAQ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="O5Y-qd-KiI"/>
+                            <constraint firstItem="emf-NL-u3z" firstAttribute="width" secondItem="unF-lD-7gG" secondAttribute="width" id="OoR-2Z-Vln"/>
                             <constraint firstItem="Zmz-XU-kQ5" firstAttribute="leading" secondItem="ofq-E8-bQH" secondAttribute="leading" id="P3V-cz-iUU"/>
                             <constraint firstItem="uNb-C3-ABZ" firstAttribute="trailing" secondItem="lWI-vI-hyY" secondAttribute="trailing" id="Pw9-BO-fpe"/>
                             <constraint firstItem="ofq-E8-bQH" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.35" id="QVY-BM-dw6"/>
                             <constraint firstItem="ofq-E8-bQH" firstAttribute="leading" secondItem="unF-lD-7gG" secondAttribute="leading" id="QcO-rL-1pe"/>
+                            <constraint firstItem="BQ2-57-KEK" firstAttribute="trailing" secondItem="emf-NL-u3z" secondAttribute="trailing" id="Qvu-84-JGD"/>
+                            <constraint firstItem="emf-NL-u3z" firstAttribute="top" secondItem="unF-lD-7gG" secondAttribute="top" id="RcD-Mo-uj9"/>
                             <constraint firstItem="TXh-Vr-eLN" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="Re2-AQ-bFh"/>
                             <constraint firstItem="UBw-id-pOa" firstAttribute="leading" secondItem="3NE-BV-A8o" secondAttribute="leading" id="Rs9-oT-c39"/>
                             <constraint firstItem="biq-gi-Shh" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="SGp-Pg-z33"/>
@@ -200,6 +232,7 @@
                             <constraint firstItem="uv0-yh-NSa" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.95" id="Sl6-bD-Ohh"/>
                             <constraint firstItem="Izl-e1-t0o" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="THi-OI-UHE"/>
                             <constraint firstItem="Pj2-jm-vuo" firstAttribute="leading" secondItem="jTd-ug-XAQ" secondAttribute="leading" id="UCT-ln-MD4"/>
+                            <constraint firstItem="63Z-Lb-ERm" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.45" id="UUO-2r-6vz"/>
                             <constraint firstItem="3NE-BV-A8o" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.75" id="UyG-Ld-BTC"/>
                             <constraint firstItem="ofq-E8-bQH" firstAttribute="trailing" secondItem="unF-lD-7gG" secondAttribute="trailing" id="VdW-f8-CCy"/>
                             <constraint firstItem="Pj2-jm-vuo" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="WQ4-da-Tgj"/>
@@ -212,11 +245,15 @@
                             <constraint firstItem="uNb-C3-ABZ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="bnz-db-tDb"/>
                             <constraint firstItem="jTd-ug-XAQ" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.05" id="fqk-9J-VBS"/>
                             <constraint firstItem="zmK-UM-BXw" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="gTw-om-2NB"/>
+                            <constraint firstItem="emf-NL-u3z" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.25" id="hOD-wC-4gn"/>
                             <constraint firstItem="GH6-2d-8Cm" firstAttribute="trailing" secondItem="zmK-UM-BXw" secondAttribute="trailing" id="jNS-45-6xa"/>
                             <constraint firstItem="aln-5L-dAl" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="kcu-PI-gjC"/>
+                            <constraint firstItem="emf-NL-u3z" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="1.5" id="ldZ-2a-G9Z"/>
                             <constraint firstItem="zmK-UM-BXw" firstAttribute="leading" secondItem="Zmz-XU-kQ5" secondAttribute="leading" id="nQ8-5y-B6Q"/>
                             <constraint firstItem="aln-5L-dAl" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.74" id="nkY-eb-G1J"/>
+                            <constraint firstItem="BQ2-57-KEK" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.35" id="q1Z-gl-doA"/>
                             <constraint firstItem="Zmz-XU-kQ5" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="qG8-0G-eVO"/>
+                            <constraint firstItem="63Z-Lb-ERm" firstAttribute="trailing" secondItem="BQ2-57-KEK" secondAttribute="trailing" id="qZs-N8-7Nz"/>
                             <constraint firstItem="GH6-2d-8Cm" firstAttribute="leading" secondItem="zmK-UM-BXw" secondAttribute="leading" id="qla-ql-lcK"/>
                             <constraint firstItem="UBw-id-pOa" firstAttribute="trailing" secondItem="3NE-BV-A8o" secondAttribute="trailing" id="r9c-vb-6sb"/>
                             <constraint firstItem="uv0-yh-NSa" firstAttribute="trailing" secondItem="UBw-id-pOa" secondAttribute="trailing" id="srX-RM-Jpp"/>

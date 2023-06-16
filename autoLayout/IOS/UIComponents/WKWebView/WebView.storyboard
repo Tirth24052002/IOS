@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web ViewVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="WebViewVC" id="Y6W-OH-hqX" customClass="WebViewVC" customModule="IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yp8-Gx-wpO">
+                                <rect key="frame" x="8" y="67" width="42" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward.to.line" catalog="system"/>
+                                <connections>
+                                    <action selector="btnBackButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="TU6-iF-ZlT"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLT-KN-cca">
+                                <rect key="frame" x="0.0" y="110" width="393" height="708"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yp8-Gx-wpO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="HCG-Kr-WpX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GLT-KN-cca" secondAttribute="trailing" id="MP6-ht-tTA"/>
+                            <constraint firstItem="yp8-Gx-wpO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="Wu9-ir-1zW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="GLT-KN-cca" secondAttribute="bottom" id="h7h-wV-iqM"/>
+                            <constraint firstItem="GLT-KN-cca" firstAttribute="top" secondItem="yp8-Gx-wpO" secondAttribute="bottom" constant="8" id="i7g-7V-lX1"/>
+                            <constraint firstItem="GLT-KN-cca" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xij-cs-M5Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="GLT-KN-cca" id="MgU-Mx-y6V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward.to.line" catalog="system" width="104" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

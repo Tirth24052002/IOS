@@ -9,7 +9,7 @@ import Foundation
 class DataModel {
     var fieldName: String?
     var pertime: String?
-    public var isSelected: Bool = false
+    var isSelected: Bool = false
     
     // MARK: - Initializer
     init(_ field: String, _ time: String) {

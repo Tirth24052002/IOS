@@ -27,7 +27,6 @@ class TableViewCell: UITableViewCell {
     
     // MARK: - IB Action
     @IBAction func btnPlusButton(_ sender: UIButton) {
-        
        // lblFieldName.text = CollectionDataModel.collectionData().append(CollectionDataModel.collectionData().)
     }
 }

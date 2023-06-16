@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -17,9 +18,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMs-Ij-X3V">
+                                <rect key="frame" x="8" y="67" width="16" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="chevron.left" catalog="system" symbolScale="large" renderingMode="hierarchical">
+                                        <hierarchicalColors>
+                                            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color systemColor="secondaryLabelColor"/>
+                                            <color systemColor="tertiaryLabelColor"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                </state>
+                                <connections>
+                                    <action selector="btnBackButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dzL-Ft-rr8"/>
+                                </connections>
+                            </button>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="V6y-kp-sY9">
+                                <rect key="frame" x="8" y="103" width="380" height="56"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" red="0.96847373250000002" green="0.27251118419999998" blue="0.048585876819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="Ms4-At-qR9"/>
+                                </connections>
+                            </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ot3-wa-O45">
-                                <rect key="frame" x="5" y="59" width="383" height="759"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="5" y="169" width="383" height="649"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qZL-F5-co3">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -35,12 +67,12 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2f-ba-nYu">
-                                                    <rect key="frame" x="43" y="79" width="42" height="21"/>
+                                                    <rect key="frame" x="43" y="85.666666666666671" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x6n-bj-zdA">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appleIcon" translatesAutoresizingMaskIntoConstraints="NO" id="x6n-bj-zdA">
                                                     <rect key="frame" x="39" y="26.333333333333329" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="Nqr-u9-xxN"/>
@@ -52,10 +84,10 @@
                                                 <constraint firstItem="x6n-bj-zdA" firstAttribute="centerX" secondItem="HGN-bQ-eza" secondAttribute="centerX" id="MHQ-7m-mLC"/>
                                                 <constraint firstItem="x6n-bj-zdA" firstAttribute="centerY" secondItem="HGN-bQ-eza" secondAttribute="centerY" multiplier="0.8" id="UM4-Mz-J4I"/>
                                                 <constraint firstItem="W2f-ba-nYu" firstAttribute="centerX" secondItem="HGN-bQ-eza" secondAttribute="centerX" id="UQo-ap-qni"/>
-                                                <constraint firstItem="W2f-ba-nYu" firstAttribute="centerY" secondItem="HGN-bQ-eza" secondAttribute="centerY" multiplier="1.4" id="dBE-wn-J7q"/>
+                                                <constraint firstItem="W2f-ba-nYu" firstAttribute="centerY" secondItem="HGN-bQ-eza" secondAttribute="centerY" multiplier="1.5" id="dBE-wn-J7q"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <color key="backgroundColor" red="0.96974724531173706" green="0.27577510476112366" blue="0.048920176923274994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="imgTableView" destination="x6n-bj-zdA" id="79c-Pb-QNf"/>
@@ -66,16 +98,22 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="bMs-Ij-X3V" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="6uP-v5-AbS"/>
                             <constraint firstItem="ot3-wa-O45" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="BRJ-3V-A3d"/>
-                            <constraint firstItem="ot3-wa-O45" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="QhE-J5-A2y"/>
+                            <constraint firstItem="V6y-kp-sY9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="Ov3-sJ-mu4"/>
+                            <constraint firstItem="V6y-kp-sY9" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="44" id="SxT-l7-wci"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="V6y-kp-sY9" secondAttribute="trailing" constant="5" id="bDD-t9-PVt"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ot3-wa-O45" secondAttribute="bottom" id="cOr-P0-jYv"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ot3-wa-O45" secondAttribute="trailing" constant="5" id="jQ3-xn-bKH"/>
+                            <constraint firstItem="ot3-wa-O45" firstAttribute="top" secondItem="V6y-kp-sY9" secondAttribute="bottom" constant="10" id="qP9-I2-sMp"/>
+                            <constraint firstItem="bMs-Ij-X3V" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="xNx-qg-EXW"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="gridCollection" destination="ot3-wa-O45" id="Kpz-PW-oNn"/>
+                        <outlet property="searchBar" destination="V6y-kp-sY9" id="3m8-oi-AmU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -84,11 +122,16 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <image name="appleIcon" width="32" height="32"/>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

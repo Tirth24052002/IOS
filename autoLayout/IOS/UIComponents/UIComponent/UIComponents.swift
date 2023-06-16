@@ -13,16 +13,6 @@ class UIComponents: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    @IBAction func btnTaskAddScreen(_ sender: Any) {
-        let taskAddStoryboard = UIStoryboard(name: "TaskAdditionPage", bundle: nil)
-        guard let taskAddVC =  taskAddStoryboard.instantiateViewController(withIdentifier:
-                                                                        "TaskAdditionPageVC")
-                as? TaskAdditionPageVC else {
-            return
-        }
-        navigationController?.pushViewController(taskAddVC , animated: true)
-    }
     
 }
 
@@ -198,5 +188,49 @@ extension UIComponents {
             return
         }
         navigationController?.pushViewController(tableViewVC , animated: true)
+    }
+    
+    // MARK: - IB Action Task Screen
+    @IBAction func btnTaskAddScreen(_ sender: Any) {
+        let taskAddStoryboard = UIStoryboard(name: "TaskAdditionPage", bundle: nil)
+        guard let taskAddVC =  taskAddStoryboard.instantiateViewController(withIdentifier:
+                                                                        "TaskAdditionPageVC")
+                as? TaskAdditionPageVC else {
+            return
+        }
+        navigationController?.pushViewController(taskAddVC , animated: true)
+    }
+
+    // MARK: - Ib Action Image Picker
+    @IBAction func btnImagePicker(_ sender: UIButton) {
+        let imagePickerStoryboard = UIStoryboard(name: "ImagePicker", bundle: nil)
+        guard let imagePickerVC =  imagePickerStoryboard.instantiateViewController(withIdentifier:
+                                                                        "ImagePickerVC")
+                as? ImagePickerVC else {
+            return
+        }
+        navigationController?.pushViewController(imagePickerVC , animated: true)
+    }
+    
+    // MARK: - IB Action Activity Indicator
+    @IBAction func btnActivityIndicator(_ sender: UIButton) {
+        let activityIndicatorStoryboard = UIStoryboard(name: "UIActivityIndicator", bundle: nil)
+        guard let activityIndicatorVC =  activityIndicatorStoryboard.instantiateViewController(withIdentifier:
+                                                                        "UIActivityIndicatorVC")
+                as? UIActivityIndicatorVC else {
+            return
+        }
+        navigationController?.pushViewController(activityIndicatorVC , animated: true)
+    }
+    
+    
+    @IBAction func btnWebView(_ sender: Any) {
+        let webViewStoryboard = UIStoryboard(name: "WebView", bundle: nil)
+        guard let webViewVC =  webViewStoryboard.instantiateViewController(withIdentifier:
+                                                                        "WebViewVC")
+                as? WebViewVC else {
+            return
+        }
+        navigationController?.pushViewController(webViewVC , animated: true)
     }
 }
