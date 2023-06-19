@@ -9,10 +9,11 @@ import UIKit
 
 class UIComponents: UIViewController {
     
-    // MARK: - View Life Cycle   
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
     
 }
 
@@ -138,7 +139,7 @@ extension UIComponents {
     @IBAction func btnPageViewController(_ sender: UIButton) {
         let pageViewControllerStoryboard = UIStoryboard(name: "MainPageViewController", bundle: nil)
         guard let pageViewControllerVC =  pageViewControllerStoryboard.instantiateViewController(withIdentifier:
-                                                                        "MainPageViewController")
+                                                                                                    "MainPageViewController")
                 as? MainPageViewController else {
             return
         }
@@ -149,7 +150,7 @@ extension UIComponents {
     @IBAction func btnStepper(_ sender: UIButton) {
         let stepperStoryboard = UIStoryboard(name: "UIStepper", bundle: nil)
         guard let stepperVC =  stepperStoryboard.instantiateViewController(withIdentifier:
-                                                                        "UIStepperVC")
+                                                                            "UIStepperVC")
                 as? UIStepperVC else {
             return
         }
@@ -161,7 +162,7 @@ extension UIComponents {
     @IBAction func btnTableView(_ sender: UIButton) {
         let tableViewStoryboard = UIStoryboard(name: "UITableView", bundle: nil)
         guard let tableViewVC =  tableViewStoryboard.instantiateViewController(withIdentifier:
-                                                                        "UITableViewVC")
+                                                                                "UITableViewVC")
                 as? UITableViewVC else {
             return
         }
@@ -172,7 +173,7 @@ extension UIComponents {
     @IBAction func btnRegistrationPage(_ sender: UIButton) {
         let registrationPageStoryboard = UIStoryboard(name: "RegistrationPage", bundle: nil)
         guard let registrationPageVC =  registrationPageStoryboard.instantiateViewController(withIdentifier:
-                                                                        "RegistrationPageVC")
+                                                                                                "RegistrationPageVC")
                 as? RegistrationPageVC else {
             return
         }
@@ -183,7 +184,7 @@ extension UIComponents {
     @IBAction func btnOptionTableView(_ sender: Any) {
         let optionTableViewStoryboard = UIStoryboard(name: "UICollectionView", bundle: nil)
         guard let tableViewVC =  optionTableViewStoryboard.instantiateViewController(withIdentifier:
-                                                                        "UICollectionViewVC")
+                                                                                        "UICollectionViewVC")
                 as? UICollectionViewVC else {
             return
         }
@@ -194,18 +195,18 @@ extension UIComponents {
     @IBAction func btnTaskAddScreen(_ sender: Any) {
         let taskAddStoryboard = UIStoryboard(name: "TaskAdditionPage", bundle: nil)
         guard let taskAddVC =  taskAddStoryboard.instantiateViewController(withIdentifier:
-                                                                        "TaskAdditionPageVC")
+                                                                            "TaskAdditionPageVC")
                 as? TaskAdditionPageVC else {
             return
         }
         navigationController?.pushViewController(taskAddVC , animated: true)
     }
-
+    
     // MARK: - Ib Action Image Picker
     @IBAction func btnImagePicker(_ sender: UIButton) {
         let imagePickerStoryboard = UIStoryboard(name: "ImagePicker", bundle: nil)
         guard let imagePickerVC =  imagePickerStoryboard.instantiateViewController(withIdentifier:
-                                                                        "ImagePickerVC")
+                                                                                    "ImagePickerVC")
                 as? ImagePickerVC else {
             return
         }
@@ -216,21 +217,43 @@ extension UIComponents {
     @IBAction func btnActivityIndicator(_ sender: UIButton) {
         let activityIndicatorStoryboard = UIStoryboard(name: "UIActivityIndicator", bundle: nil)
         guard let activityIndicatorVC =  activityIndicatorStoryboard.instantiateViewController(withIdentifier:
-                                                                        "UIActivityIndicatorVC")
+                                                                                                "UIActivityIndicatorVC")
                 as? UIActivityIndicatorVC else {
             return
         }
         navigationController?.pushViewController(activityIndicatorVC , animated: true)
     }
     
-    
+    // MARK: - WK Wenb View
     @IBAction func btnWebView(_ sender: Any) {
         let webViewStoryboard = UIStoryboard(name: "WebView", bundle: nil)
         guard let webViewVC =  webViewStoryboard.instantiateViewController(withIdentifier:
-                                                                        "WebViewVC")
+                                                                            "WebViewVC")
                 as? WebViewVC else {
             return
         }
         navigationController?.pushViewController(webViewVC , animated: true)
+    }
+    
+    // MARK: - Stack View
+    @IBAction func btnStackView(_ sender: UIButton) {
+        let stackViewStoryboard = UIStoryboard(name: "StackView", bundle: nil)
+        guard let stackViewVC =  stackViewStoryboard.instantiateViewController(withIdentifier:
+                                                                                "StackViewVC")
+                as? StackViewVC else {
+            return
+        }
+        navigationController?.pushViewController(stackViewVC , animated: true)
+    }
+    
+    // MARK: - Tab Bar
+    @IBAction func btnTabBar(_ sender: UIButton) {
+        let tabBarStoryboard = UIStoryboard(name: "UITabBar", bundle: nil)
+        guard let tabBarVC =  tabBarStoryboard.instantiateViewController(withIdentifier:
+                                                                            "UITabBarVC")
+                as? UITabBarVC else {
+            return
+        }
+        navigationController?.pushViewController(tabBarVC , animated: true)
     }
 }

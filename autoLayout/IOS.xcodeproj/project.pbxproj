@@ -59,6 +59,14 @@
 		AF983BE92A2DB92C00B86BE1 /* UILabel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF983BE82A2DB92C00B86BE1 /* UILabel.storyboard */; };
 		AF983BEB2A2DB95B00B86BE1 /* UILabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF983BEA2A2DB95B00B86BE1 /* UILabelVC.swift */; };
 		AFB3B2FF2A36CF5E0057A22A /* DetailsPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB3B2FE2A36CF5E0057A22A /* DetailsPageVC.swift */; };
+		AFC4B55B2A4014AD001B1C3C /* StackView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC4B55A2A4014AD001B1C3C /* StackView.storyboard */; };
+		AFC4B55D2A4014D7001B1C3C /* StackViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4B55C2A4014D7001B1C3C /* StackViewVC.swift */; };
+		AFC4B55F2A40206C001B1C3C /* demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC4B55E2A40206C001B1C3C /* demo.storyboard */; };
+		AFC4B5622A402B6A001B1C3C /* UITabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC4B5612A402B6A001B1C3C /* UITabBar.storyboard */; };
+		AFC4B56A2A402EC6001B1C3C /* UITabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4B5692A402EC6001B1C3C /* UITabBarVC.swift */; };
+		AFC4B56C2A403315001B1C3C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4B56B2A403314001B1C3C /* HomeVC.swift */; };
+		AFC4B56E2A403323001B1C3C /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4B56D2A403323001B1C3C /* MapVC.swift */; };
+		AFC4B5702A4074F9001B1C3C /* CustomScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4B56F2A4074F9001B1C3C /* CustomScreen.swift */; };
 		AFC9908B2A318DF70071C98E /* UIScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC9908A2A318DF70071C98E /* UIScrollView.storyboard */; };
 		AFC9908D2A318E4B0071C98E /* UITextView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC9908C2A318E4B0071C98E /* UITextView.storyboard */; };
 		AFC990902A31A1BB0071C98E /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC9908E2A31A1BB0071C98E /* EventTableViewCell.swift */; };
@@ -145,6 +153,14 @@
 		AF983BE82A2DB92C00B86BE1 /* UILabel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UILabel.storyboard; sourceTree = "<group>"; };
 		AF983BEA2A2DB95B00B86BE1 /* UILabelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelVC.swift; sourceTree = "<group>"; };
 		AFB3B2FE2A36CF5E0057A22A /* DetailsPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPageVC.swift; sourceTree = "<group>"; };
+		AFC4B55A2A4014AD001B1C3C /* StackView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StackView.storyboard; sourceTree = "<group>"; };
+		AFC4B55C2A4014D7001B1C3C /* StackViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewVC.swift; sourceTree = "<group>"; };
+		AFC4B55E2A40206C001B1C3C /* demo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = demo.storyboard; sourceTree = "<group>"; };
+		AFC4B5612A402B6A001B1C3C /* UITabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITabBar.storyboard; sourceTree = "<group>"; };
+		AFC4B5692A402EC6001B1C3C /* UITabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarVC.swift; sourceTree = "<group>"; };
+		AFC4B56B2A403314001B1C3C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		AFC4B56D2A403323001B1C3C /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		AFC4B56F2A4074F9001B1C3C /* CustomScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScreen.swift; sourceTree = "<group>"; };
 		AFC9908A2A318DF70071C98E /* UIScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIScrollView.storyboard; sourceTree = "<group>"; };
 		AFC9908C2A318E4B0071C98E /* UITextView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextView.storyboard; sourceTree = "<group>"; };
 		AFC9908E2A31A1BB0071C98E /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
@@ -397,6 +413,8 @@
 		AF983BE32A2DB79F00B86BE1 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				AFC4B5602A402B4E001B1C3C /* UITabBar */,
+				AFC4B5592A401497001B1C3C /* StackView */,
 				AFDC54EC2A3C6FB80088497F /* WKWebView */,
 				AFDC54E72A3C60960088497F /* UIActivityIndicator */,
 				AFDC54E12A3C3A5C0088497F /* ImagePicker */,
@@ -445,6 +463,28 @@
 				AF1C712E2A29BEE40025E0F9 /* Pago.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		AFC4B5592A401497001B1C3C /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				AFC4B55A2A4014AD001B1C3C /* StackView.storyboard */,
+				AFC4B55C2A4014D7001B1C3C /* StackViewVC.swift */,
+				AFC4B55E2A40206C001B1C3C /* demo.storyboard */,
+			);
+			path = StackView;
+			sourceTree = "<group>";
+		};
+		AFC4B5602A402B4E001B1C3C /* UITabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AFC4B5612A402B6A001B1C3C /* UITabBar.storyboard */,
+				AFC4B5692A402EC6001B1C3C /* UITabBarVC.swift */,
+				AFC4B56B2A403314001B1C3C /* HomeVC.swift */,
+				AFC4B56D2A403323001B1C3C /* MapVC.swift */,
+				AFC4B56F2A4074F9001B1C3C /* CustomScreen.swift */,
+			);
+			path = UITabBar;
 			sourceTree = "<group>";
 		};
 		AFCA845B2A383F1A008DB85F /* TaskAdditionPage */ = {
@@ -558,18 +598,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC4B55B2A4014AD001B1C3C /* StackView.storyboard in Resources */,
 				AF1C712F2A29BEE40025E0F9 /* Pago.storyboard in Resources */,
 				AF5407B32A30AA2C0062F629 /* IndexTableViewCell.xib in Resources */,
 				AFC9908D2A318E4B0071C98E /* UITextView.storyboard in Resources */,
 				AF7EAC852A28951F0090E90F /* FoodItems.storyboard in Resources */,
 				AF781D4D2A2F570700FC8132 /* UISegmentedControl.storyboard in Resources */,
 				AFDA5EE72A387D170073B062 /* TableViewCell.xib in Resources */,
+				AFC4B55F2A40206C001B1C3C /* demo.storyboard in Resources */,
 				AF0CFC382A246CBD00F684A1 /* LaunchScreen.storyboard in Resources */,
 				AF983BE92A2DB92C00B86BE1 /* UILabel.storyboard in Resources */,
 				AF96E5802A2DE9F300EA3353 /* UITextField.storyboard in Resources */,
 				AFFAD7AF2A318BDF0072E871 /* UIPageControl.storyboard in Resources */,
 				AFDC54F82A3C756E0088497F /* WebView.storyboard in Resources */,
 				AF781D412A2EF9BC00FC8132 /* UIComponents.storyboard in Resources */,
+				AFC4B5622A402B6A001B1C3C /* UITabBar.storyboard in Resources */,
 				AF0CFC352A246CBD00F684A1 /* Assets.xcassets in Resources */,
 				AF427C182A25AF5500A83CA3 /* SignInScreen.storyboard in Resources */,
 				AF5407A92A308D5A0062F629 /* UIStepper.storyboard in Resources */,
@@ -611,12 +654,15 @@
 				AF65D96D2A37235F0011A08D /* CollectionViewCell.swift in Sources */,
 				AFCA845F2A383F8B008DB85F /* TaskAdditionPageVC.swift in Sources */,
 				AF5407AB2A308D7A0062F629 /* UIStepperVC.swift in Sources */,
+				AFC4B56C2A403315001B1C3C /* HomeVC.swift in Sources */,
 				AFDC54E52A3C3AB90088497F /* ImagePickerVC.swift in Sources */,
 				AF781D432A2EF9E200FC8132 /* UIComponents.swift in Sources */,
 				AFC990902A31A1BB0071C98E /* EventTableViewCell.swift in Sources */,
 				AF0CFC302A246CB900F684A1 /* ViewController.swift in Sources */,
 				AF81DD212A30613E00BADAAE /* RedVC.swift in Sources */,
+				AFC4B5702A4074F9001B1C3C /* CustomScreen.swift in Sources */,
 				AFF6C0DC2A33179A00500C08 /* RegistrationTableViewCell.swift in Sources */,
+				AFC4B56E2A403323001B1C3C /* MapVC.swift in Sources */,
 				AFF6C0D22A32DCD800500C08 /* ImageTabelView.swift in Sources */,
 				AFDA5EE62A387D170073B062 /* TableViewCell.swift in Sources */,
 				AFEC93632A303F2F0025DA52 /* UIScrollViewVC.swift in Sources */,
@@ -628,10 +674,12 @@
 				AFDA5EE92A388C3B0073B062 /* TabelDataModel.swift in Sources */,
 				AFE970402A3087F90002A5F0 /* YellowVC.swift in Sources */,
 				AF781D4B2A2F51A200FC8132 /* UIProgressViewVC.swift in Sources */,
+				AFC4B55D2A4014D7001B1C3C /* StackViewVC.swift in Sources */,
 				AFF6C0D72A32F80F00500C08 /* RegistrationPageVC.swift in Sources */,
 				AF5407B22A30AA2C0062F629 /* IndexTableViewCell.swift in Sources */,
 				AFDA5EDD2A3866E80073B062 /* DataCollectionViewCell.swift in Sources */,
 				AF0CFC2E2A246CB900F684A1 /* SceneDelegate.swift in Sources */,
+				AFC4B56A2A402EC6001B1C3C /* UITabBarVC.swift in Sources */,
 				AFB3B2FF2A36CF5E0057A22A /* DetailsPageVC.swift in Sources */,
 				AF4A70722A31C8E50000BDC2 /* CompanyTableViewCell.swift in Sources */,
 				AF96E5852A2DEAC900EA3353 /* CustomTextField.swift in Sources */,

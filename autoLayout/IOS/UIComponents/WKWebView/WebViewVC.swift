@@ -13,17 +13,9 @@ class WebViewVC: UIViewController {
     // MARK: - IB Outlets
     @IBOutlet var webView: WKWebView!
     
-    // MARK: - View Life Cycle
- //   override func loadView() {
-//        let webConfiguration = WKWebViewConfiguration()
-//        webView = WKWebView(frame: .zero, configuration: webConfiguration)
-//        webView.uiDelegate = self
-//        view = webView
-//    }
-    
+    // MARK: - View Life Cycle  
     override func viewDidLoad() {
         super.viewDidLoad()
-        initialSetup()
         setup()
     }
     
@@ -38,13 +30,6 @@ class WebViewVC: UIViewController {
 
 // MARK: - Extension
 extension WebViewVC: WKUIDelegate {
-    func initialSetup() {
-       // let webConfiguration = WKWebViewConfiguration()
-      //  webView = WKWebView(frame: .zero, configuration: webConfiguration)
-     //   webView.uiDelegate = self
-    //      view = webView
-    }
-    
     func setup() {
         let myURL = URL(string:"https://www.google.com")
         let myRequest = URLRequest(url: myURL!)

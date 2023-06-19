@@ -187,32 +187,55 @@
                                     <action selector="btnWebView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eKm-2z-0U9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qT4-wh-X0l">
+                                <rect key="frame" x="208.66666666666663" y="235.66666666666666" width="172" height="34.999999999999972"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Stack View"/>
+                                <connections>
+                                    <action selector="btnStackView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eex-ae-ZTr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytf-E9-dqQ">
+                                <rect key="frame" x="208.66666666666663" y="281.66666666666669" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Tab Bar"/>
+                                <connections>
+                                    <action selector="btnTabBar:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="tbj-kr-gbc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ytf-E9-dqQ" firstAttribute="trailing" secondItem="qT4-wh-X0l" secondAttribute="trailing" id="0Fe-Aw-AD0"/>
+                            <constraint firstItem="ytf-E9-dqQ" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.65" id="1vc-Ez-5LU"/>
                             <constraint firstItem="GH6-2d-8Cm" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="1zV-Pb-Jmh"/>
                             <constraint firstItem="unF-lD-7gG" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.25" id="2Tj-AB-pfb"/>
                             <constraint firstItem="Pj2-jm-vuo" firstAttribute="trailing" secondItem="jTd-ug-XAQ" secondAttribute="trailing" id="2r7-Fx-52b"/>
                             <constraint firstItem="Izl-e1-t0o" firstAttribute="trailing" secondItem="uNb-C3-ABZ" secondAttribute="trailing" id="3OA-OT-plY"/>
                             <constraint firstItem="lWI-vI-hyY" firstAttribute="trailing" secondItem="TXh-Vr-eLN" secondAttribute="trailing" id="4so-Az-jJF"/>
+                            <constraint firstItem="qT4-wh-X0l" firstAttribute="leading" secondItem="63Z-Lb-ERm" secondAttribute="leading" id="4ts-VJ-QKi"/>
                             <constraint firstItem="emf-NL-u3z" firstAttribute="centerY" secondItem="unF-lD-7gG" secondAttribute="centerY" id="6B1-ND-axy"/>
                             <constraint firstItem="BQ2-57-KEK" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="1.5" id="7HB-Px-8x3"/>
                             <constraint firstItem="UBw-id-pOa" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.85" id="80g-b7-IMc"/>
                             <constraint firstItem="aln-5L-dAl" firstAttribute="leading" secondItem="biq-gi-Shh" secondAttribute="leading" id="8bY-kn-xGZ"/>
+                            <constraint firstItem="qT4-wh-X0l" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.55" id="8lI-gi-LPB"/>
                             <constraint firstItem="uv0-yh-NSa" firstAttribute="leading" secondItem="UBw-id-pOa" secondAttribute="leading" id="9aA-i9-2F3"/>
                             <constraint firstItem="jTd-ug-XAQ" firstAttribute="trailing" secondItem="uv0-yh-NSa" secondAttribute="trailing" id="BGu-Kx-ulU"/>
+                            <constraint firstItem="qT4-wh-X0l" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="1.5" id="CEI-XX-Egg"/>
                             <constraint firstItem="Zmz-XU-kQ5" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.45" id="DNl-PF-bp0"/>
                             <constraint firstItem="Izl-e1-t0o" firstAttribute="leading" secondItem="uNb-C3-ABZ" secondAttribute="leading" id="FDi-Cq-xgN"/>
                             <constraint firstItem="63Z-Lb-ERm" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="1.5" id="GTA-FL-VVi"/>
                             <constraint firstItem="TXh-Vr-eLN" firstAttribute="leading" secondItem="Pj2-jm-vuo" secondAttribute="leading" id="GfD-ek-pzg"/>
                             <constraint firstItem="jTd-ug-XAQ" firstAttribute="leading" secondItem="uv0-yh-NSa" secondAttribute="leading" id="GhH-nS-13a"/>
                             <constraint firstItem="TXh-Vr-eLN" firstAttribute="trailing" secondItem="Pj2-jm-vuo" secondAttribute="trailing" id="H50-ap-prl"/>
+                            <constraint firstItem="ytf-E9-dqQ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="1.5" id="Hsh-Hi-HLj"/>
                             <constraint firstItem="zmK-UM-BXw" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.55" id="IH9-cN-LLa"/>
                             <constraint firstItem="Izl-e1-t0o" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.55" id="Izq-fa-loJ"/>
                             <constraint firstItem="GH6-2d-8Cm" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.65" id="Jtm-tR-bgQ"/>
                             <constraint firstItem="biq-gi-Shh" firstAttribute="trailing" secondItem="Izl-e1-t0o" secondAttribute="trailing" id="L27-HC-fnm"/>
                             <constraint firstItem="lWI-vI-hyY" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="LA6-dC-oYk"/>
+                            <constraint firstItem="ytf-E9-dqQ" firstAttribute="leading" secondItem="qT4-wh-X0l" secondAttribute="leading" id="Lgp-DA-hHR"/>
                             <constraint firstItem="BQ2-57-KEK" firstAttribute="leading" secondItem="emf-NL-u3z" secondAttribute="leading" id="MEM-qX-sfT"/>
                             <constraint firstItem="63Z-Lb-ERm" firstAttribute="leading" secondItem="BQ2-57-KEK" secondAttribute="leading" id="Maw-4p-lQ9"/>
                             <constraint firstItem="lWI-vI-hyY" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.15" id="NnK-i3-Pbg"/>
@@ -246,6 +269,7 @@
                             <constraint firstItem="jTd-ug-XAQ" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.05" id="fqk-9J-VBS"/>
                             <constraint firstItem="zmK-UM-BXw" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="gTw-om-2NB"/>
                             <constraint firstItem="emf-NL-u3z" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.25" id="hOD-wC-4gn"/>
+                            <constraint firstItem="qT4-wh-X0l" firstAttribute="trailing" secondItem="63Z-Lb-ERm" secondAttribute="trailing" id="hTV-va-5xa"/>
                             <constraint firstItem="GH6-2d-8Cm" firstAttribute="trailing" secondItem="zmK-UM-BXw" secondAttribute="trailing" id="jNS-45-6xa"/>
                             <constraint firstItem="aln-5L-dAl" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="kcu-PI-gjC"/>
                             <constraint firstItem="emf-NL-u3z" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="1.5" id="ldZ-2a-G9Z"/>
