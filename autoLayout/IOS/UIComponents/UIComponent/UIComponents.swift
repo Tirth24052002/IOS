@@ -13,8 +13,6 @@ class UIComponents: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    
 }
 
 // MARK: - Extension
@@ -255,5 +253,16 @@ extension UIComponents {
             return
         }
         navigationController?.pushViewController(tabBarVC , animated: true)
+    }
+    
+    // MARK: - Map View
+    @IBAction func btnMapView(_ sender: UIButton) {
+        let mapViewStoryboard = UIStoryboard(name: "MapView", bundle: nil)
+        guard let mapVewVC =  mapViewStoryboard.instantiateViewController(withIdentifier:
+                                                                        "MapViewVC")
+                as? MapViewVC else {
+            return
+        }
+        navigationController?.pushViewController(mapVewVC , animated: true)
     }
 }

@@ -24,7 +24,7 @@ class HomeVC: UIViewController {
         }
         let timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(0.1), repeats: true) {
             (timer) in
-            print(self.webView.estimatedProgress)
+            //print(self.webView.estimatedProgress)
         }
         let urlRequest = URLRequest(url: url)
         webView.load(urlRequest)
@@ -38,6 +38,7 @@ class HomeVC: UIViewController {
 //        toolBar.setItems([customView], animated: true)
     }
     
+    // MARK: - IB Action
     @IBAction func btnReload(_ sender: UIBarButtonItem) {
         self.webView.reload()
     }

@@ -61,12 +61,13 @@
 		AFB3B2FF2A36CF5E0057A22A /* DetailsPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB3B2FE2A36CF5E0057A22A /* DetailsPageVC.swift */; };
 		AFC4B55B2A4014AD001B1C3C /* StackView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC4B55A2A4014AD001B1C3C /* StackView.storyboard */; };
 		AFC4B55D2A4014D7001B1C3C /* StackViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4B55C2A4014D7001B1C3C /* StackViewVC.swift */; };
-		AFC4B55F2A40206C001B1C3C /* demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC4B55E2A40206C001B1C3C /* demo.storyboard */; };
 		AFC4B5622A402B6A001B1C3C /* UITabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC4B5612A402B6A001B1C3C /* UITabBar.storyboard */; };
 		AFC4B56A2A402EC6001B1C3C /* UITabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4B5692A402EC6001B1C3C /* UITabBarVC.swift */; };
 		AFC4B56C2A403315001B1C3C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4B56B2A403314001B1C3C /* HomeVC.swift */; };
 		AFC4B56E2A403323001B1C3C /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4B56D2A403323001B1C3C /* MapVC.swift */; };
 		AFC4B5702A4074F9001B1C3C /* CustomScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4B56F2A4074F9001B1C3C /* CustomScreen.swift */; };
+		AFC897E22A4161BF00C0018D /* MapViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC897E12A4161BF00C0018D /* MapViewVC.swift */; };
+		AFC897E42A4161CB00C0018D /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC897E32A4161CB00C0018D /* MapView.storyboard */; };
 		AFC9908B2A318DF70071C98E /* UIScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC9908A2A318DF70071C98E /* UIScrollView.storyboard */; };
 		AFC9908D2A318E4B0071C98E /* UITextView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC9908C2A318E4B0071C98E /* UITextView.storyboard */; };
 		AFC990902A31A1BB0071C98E /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC9908E2A31A1BB0071C98E /* EventTableViewCell.swift */; };
@@ -155,12 +156,13 @@
 		AFB3B2FE2A36CF5E0057A22A /* DetailsPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPageVC.swift; sourceTree = "<group>"; };
 		AFC4B55A2A4014AD001B1C3C /* StackView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StackView.storyboard; sourceTree = "<group>"; };
 		AFC4B55C2A4014D7001B1C3C /* StackViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewVC.swift; sourceTree = "<group>"; };
-		AFC4B55E2A40206C001B1C3C /* demo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = demo.storyboard; sourceTree = "<group>"; };
 		AFC4B5612A402B6A001B1C3C /* UITabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITabBar.storyboard; sourceTree = "<group>"; };
 		AFC4B5692A402EC6001B1C3C /* UITabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarVC.swift; sourceTree = "<group>"; };
 		AFC4B56B2A403314001B1C3C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		AFC4B56D2A403323001B1C3C /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		AFC4B56F2A4074F9001B1C3C /* CustomScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScreen.swift; sourceTree = "<group>"; };
+		AFC897E12A4161BF00C0018D /* MapViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewVC.swift; sourceTree = "<group>"; };
+		AFC897E32A4161CB00C0018D /* MapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
 		AFC9908A2A318DF70071C98E /* UIScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIScrollView.storyboard; sourceTree = "<group>"; };
 		AFC9908C2A318E4B0071C98E /* UITextView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UITextView.storyboard; sourceTree = "<group>"; };
 		AFC9908E2A31A1BB0071C98E /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
@@ -413,6 +415,7 @@
 		AF983BE32A2DB79F00B86BE1 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				AFC897E02A4161A300C0018D /* MapView */,
 				AFC4B5602A402B4E001B1C3C /* UITabBar */,
 				AFC4B5592A401497001B1C3C /* StackView */,
 				AFDC54EC2A3C6FB80088497F /* WKWebView */,
@@ -470,7 +473,6 @@
 			children = (
 				AFC4B55A2A4014AD001B1C3C /* StackView.storyboard */,
 				AFC4B55C2A4014D7001B1C3C /* StackViewVC.swift */,
-				AFC4B55E2A40206C001B1C3C /* demo.storyboard */,
 			);
 			path = StackView;
 			sourceTree = "<group>";
@@ -485,6 +487,15 @@
 				AFC4B56F2A4074F9001B1C3C /* CustomScreen.swift */,
 			);
 			path = UITabBar;
+			sourceTree = "<group>";
+		};
+		AFC897E02A4161A300C0018D /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				AFC897E12A4161BF00C0018D /* MapViewVC.swift */,
+				AFC897E32A4161CB00C0018D /* MapView.storyboard */,
+			);
+			path = MapView;
 			sourceTree = "<group>";
 		};
 		AFCA845B2A383F1A008DB85F /* TaskAdditionPage */ = {
@@ -601,11 +612,11 @@
 				AFC4B55B2A4014AD001B1C3C /* StackView.storyboard in Resources */,
 				AF1C712F2A29BEE40025E0F9 /* Pago.storyboard in Resources */,
 				AF5407B32A30AA2C0062F629 /* IndexTableViewCell.xib in Resources */,
+				AFC897E42A4161CB00C0018D /* MapView.storyboard in Resources */,
 				AFC9908D2A318E4B0071C98E /* UITextView.storyboard in Resources */,
 				AF7EAC852A28951F0090E90F /* FoodItems.storyboard in Resources */,
 				AF781D4D2A2F570700FC8132 /* UISegmentedControl.storyboard in Resources */,
 				AFDA5EE72A387D170073B062 /* TableViewCell.xib in Resources */,
-				AFC4B55F2A40206C001B1C3C /* demo.storyboard in Resources */,
 				AF0CFC382A246CBD00F684A1 /* LaunchScreen.storyboard in Resources */,
 				AF983BE92A2DB92C00B86BE1 /* UILabel.storyboard in Resources */,
 				AF96E5802A2DE9F300EA3353 /* UITextField.storyboard in Resources */,
@@ -666,6 +677,7 @@
 				AFF6C0D22A32DCD800500C08 /* ImageTabelView.swift in Sources */,
 				AFDA5EE62A387D170073B062 /* TableViewCell.swift in Sources */,
 				AFEC93632A303F2F0025DA52 /* UIScrollViewVC.swift in Sources */,
+				AFC897E22A4161BF00C0018D /* MapViewVC.swift in Sources */,
 				AFF6C0D92A3308FA00500C08 /* RegistrationModel.swift in Sources */,
 				AFE9703E2A3087800002A5F0 /* GreenVC.swift in Sources */,
 				AF0CFC2C2A246CB900F684A1 /* AppDelegate.swift in Sources */,

@@ -21,6 +21,11 @@ class MapVC: UIViewController {
         super.viewDidLoad()
         pickerView.delegate = self
         pickerView.dataSource = self
+        
+        let time = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
+            print(self.datePickerView.date)
+            print(self.datePickerView.countDownDuration)
+        }
     }
 }
 
