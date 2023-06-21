@@ -13,6 +13,9 @@ class UIComponents: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+
+    
 }
 
 // MARK: - Extension
@@ -264,5 +267,16 @@ extension UIComponents {
             return
         }
         navigationController?.pushViewController(mapVewVC , animated: true)
+    }
+    
+    // MARK: - Navigation Controller
+    @IBAction func btnNavigationController(_ sender: UIButton) {
+        let navigaationControllerStoryboard = UIStoryboard(name: "FirstVC", bundle: nil)
+        guard let navigationControllerVC =  navigaationControllerStoryboard.instantiateViewController(withIdentifier:
+                                                                        "FirstVC")
+                as? FirstVC else {
+            return
+        }
+        navigationController?.pushViewController(navigationControllerVC , animated: true)
     }
 }
