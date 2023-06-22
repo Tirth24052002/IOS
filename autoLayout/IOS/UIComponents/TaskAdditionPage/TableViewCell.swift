@@ -7,8 +7,18 @@
 
 import UIKit
 
+// MARK: - Protocol
+protocol FlowListTVCellDelegates: AnyObject {
+    func plusTapAction(indexPath: IndexPath, data: TabelDataModel)
+}
+
 class TableViewCell: UITableViewCell {
 
+    // MARK: - Variable
+    var delegate: FlowListTVCellDelegates?
+    var indexPath: IndexPath?
+    var indexData: TabelDataModel?
+    
     // MARK: - IB Outlets
     @IBOutlet weak var lblTableViewContent: UIView!
     @IBOutlet weak var lblFieldName: UILabel!
@@ -27,13 +37,19 @@ class TableViewCell: UITableViewCell {
     
     // MARK: - IB Action
     @IBAction func btnPlusButton(_ sender: UIButton) {
-       // lblFieldName.text = CollectionDataModel.collectionData().append(CollectionDataModel.collectionData().)
+        guard let indexData, let indexPath else {
+            return
+        }
+        delegate?.plusTapAction(indexPath: indexPath, data: indexData)
     }
 }
 
 // MARK: - Extension
 extension TableViewCell {
-    func configCell(_ data: TabelDataModel) { //, _ arr: [TabelDataModel]) {
+    func configCell(_ data: TabelDataModel, indexPath: IndexPath) {
+        //, _ arr: [TabelDataModel]) {
+        self.indexPath = indexPath
+        indexData = data
         lblFieldName.text = data.fieldName
         lblTime.text = data.pertime
       //  var arrDar = [CollectionDataModel]

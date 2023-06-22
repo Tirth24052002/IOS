@@ -16,6 +16,7 @@ class FourthVC: UIViewController {
         navigationController?.toolbar.barTintColor = .blue
     }
     
+    // MARK: - IB Action
     @IBAction func goToFourthVC(_ sender: UIStoryboardSegue) {
         
     }

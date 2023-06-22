@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TabelDataModel {
+struct TabelDataModel: Hashable {
     
     // MARK: - Variables
     var fieldName: String?

@@ -16,9 +16,11 @@ class FirstVC: UIViewController {
         navigationController?.toolbar.barTintColor = .purple
     }
     
+    // MARK: - IB Action
     @IBAction func goToFirstVC(_ sender: UIStoryboardSegue) {
        
     }
+    
     @IBAction func btnMultipleViewControlers(_ sender: UIButton) {
         if let thirdVC = UIStoryboard(name: "FirstVC", bundle: nil).instantiateViewController(withIdentifier: "ThirdVC") as? ThirdVC {
             self.navigationController?.pushViewController(thirdVC, animated: true)

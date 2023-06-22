@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScoreAddingTableViewCell" rowHeight="92" id="KGk-i7-Jjw" customClass="ScoreAddingTableViewCell" customModule="IOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="404" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Hit Six" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuL-vy-pWZ">
+                        <rect key="frame" x="44" y="36" width="108" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POx-Ml-wLS">
+                        <rect key="frame" x="327" y="29" width="47" height="35"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system"/>
+                        <connections>
+                            <action selector="btnAddScore:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gqx-vg-pw6"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsE-kJ-Twa">
+                        <rect key="frame" x="306" y="34.666666666666664" width="13" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.1624650359" green="0.20872426029999999" blue="0.25764068959999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="POx-Ml-wLS" firstAttribute="centerY" secondItem="JuL-vy-pWZ" secondAttribute="centerY" id="6zF-xx-Tpn"/>
+                    <constraint firstItem="JuL-vy-pWZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="36" id="B2f-eg-B6R"/>
+                    <constraint firstItem="qsE-kJ-Twa" firstAttribute="centerY" secondItem="POx-Ml-wLS" secondAttribute="centerY" id="Pgz-gY-KT1"/>
+                    <constraint firstItem="POx-Ml-wLS" firstAttribute="leading" secondItem="qsE-kJ-Twa" secondAttribute="trailing" constant="8" symbolic="YES" id="UnA-L0-22B"/>
+                    <constraint firstAttribute="bottom" secondItem="JuL-vy-pWZ" secondAttribute="bottom" constant="35" id="dLK-w0-hUt"/>
+                    <constraint firstAttribute="trailing" secondItem="POx-Ml-wLS" secondAttribute="trailing" constant="30" id="tv8-HS-5aL"/>
+                    <constraint firstItem="JuL-vy-pWZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="44" id="wWo-K6-Z9n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnPlusButton" destination="POx-Ml-wLS" id="e9F-fc-HYk"/>
+                <outlet property="lblAddingScore" destination="JuL-vy-pWZ" id="YNY-n9-COH"/>
+                <outlet property="lblScoreToAdd" destination="qsE-kJ-Twa" id="b8n-0P-e2b"/>
+            </connections>
+            <point key="canvasLocation" x="193.89312977099235" y="5.6338028169014089"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

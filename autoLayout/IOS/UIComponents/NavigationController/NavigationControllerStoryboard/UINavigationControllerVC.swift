@@ -7,16 +7,15 @@
 
 import UIKit
 
-
-
 class UINavigationControllerVC: UIViewController {
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    // MARK: - IB Action
     @IBAction func firstVc(_ segue: UIStoryboardSegue) {
         
     }
-
 }

@@ -32,7 +32,7 @@ class TaskAdditionPageVC: UIViewController {
     
     // MARK: - Variables
     private var refreshData: UIRefreshControl!
-    private var arrdata = CollectionDataModel.collectionData()
+    private var arrdata: [CollectionDataModel]!
     private var arrTableData = TabelDataModel.getTableData()
     private var searchResult: [Any] = []
     private var isSearchActive: Bool = false
@@ -51,7 +51,6 @@ class TaskAdditionPageVC: UIViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
         implementation()
     }
     
@@ -59,6 +58,7 @@ class TaskAdditionPageVC: UIViewController {
         print("The data refershed")
         self.refreshData.endRefreshing()
     }
+    
     // MARK: - Function
     func addlestImageTo(txtField: UITextField, andImage img: UIImage) {
         let leftImage = UIImageView()
@@ -94,6 +94,7 @@ class TaskAdditionPageVC: UIViewController {
 // MARK: - Extension
 extension TaskAdditionPageVC {
     func implementation() {
+        arrdata = CollectionDataModel.collectionData()
         self.refreshData = UIRefreshControl()
         self.refreshData.tintColor = .systemYellow
         self.refreshData.addTarget(self, action: #selector(loadApi), for: .valueChanged)
@@ -132,7 +133,6 @@ extension TaskAdditionPageVC {
 extension TaskAdditionPageVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
        // arrdata.append(arrTableData.)
-    
         return isSearchActive == true ? searchResult.count : arrdata.count
     }
 }
@@ -182,12 +182,24 @@ extension TaskAdditionPageVC: UITableViewDataSource {
         let indexData = isSearchActive == true
         ? seachResultForTableView[indexPath.row]
         : arrTableData[indexPath.row]
-        additionCell.configCell(indexData)
+        additionCell.configCell(indexData, indexPath: indexPath)
+        additionCell.delegate = self
         return additionCell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+}
+
+// MARK: - Tableview cell delegate
+extension TaskAdditionPageVC: FlowListTVCellDelegates {
+    func plusTapAction(indexPath: IndexPath, data: TabelDataModel) {
+        seachResultForTableView.removeAll(where: {$0 == data})
+        arrTableData.removeAll(where: {$0 == data})
+        arrdata.append(.init(data: data.fieldName))
+        lblTableViewContents.reloadData()
+        lblcollectionView.reloadData()
     }
 }
 

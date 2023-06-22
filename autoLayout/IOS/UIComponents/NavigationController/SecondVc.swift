@@ -9,12 +9,14 @@ import UIKit
 
 class SecondVc: UIViewController {
 
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.backgroundColor = .purple
         navigationController?.toolbar.tintColor = .purple
     }
     
+    // MARK: - IB Action
     @IBAction func gotoSecondVC(_ sender: UIStoryboardSegue) {
         
     }
@@ -24,8 +26,5 @@ class SecondVc: UIViewController {
             .instantiateViewController(withIdentifier: "FourthVC") as? FourthVC {
             self.navigationController?.pushViewController(fourthVc, animated: true)
         }
-        
     }
-    
-    
 }

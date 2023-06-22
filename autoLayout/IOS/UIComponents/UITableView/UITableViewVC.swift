@@ -130,6 +130,5 @@ extension UITableViewVC: UITableViewDelegate {
             arrCompany[indexPath.row] = indexData
             tableContents.reloadData()
         }
-        
     }
 }

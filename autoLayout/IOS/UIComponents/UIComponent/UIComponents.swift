@@ -14,7 +14,15 @@ class UIComponents: UIViewController {
         super.viewDidLoad()
     }
     
-
+    @IBAction func btnParkingBookingScreen(_ sender: UIButton) {
+        let bookParkingStoryboard = UIStoryboard(name: "BookParking", bundle: nil)
+        guard let bookParkingVC =  bookParkingStoryboard.instantiateViewController(withIdentifier:
+                                                                        "BookParkingVC")
+                as? BookParkingVC else {
+            return
+        }
+        navigationController?.pushViewController(bookParkingVC , animated: true)
+    }
     
 }
 
@@ -278,5 +286,16 @@ extension UIComponents {
             return
         }
         navigationController?.pushViewController(navigationControllerVC , animated: true)
+    }
+    
+    // MARK: - Cricket Board
+    @IBAction func btnCricketScoreBoard(_ sender: UIButton) {
+        let cricketBoardStoryboard = UIStoryboard(name: "CricketScoreBoard", bundle: nil)
+        guard let cricketBoardVC =  cricketBoardStoryboard.instantiateViewController(withIdentifier:
+                                                                        "CircketBoardTabBar")
+                as? CircketBoardTabBar else {
+            return
+        }
+        navigationController?.pushViewController(cricketBoardVC , animated: true)
     }
 }
