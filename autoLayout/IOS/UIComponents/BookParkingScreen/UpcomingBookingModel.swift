@@ -27,13 +27,13 @@ struct UpcomingBookingModel {
 extension UpcomingBookingModel {
     static func getUserData() -> [UpcomingBookingModel] {
         return[UpcomingBookingModel("TAGB00134A",
-                                 "09:00 AM",
+                                 "07:00 AM",
                                  "VM-5-S-444"),
                UpcomingBookingModel("TAGB00134B",
-                                 "10:00 AM",
+                                 "11:00 AM",
                                  "VM-5-S-854"),
                UpcomingBookingModel("TAGB00134C",
-                                 "09:30 AM",
+                                 "05:30 AM",
                                  "VM-5–P-458"),
                UpcomingBookingModel("TAGB00134D",
                                  "10:20 AM",

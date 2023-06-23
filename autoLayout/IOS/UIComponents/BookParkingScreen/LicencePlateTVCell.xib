@@ -28,13 +28,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBV-c2-KPz">
-                        <rect key="frame" x="136.33333333333334" y="18" width="65" height="19.666666666666671"/>
+                        <rect key="frame" x="135" y="18" width="65" height="19.666666666666671"/>
                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VM-5-S-444" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vho-Tv-6Yf">
-                        <rect key="frame" x="244.66666666666666" y="18" width="91.333333333333343" height="19.666666666666671"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VM-5-S-444" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vho-Tv-6Yf">
+                        <rect key="frame" x="231.00000000000003" y="18" width="91.333333333333343" height="19.666666666666671"/>
                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -52,10 +52,13 @@
                 <constraints>
                     <constraint firstItem="ZnW-8O-A5Q" firstAttribute="centerY" secondItem="vho-Tv-6Yf" secondAttribute="centerY" id="0SU-ro-JhF"/>
                     <constraint firstItem="fP3-X5-0cc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="1zl-gR-HNH"/>
-                    <constraint firstAttribute="trailing" secondItem="ZnW-8O-A5Q" secondAttribute="trailing" constant="16" id="7o5-ge-x0b"/>
+                    <constraint firstAttribute="trailing" secondItem="vho-Tv-6Yf" secondAttribute="trailing" constant="70.666666666666629" id="5XG-hU-cJE"/>
+                    <constraint firstAttribute="trailing" secondItem="ZnW-8O-A5Q" secondAttribute="trailing" constant="16" id="G5z-oj-quf"/>
                     <constraint firstItem="BBV-c2-KPz" firstAttribute="top" secondItem="fP3-X5-0cc" secondAttribute="top" id="IYv-G9-KzV"/>
-                    <constraint firstItem="BBV-c2-KPz" firstAttribute="leading" secondItem="fP3-X5-0cc" secondAttribute="trailing" constant="33" id="ZuC-2a-QBc"/>
-                    <constraint firstAttribute="trailing" secondItem="vho-Tv-6Yf" secondAttribute="trailing" constant="57" id="jRz-eg-kiS"/>
+                    <constraint firstAttribute="trailing" secondItem="BBV-c2-KPz" secondAttribute="trailing" constant="193" id="Mkg-Bf-kAk"/>
+                    <constraint firstItem="vho-Tv-6Yf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="231" id="Nqc-ut-EOy"/>
+                    <constraint firstItem="ZnW-8O-A5Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="361" id="Oev-Dl-6lo"/>
+                    <constraint firstItem="BBV-c2-KPz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="135" id="glM-QK-dRQ"/>
                     <constraint firstItem="fP3-X5-0cc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ytY-LY-FNJ"/>
                     <constraint firstItem="vho-Tv-6Yf" firstAttribute="centerY" secondItem="BBV-c2-KPz" secondAttribute="centerY" id="z4D-5A-BZm"/>
                 </constraints>
@@ -66,7 +69,7 @@
                 <outlet property="lblNumberPlate" destination="vho-Tv-6Yf" id="EVS-LO-sWO"/>
                 <outlet property="lblStarTime" destination="BBV-c2-KPz" id="E01-6E-yQu"/>
             </connections>
-            <point key="canvasLocation" x="66.412213740458014" y="-11.619718309859156"/>
+            <point key="canvasLocation" x="72.51908396946564" y="-11.619718309859156"/>
         </tableViewCell>
     </objects>
     <resources>

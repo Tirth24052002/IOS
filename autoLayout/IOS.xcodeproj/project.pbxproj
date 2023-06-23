@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF00C3872A4550B20017C71D /* ParkingSpaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF00C3862A4550B20017C71D /* ParkingSpaceModel.swift */; };
 		AF07C9A12A42F51100FB6C02 /* UINavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF07C9A02A42F51100FB6C02 /* UINavigationController.storyboard */; };
 		AF0CFC2C2A246CB900F684A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0CFC2B2A246CB900F684A1 /* AppDelegate.swift */; };
 		AF0CFC2E2A246CB900F684A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0CFC2D2A246CB900F684A1 /* SceneDelegate.swift */; };
@@ -124,6 +125,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF00C3862A4550B20017C71D /* ParkingSpaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpaceModel.swift; sourceTree = "<group>"; };
 		AF07C9A02A42F51100FB6C02 /* UINavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UINavigationController.storyboard; sourceTree = "<group>"; };
 		AF0CFC282A246CB900F684A1 /* IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0CFC2B2A246CB900F684A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -496,6 +498,7 @@
 				AF8ECBB52A446EC0005EBB71 /* LicencePlateTVCell.xib */,
 				AF98B7682A44766B0086E2FB /* UpcomingBookingModel.swift */,
 				AF98B76A2A4482300086E2FB /* ExpiredBookingModel.swift */,
+				AF00C3862A4550B20017C71D /* ParkingSpaceModel.swift */,
 			);
 			path = BookParkingScreen;
 			sourceTree = "<group>";
@@ -851,6 +854,7 @@
 				AFDA5EE92A388C3B0073B062 /* TabelDataModel.swift in Sources */,
 				AF9562A72A42B55300E90EA2 /* ThirdVc.swift in Sources */,
 				AF1A8A012A442C9A0070F831 /* homePageScoreBoardVC.swift in Sources */,
+				AF00C3872A4550B20017C71D /* ParkingSpaceModel.swift in Sources */,
 				AFE970402A3087F90002A5F0 /* YellowVC.swift in Sources */,
 				AF781D4B2A2F51A200FC8132 /* UIProgressViewVC.swift in Sources */,
 				AF8ECBB62A446EC0005EBB71 /* LicencePlateTVCell.swift in Sources */,

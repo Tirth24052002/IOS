@@ -32,6 +32,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="leftMenu"/>
+                                        <connections>
+                                            <action selector="btnBackButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="anR-fh-Thy"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQR-Kw-Lhy">
                                         <rect key="frame" x="155" y="11.000000000000002" width="83" height="22.666666666666671"/>
@@ -48,32 +51,16 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="notificationIcon" title=""/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPL-N5-bjO">
-                                        <rect key="frame" x="8" y="4" width="16" height="34.333333333333336"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" image="chevron.backward" catalog="system">
-                                            <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="btnBackBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="asB-63-irj"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.027450980392156862" green="0.45882352941176469" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="25f-ql-QpU"/>
                                     <constraint firstAttribute="trailing" secondItem="hBg-2q-n4g" secondAttribute="trailing" constant="12" id="8d9-79-EF4"/>
                                     <constraint firstItem="hBg-2q-n4g" firstAttribute="top" secondItem="etY-8X-dbq" secondAttribute="top" constant="12" id="FOa-y5-cGw"/>
-                                    <constraint firstItem="SPL-N5-bjO" firstAttribute="leading" secondItem="etY-8X-dbq" secondAttribute="leading" constant="8" id="Gbz-SI-iQ0"/>
                                     <constraint firstAttribute="trailing" secondItem="SQR-Kw-Lhy" secondAttribute="trailing" constant="155" id="K4a-VL-aVV"/>
                                     <constraint firstItem="SQR-Kw-Lhy" firstAttribute="leading" secondItem="etY-8X-dbq" secondAttribute="leading" constant="155" id="Su6-3x-esw"/>
                                     <constraint firstItem="MTm-1i-4ac" firstAttribute="top" secondItem="etY-8X-dbq" secondAttribute="top" constant="11" id="nXB-tB-QAX"/>
-                                    <constraint firstItem="MTm-1i-4ac" firstAttribute="leading" secondItem="SPL-N5-bjO" secondAttribute="trailing" constant="26" id="nq3-YL-GXC"/>
                                     <constraint firstItem="MTm-1i-4ac" firstAttribute="leading" secondItem="etY-8X-dbq" secondAttribute="leading" constant="50" id="rDG-Ca-FXU"/>
-                                    <constraint firstItem="SPL-N5-bjO" firstAttribute="top" secondItem="etY-8X-dbq" secondAttribute="top" constant="4" id="sIK-Wd-cpz"/>
                                     <constraint firstItem="SQR-Kw-Lhy" firstAttribute="top" secondItem="etY-8X-dbq" secondAttribute="top" constant="11" id="voG-F9-fWh"/>
                                 </constraints>
                             </view>
@@ -87,27 +74,57 @@
                                 </segments>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="selectedSegmentTintColor" red="0.023529411764705882" green="0.36470588235294116" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentControlAction:" destination="Y6W-OH-hqX" eventType="valueChanged" id="Icl-ko-fEO"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MUW-Bi-svp">
-                                <rect key="frame" x="0.0" y="156" width="393" height="662"/>
+                                <rect key="frame" x="0.0" y="156" width="393" height="613"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCU-wC-X3r">
+                                <rect key="frame" x="303" y="687" width="74" height="64"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plusbtnicon"/>
+                            </button>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upd-Gp-Lli">
+                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Home" image="homeicon" id="bm3-5D-HD7"/>
+                                    <tabBarItem title="Booking" image="bookingIcon" id="n5R-nf-ySt">
+                                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="Verify" image="veriftyIcon" id="3ku-RC-Z6p"/>
+                                    <tabBarItem title="Report" image="reportIcon" id="fgv-5U-aKs"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="selectedImageTintColor" red="0.027450980392156862" green="0.45882352941176469" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                            </tabBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.030968245120000001" green="0.4590141177" blue="0.47385531660000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="MUW-Bi-svp" secondAttribute="bottom" id="18d-Wn-e5L"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="MUW-Bi-svp" secondAttribute="bottom" constant="49" id="18d-Wn-e5L"/>
                             <constraint firstItem="etY-8X-dbq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="7Qy-Np-I26"/>
+                            <constraint firstItem="upd-Gp-Lli" firstAttribute="top" secondItem="jCU-wC-X3r" secondAttribute="bottom" constant="18" id="8yS-2e-pgZ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="moM-zk-iZb" secondAttribute="trailing" constant="16" id="9pq-gk-epr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="upd-Gp-Lli" secondAttribute="trailing" id="9tF-OK-ONi"/>
+                            <constraint firstItem="upd-Gp-Lli" firstAttribute="top" secondItem="MUW-Bi-svp" secondAttribute="bottom" id="Iyo-TU-KEI"/>
                             <constraint firstItem="moM-zk-iZb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="SlD-ON-rvh"/>
+                            <constraint firstItem="upd-Gp-Lli" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="XGe-8z-dmG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jCU-wC-X3r" secondAttribute="trailing" constant="16" id="ZUD-Vs-8UX"/>
                             <constraint firstItem="MUW-Bi-svp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="d1N-UC-pPo"/>
                             <constraint firstItem="moM-zk-iZb" firstAttribute="top" secondItem="etY-8X-dbq" secondAttribute="bottom" constant="13" id="dnS-w6-Txc"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="etY-8X-dbq" secondAttribute="trailing" id="f0f-xq-c8H"/>
                             <constraint firstItem="MUW-Bi-svp" firstAttribute="top" secondItem="moM-zk-iZb" secondAttribute="bottom" constant="9" id="gTV-A7-4Ki"/>
+                            <constraint firstItem="upd-Gp-Lli" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="inQ-AI-Nlt"/>
                             <constraint firstItem="etY-8X-dbq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="o75-Kx-YST"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MUW-Bi-svp" secondAttribute="trailing" id="xCT-yQ-gse"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttomTabBar" destination="upd-Gp-Lli" id="23i-xC-Uys"/>
                         <outlet property="segmentControl" destination="moM-zk-iZb" id="qQY-sc-OSn"/>
                         <outlet property="tableViewContents" destination="MUW-Bi-svp" id="Iwh-Pu-TDv"/>
                         <outlet property="tableViewHeader" destination="zm8-Ps-fYe" id="6Ya-2y-KhD"/>
@@ -140,7 +157,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Licence Plate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyk-SM-8wm">
-                            <rect key="frame" x="243" y="13" width="79" height="21"/>
+                            <rect key="frame" x="231" y="13" width="91" height="21"/>
                             <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -150,6 +167,7 @@
                     <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="CAi-k4-GXP" secondAttribute="bottom" constant="10" id="6xs-OO-Ujm"/>
+                        <constraint firstItem="gyk-SM-8wm" firstAttribute="leading" secondItem="2i0-FW-O2n" secondAttribute="leading" constant="231" id="9uy-Kx-FXv"/>
                         <constraint firstItem="CAi-k4-GXP" firstAttribute="centerY" secondItem="PdC-xe-S0U" secondAttribute="centerY" id="HdH-bl-80Z"/>
                         <constraint firstItem="PdC-xe-S0U" firstAttribute="leading" secondItem="zm8-Ps-fYe" secondAttribute="leading" constant="4" id="KfO-6C-TKb"/>
                         <constraint firstItem="9PF-RB-GNR" firstAttribute="centerY" secondItem="PdC-xe-S0U" secondAttribute="centerY" id="MSc-Ra-eJP"/>
@@ -167,10 +185,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="bookingIcon" width="21" height="21"/>
         <image name="filterIcon" width="8" height="10"/>
+        <image name="homeicon" width="24" height="24"/>
         <image name="leftMenu" width="98" height="44"/>
         <image name="notificationIcon" width="20" height="20"/>
+        <image name="plusbtnicon" width="50" height="50"/>
+        <image name="reportIcon" width="18" height="22"/>
+        <image name="veriftyIcon" width="19" height="22"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
