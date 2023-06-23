@@ -30,6 +30,7 @@ class DetailsPageVC: UIViewController {
         lblTitle.text = titleoffield
     }
     
+    // MARK: - IB Action
     @IBAction func backButton(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }

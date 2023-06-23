@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 // MARK: - Extension UITextView
 extension UITextView {
     @IBInspectable var doneAccessory: Bool {
@@ -18,6 +19,7 @@ extension UITextView {
             }
         }
     }
+    
     // MARK: - Function of Done Button
     func addDoneButtonOnKeyboard() {
         let doneToolbar: UIToolbar = UIToolbar(frame: CGRect.init(x: 0,
@@ -58,6 +60,7 @@ extension UITextField{
             }
         }
     }
+    
     // MARK: - Function Done button
     func addDoneButtonOnKeyboard()
     {

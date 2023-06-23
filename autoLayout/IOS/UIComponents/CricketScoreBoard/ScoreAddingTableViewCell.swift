@@ -15,8 +15,8 @@ protocol AdditionOperationDelegate: AnyObject {
 class ScoreAddingTableViewCell: UITableViewCell {
 
     // MARK: - Variable
-    var indexData: AddingScoreModal?
-    var indexPath: IndexPath?
+    private var indexData: AddingScoreModal?
+    private var indexPath: IndexPath?
     
     // MARK: - IB Outlets
     @IBOutlet weak var lblAddingScore: UILabel!

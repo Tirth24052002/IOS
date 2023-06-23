@@ -14,16 +14,9 @@ class UIComponents: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func btnParkingBookingScreen(_ sender: UIButton) {
-        let bookParkingStoryboard = UIStoryboard(name: "BookParking", bundle: nil)
-        guard let bookParkingVC =  bookParkingStoryboard.instantiateViewController(withIdentifier:
-                                                                        "BookParkingVC")
-                as? BookParkingVC else {
-            return
-        }
-        navigationController?.pushViewController(bookParkingVC , animated: true)
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = false
     }
-    
 }
 
 // MARK: - Extension
@@ -297,5 +290,16 @@ extension UIComponents {
             return
         }
         navigationController?.pushViewController(cricketBoardVC , animated: true)
+    }
+    
+    // MARK: - Parking Booking Screen
+    @IBAction func btnParkingBookingScreen(_ sender: UIButton) {
+        let bookParkingStoryboard = UIStoryboard(name: "BookParking", bundle: nil)
+        guard let bookParkingVC =  bookParkingStoryboard.instantiateViewController(withIdentifier:
+                                                                        "BookParkingVC")
+                as? BookParkingVC else {
+            return
+        }
+        navigationController?.pushViewController(bookParkingVC , animated: true)
     }
 }

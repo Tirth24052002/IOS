@@ -19,7 +19,7 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1jB-q7-pSJ">
                                 <rect key="frame" x="49" y="642.33333333333337" width="295" height="32"/>
                                 <segments>
-                                    <segment title="Lion"/>
+                                    <segment title="" image="appleIcon"/>
                                     <segment title="Koala"/>
                                     <segment title="Elephant"/>
                                     <segment title="Fox"/>
@@ -55,6 +55,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="appleIcon" width="32" height="32"/>
         <image name="lion" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

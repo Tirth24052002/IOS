@@ -24,10 +24,6 @@ class LicencePlateTVCell: UITableViewCell {
     }
 }
 
-extension LicencePlateTVCell {
-  //  let crossAttr = [NSAttributedStringKey.strikethroughStyle: NSUnderlineStyle.styleSingle.rawValue]
-    
-}
 // MARK: - Extension Upcoming Model
 extension LicencePlateTVCell {
     func configCell(info: UpcomingBookingModel) {

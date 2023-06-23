@@ -14,6 +14,3 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var lblCollectionText: UILabel!
     
 }
-extension CollectionViewCell {
-
-}

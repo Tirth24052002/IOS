@@ -44,8 +44,8 @@ class UICollectionViewVC: UIViewController {
 // MARK: -  Function
 extension UICollectionViewVC {
     @objc func loadData() {
-        sleep(1)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.0){ [self] in
+        //sleep(1)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){ [self] in
             //DispatchTime.init(uptimeNanoseconds: 4)
             print("Load Data from Api")
             gridData.append(addElements.first ?? "")
@@ -80,6 +80,7 @@ extension UICollectionViewVC {
         
     }
 }
+
  // MARK: - Extension Collection View Data Source
 extension UICollectionViewVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
@@ -107,6 +108,7 @@ extension UICollectionViewVC: UICollectionViewDelegate {
 
 // MARK: - Collection View Flow Layout
 extension UICollectionViewVC: UICollectionViewDelegateFlowLayout {
+
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {

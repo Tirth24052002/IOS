@@ -9,6 +9,7 @@ import UIKit
 
 class UISwitchVC: UIViewController {
 
+    // MARK: - IB Outlets
     @IBOutlet weak var swtColor: UISwitch!
     
     // MARK: - View Life Cycle

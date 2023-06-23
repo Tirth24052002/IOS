@@ -106,7 +106,6 @@ extension BookParkingVC: UITableViewDataSource {
         default:
             print("Default")
         }
-        tableViewContents.reloadData()
         return cell
     }
 }

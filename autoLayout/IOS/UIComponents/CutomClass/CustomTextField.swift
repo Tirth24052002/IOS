@@ -9,7 +9,7 @@ import UIKit
 
 class CustomTextField: UITextField {
     
-    // MARK: - IB Instactable
+    // MARK: - IB Inspectable
     @IBInspectable
     public var textPadding: CGFloat = 2.0 {
         didSet{

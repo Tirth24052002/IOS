@@ -7,6 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Poppins-Light.ttf">
+            <string>Poppins-Light</string>
+        </array>
         <array key="Poppins-Medium.ttf">
             <string>Poppins-Medium</string>
         </array>
@@ -21,20 +24,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="393" height="57"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="UnderlinedLabel" text="TAGB00134A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fP3-X5-0cc" customClass="UnderlinedLabel" customModule="IOS" customModuleProvider="target">
-                        <rect key="frame" x="16" y="18" width="87.333333333333329" height="19.666666666666671"/>
-                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBV-c2-KPz">
-                        <rect key="frame" x="135" y="18" width="65" height="19.666666666666671"/>
-                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                        <rect key="frame" x="135" y="18" width="80" height="19.666666666666671"/>
+                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VM-5-S-444" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vho-Tv-6Yf">
-                        <rect key="frame" x="231.00000000000003" y="18" width="91.333333333333343" height="19.666666666666671"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="VM-5-S-4 4 fge5g 4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vho-Tv-6Yf">
+                        <rect key="frame" x="249.00000000000003" y="-11.666666666666664" width="73.333333333333343" height="79"/>
                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -48,17 +45,22 @@
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="infoButtom"/>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="UnderlinedLabel" text="TAGB00134A  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fP3-X5-0cc" customClass="UnderlinedLabel" customModule="IOS" customModuleProvider="target">
+                        <rect key="frame" x="16" y="18" width="94.666666666666671" height="19.666666666666671"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="ZnW-8O-A5Q" firstAttribute="centerY" secondItem="vho-Tv-6Yf" secondAttribute="centerY" id="0SU-ro-JhF"/>
                     <constraint firstItem="fP3-X5-0cc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="1zl-gR-HNH"/>
-                    <constraint firstAttribute="trailing" secondItem="vho-Tv-6Yf" secondAttribute="trailing" constant="70.666666666666629" id="5XG-hU-cJE"/>
+                    <constraint firstItem="ZnW-8O-A5Q" firstAttribute="leading" secondItem="vho-Tv-6Yf" secondAttribute="trailing" constant="38.666666666666629" id="3wc-kc-Xy5"/>
                     <constraint firstAttribute="trailing" secondItem="ZnW-8O-A5Q" secondAttribute="trailing" constant="16" id="G5z-oj-quf"/>
                     <constraint firstItem="BBV-c2-KPz" firstAttribute="top" secondItem="fP3-X5-0cc" secondAttribute="top" id="IYv-G9-KzV"/>
-                    <constraint firstAttribute="trailing" secondItem="BBV-c2-KPz" secondAttribute="trailing" constant="193" id="Mkg-Bf-kAk"/>
-                    <constraint firstItem="vho-Tv-6Yf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="231" id="Nqc-ut-EOy"/>
-                    <constraint firstItem="ZnW-8O-A5Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="361" id="Oev-Dl-6lo"/>
+                    <constraint firstItem="vho-Tv-6Yf" firstAttribute="leading" secondItem="BBV-c2-KPz" secondAttribute="trailing" constant="34" id="RP1-3K-vsp"/>
                     <constraint firstItem="BBV-c2-KPz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="135" id="glM-QK-dRQ"/>
+                    <constraint firstItem="BBV-c2-KPz" firstAttribute="leading" secondItem="fP3-X5-0cc" secondAttribute="trailing" constant="24.333333333333329" id="wkf-yq-46r"/>
                     <constraint firstItem="fP3-X5-0cc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ytY-LY-FNJ"/>
                     <constraint firstItem="vho-Tv-6Yf" firstAttribute="centerY" secondItem="BBV-c2-KPz" secondAttribute="centerY" id="z4D-5A-BZm"/>
                 </constraints>

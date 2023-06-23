@@ -68,12 +68,10 @@ extension RegistrationPageVC: UITableViewDataSource {
 // MARK: -  Table View Delegate
 extension RegistrationPageVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         let filteredData = dataModel.filter({$0.isSelected == true})
         print(indexPath.row)
         print(filteredData.count)
 //        print(indexPath.description)
-        
         let detailsPageStoryboard = UIStoryboard(name: "RegistrationPage", bundle: nil)
         guard let detailsPageVC =  detailsPageStoryboard.instantiateViewController(withIdentifier:
                                                                                 "DetailsPageVC")

@@ -10,8 +10,8 @@ import UIKit
 class UIPageControlVC: UIViewController {
     
     // MARK: - Variables
-    var pageControlIndex = 0
-    var lastindex = 10
+    private var pageControlIndex = 0
+    private var lastindex = 10
     
     // MARK: - IB Outlet
     @IBOutlet weak var pageControler: UIPageControl!

@@ -9,6 +9,7 @@
 		<string>Poppins-Thin</string>
 		<string>Poppins-Bold</string>
 		<string>Poppins-Medium</string>
+		<string>Poppins-Light</string>
 	</array>
 	<key>CFBundleExecutable</key>
 	<string></string>

@@ -34,6 +34,5 @@ extension WebViewVC: WKUIDelegate {
         let myURL = URL(string:"https://www.google.com")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
-        
     }
 }

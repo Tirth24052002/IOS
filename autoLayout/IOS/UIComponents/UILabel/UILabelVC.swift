@@ -52,12 +52,10 @@ extension UILabelVC {
         let attributes = [NSAttributedString.Key.font: font]
         let attributedQuote = NSAttributedString(string: quote, attributes: attributes)
         lblName.attributedText = attributedQuote
-        
         let myCutom = "The Cutomized String"
         let colorSet = [NSAttributedString.Key.foregroundColor: UIColor.red]
         let addColor = NSAttributedString(string: myCutom, attributes: colorSet)
         lblCustom.attributedText = addColor
-        
         //let fontChange = [NSAttributedString.Key.font: UIFont(name: "Chalkduster", size: 20)]
         let redString = "Programatic string with red color and underline \nform 0 to 18 position"
               let attrs = [NSAttributedString.Key.foregroundColor: UIColor.red]

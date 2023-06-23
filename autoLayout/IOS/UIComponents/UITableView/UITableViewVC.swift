@@ -10,7 +10,7 @@ import UIKit
 class UITableViewVC: UIViewController {
     
     // MARK: - Variables
-    var arrCompany = FindJobModel.getCurrentOpening()
+    private var arrCompany = FindJobModel.getCurrentOpening()
     
     // MARK: - IB Outlets
     @IBOutlet weak var tableContents: UITableView!
