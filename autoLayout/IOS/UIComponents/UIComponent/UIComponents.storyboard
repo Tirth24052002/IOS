@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WE2-Xk-np7">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9cC-aw-HSa">
+            <objects>
+                <navigationController id="WE2-Xk-np7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oei-tE-9A9">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yQt-Ix-NNJ" kind="relationship" relationship="rootViewController" id="wxv-oX-Nyk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jDD-Wg-K7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-657" y="-35"/>
+        </scene>
+        <!--UI Components-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unF-lD-7gG">
+                                <rect key="frame" x="12.333333333333329" y="92" width="172" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="PFy-1n-PJD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Label"/>
+                                <connections>
+                                    <action selector="btnlabel:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hIL-lP-LgW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofq-E8-bQH">
+                                <rect key="frame" x="12.333333333333329" y="136" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="btnButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="l2V-5J-K5K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmz-XU-kQ5">
+                                <rect key="frame" x="12.333333333333329" y="179.66666666666666" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Text Field"/>
+                                <connections>
+                                    <action selector="btnTextfield:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="a7x-iz-yRI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmK-UM-BXw">
+                                <rect key="frame" x="12.333333333333329" y="223.66666666666666" width="172" height="34.999999999999972"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="TextView"/>
+                                <connections>
+                                    <action selector="btnTextView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iCV-71-Vdi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GH6-2d-8Cm">
+                                <rect key="frame" x="12.333333333333329" y="267.66666666666669" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Switch"/>
+                                <connections>
+                                    <action selector="btnSwitch:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uur-sk-5ZE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NE-BV-A8o">
+                                <rect key="frame" x="12.333333333333329" y="311.33333333333331" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sllider"/>
+                                <connections>
+                                    <action selector="btnSlider:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Sqp-49-B82"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBw-id-pOa">
+                                <rect key="frame" x="12.333333333333329" y="355.33333333333331" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Progress View"/>
+                                <connections>
+                                    <action selector="btnProgressView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ANo-cV-yy8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uv0-yh-NSa">
+                                <rect key="frame" x="12.333333333333329" y="399" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Segmented Control"/>
+                                <connections>
+                                    <action selector="btnSegmentedControl:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="LeA-mg-UBb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTd-ug-XAQ">
+                                <rect key="frame" x="12.333333333333329" y="443" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Page Control"/>
+                                <connections>
+                                    <action selector="btnPageControl:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="US7-B4-2Zw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pj2-jm-vuo">
+                                <rect key="frame" x="12.333333333333329" y="530.66666666666663" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Scroll View"/>
+                                <connections>
+                                    <action selector="btnScrollView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="VOl-r6-j8h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXh-Vr-eLN">
+                                <rect key="frame" x="12.333333333333329" y="574.33333333333337" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Page VC"/>
+                                <connections>
+                                    <action selector="btnPageViewController:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nbB-kc-7PP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWI-vI-hyY">
+                                <rect key="frame" x="12.333333333333329" y="486.66666666666669" width="172" height="35.000000000000057"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Stepper"/>
+                                <connections>
+                                    <action selector="btnStepper:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2qz-B5-Jy4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNb-C3-ABZ">
+                                <rect key="frame" x="12.333333333333329" y="618.33333333333337" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Table View"/>
+                                <connections>
+                                    <action selector="btnTableView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8aZ-7G-NFs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izl-e1-t0o">
+                                <rect key="frame" x="12.333333333333329" y="662.33333333333337" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Registration Page"/>
+                                <connections>
+                                    <action selector="btnRegistrationPage:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="aYP-vf-wrv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biq-gi-Shh">
+                                <rect key="frame" x="12.333333333333329" y="706" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Collection View"/>
+                                <connections>
+                                    <action selector="btnOptionTableView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="y19-xL-vMI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aln-5L-dAl">
+                                <rect key="frame" x="12.333333333333329" y="746" width="172" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Task Add Screen"/>
+                                <connections>
+                                    <action selector="btnTaskAddScreen:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pck-XE-1za"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emf-NL-u3z">
+                                <rect key="frame" x="208.66666666666663" y="92" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Image Picker"/>
+                                <connections>
+                                    <action selector="btnImagePicker:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RNO-Ed-3we"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQ2-57-KEK">
+                                <rect key="frame" x="208.66666666666663" y="136" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Activity Indicator"/>
+                                <connections>
+                                    <action selector="btnActivityIndicator:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xOZ-Ba-fhJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63Z-Lb-ERm">
+                                <rect key="frame" x="208.66666666666663" y="179.66666666666666" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Web View"/>
+                                <connections>
+                                    <action selector="btnWebView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eKm-2z-0U9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qT4-wh-X0l">
+                                <rect key="frame" x="208.66666666666663" y="223.66666666666666" width="172" height="34.999999999999972"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Stack View"/>
+                                <connections>
+                                    <action selector="btnStackView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eex-ae-ZTr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytf-E9-dqQ">
+                                <rect key="frame" x="208.66666666666663" y="267.66666666666669" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Tab Bar"/>
+                                <connections>
+                                    <action selector="btnTabBar:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="tbj-kr-gbc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWq-FW-74I">
+                                <rect key="frame" x="208.66666666666663" y="311.33333333333331" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Map View"/>
+                                <connections>
+                                    <action selector="btnMapView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Bx9-Aw-jS6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ytf-E9-dqQ" firstAttribute="trailing" secondItem="qT4-wh-X0l" secondAttribute="trailing" id="0Fe-Aw-AD0"/>
+                            <constraint firstItem="ytf-E9-dqQ" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.65" id="1vc-Ez-5LU"/>
+                            <constraint firstItem="GH6-2d-8Cm" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="1zV-Pb-Jmh"/>
+                            <constraint firstItem="unF-lD-7gG" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.25" id="2Tj-AB-pfb"/>
+                            <constraint firstItem="Pj2-jm-vuo" firstAttribute="trailing" secondItem="jTd-ug-XAQ" secondAttribute="trailing" id="2r7-Fx-52b"/>
+                            <constraint firstItem="Izl-e1-t0o" firstAttribute="trailing" secondItem="uNb-C3-ABZ" secondAttribute="trailing" id="3OA-OT-plY"/>
+                            <constraint firstItem="lWI-vI-hyY" firstAttribute="trailing" secondItem="TXh-Vr-eLN" secondAttribute="trailing" id="4so-Az-jJF"/>
+                            <constraint firstItem="qT4-wh-X0l" firstAttribute="leading" secondItem="63Z-Lb-ERm" secondAttribute="leading" id="4ts-VJ-QKi"/>
+                            <constraint firstItem="emf-NL-u3z" firstAttribute="centerY" secondItem="unF-lD-7gG" secondAttribute="centerY" id="6B1-ND-axy"/>
+                            <constraint firstItem="BQ2-57-KEK" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="1.5" id="7HB-Px-8x3"/>
+                            <constraint firstItem="UBw-id-pOa" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.85" id="80g-b7-IMc"/>
+                            <constraint firstItem="aln-5L-dAl" firstAttribute="leading" secondItem="biq-gi-Shh" secondAttribute="leading" id="8bY-kn-xGZ"/>
+                            <constraint firstItem="qT4-wh-X0l" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.55" id="8lI-gi-LPB"/>
+                            <constraint firstItem="uv0-yh-NSa" firstAttribute="leading" secondItem="UBw-id-pOa" secondAttribute="leading" id="9aA-i9-2F3"/>
+                            <constraint firstItem="jTd-ug-XAQ" firstAttribute="trailing" secondItem="uv0-yh-NSa" secondAttribute="trailing" id="BGu-Kx-ulU"/>
+                            <constraint firstItem="qT4-wh-X0l" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="1.5" id="CEI-XX-Egg"/>
+                            <constraint firstItem="Zmz-XU-kQ5" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.45" id="DNl-PF-bp0"/>
+                            <constraint firstItem="Izl-e1-t0o" firstAttribute="leading" secondItem="uNb-C3-ABZ" secondAttribute="leading" id="FDi-Cq-xgN"/>
+                            <constraint firstItem="RWq-FW-74I" firstAttribute="trailing" secondItem="ytf-E9-dqQ" secondAttribute="trailing" id="FNR-DG-49v"/>
+                            <constraint firstItem="63Z-Lb-ERm" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="1.5" id="GTA-FL-VVi"/>
+                            <constraint firstItem="TXh-Vr-eLN" firstAttribute="leading" secondItem="Pj2-jm-vuo" secondAttribute="leading" id="GfD-ek-pzg"/>
+                            <constraint firstItem="jTd-ug-XAQ" firstAttribute="leading" secondItem="uv0-yh-NSa" secondAttribute="leading" id="GhH-nS-13a"/>
+                            <constraint firstItem="TXh-Vr-eLN" firstAttribute="trailing" secondItem="Pj2-jm-vuo" secondAttribute="trailing" id="H50-ap-prl"/>
+                            <constraint firstItem="ytf-E9-dqQ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="1.5" id="Hsh-Hi-HLj"/>
+                            <constraint firstItem="zmK-UM-BXw" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.55" id="IH9-cN-LLa"/>
+                            <constraint firstItem="Izl-e1-t0o" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.55" id="Izq-fa-loJ"/>
+                            <constraint firstItem="GH6-2d-8Cm" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.65" id="Jtm-tR-bgQ"/>
+                            <constraint firstItem="biq-gi-Shh" firstAttribute="trailing" secondItem="Izl-e1-t0o" secondAttribute="trailing" id="L27-HC-fnm"/>
+                            <constraint firstItem="lWI-vI-hyY" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="LA6-dC-oYk"/>
+                            <constraint firstItem="ytf-E9-dqQ" firstAttribute="leading" secondItem="qT4-wh-X0l" secondAttribute="leading" id="Lgp-DA-hHR"/>
+                            <constraint firstItem="BQ2-57-KEK" firstAttribute="leading" secondItem="emf-NL-u3z" secondAttribute="leading" id="MEM-qX-sfT"/>
+                            <constraint firstItem="63Z-Lb-ERm" firstAttribute="leading" secondItem="BQ2-57-KEK" secondAttribute="leading" id="Maw-4p-lQ9"/>
+                            <constraint firstItem="lWI-vI-hyY" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.15" id="NnK-i3-Pbg"/>
+                            <constraint firstItem="biq-gi-Shh" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.65" id="O3H-gK-oIh"/>
+                            <constraint firstItem="jTd-ug-XAQ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="O5Y-qd-KiI"/>
+                            <constraint firstItem="emf-NL-u3z" firstAttribute="width" secondItem="unF-lD-7gG" secondAttribute="width" id="OoR-2Z-Vln"/>
+                            <constraint firstItem="Zmz-XU-kQ5" firstAttribute="leading" secondItem="ofq-E8-bQH" secondAttribute="leading" id="P3V-cz-iUU"/>
+                            <constraint firstItem="uNb-C3-ABZ" firstAttribute="trailing" secondItem="lWI-vI-hyY" secondAttribute="trailing" id="Pw9-BO-fpe"/>
+                            <constraint firstItem="ofq-E8-bQH" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.35" id="QVY-BM-dw6"/>
+                            <constraint firstItem="ofq-E8-bQH" firstAttribute="leading" secondItem="unF-lD-7gG" secondAttribute="leading" id="QcO-rL-1pe"/>
+                            <constraint firstItem="BQ2-57-KEK" firstAttribute="trailing" secondItem="emf-NL-u3z" secondAttribute="trailing" id="Qvu-84-JGD"/>
+                            <constraint firstItem="emf-NL-u3z" firstAttribute="top" secondItem="unF-lD-7gG" secondAttribute="top" id="RcD-Mo-uj9"/>
+                            <constraint firstItem="TXh-Vr-eLN" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="Re2-AQ-bFh"/>
+                            <constraint firstItem="UBw-id-pOa" firstAttribute="leading" secondItem="3NE-BV-A8o" secondAttribute="leading" id="Rs9-oT-c39"/>
+                            <constraint firstItem="biq-gi-Shh" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="SGp-Pg-z33"/>
+                            <constraint firstItem="3NE-BV-A8o" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="SLR-3U-HKE"/>
+                            <constraint firstItem="uv0-yh-NSa" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.95" id="Sl6-bD-Ohh"/>
+                            <constraint firstItem="Izl-e1-t0o" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="THi-OI-UHE"/>
+                            <constraint firstItem="Pj2-jm-vuo" firstAttribute="leading" secondItem="jTd-ug-XAQ" secondAttribute="leading" id="UCT-ln-MD4"/>
+                            <constraint firstItem="63Z-Lb-ERm" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.45" id="UUO-2r-6vz"/>
+                            <constraint firstItem="3NE-BV-A8o" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.75" id="UyG-Ld-BTC"/>
+                            <constraint firstItem="ofq-E8-bQH" firstAttribute="trailing" secondItem="unF-lD-7gG" secondAttribute="trailing" id="VdW-f8-CCy"/>
+                            <constraint firstItem="Pj2-jm-vuo" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="WQ4-da-Tgj"/>
+                            <constraint firstItem="3NE-BV-A8o" firstAttribute="trailing" secondItem="GH6-2d-8Cm" secondAttribute="trailing" id="WSb-9W-3vn"/>
+                            <constraint firstItem="TXh-Vr-eLN" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.35" id="X6O-co-3yA"/>
+                            <constraint firstItem="UBw-id-pOa" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="XC7-Wm-RJz"/>
+                            <constraint firstItem="unF-lD-7gG" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="Ywc-cA-fCR"/>
+                            <constraint firstItem="RWq-FW-74I" firstAttribute="leading" secondItem="ytf-E9-dqQ" secondAttribute="leading" id="aPE-TL-qeu"/>
+                            <constraint firstItem="uv0-yh-NSa" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="b4G-My-bJd"/>
+                            <constraint firstItem="3NE-BV-A8o" firstAttribute="leading" secondItem="GH6-2d-8Cm" secondAttribute="leading" id="bgP-GV-B3C"/>
+                            <constraint firstItem="uNb-C3-ABZ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="bnz-db-tDb"/>
+                            <constraint firstItem="RWq-FW-74I" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="1.5" id="cvC-Z9-RdT"/>
+                            <constraint firstItem="jTd-ug-XAQ" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.05" id="fqk-9J-VBS"/>
+                            <constraint firstItem="zmK-UM-BXw" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="gTw-om-2NB"/>
+                            <constraint firstItem="emf-NL-u3z" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.25" id="hOD-wC-4gn"/>
+                            <constraint firstItem="qT4-wh-X0l" firstAttribute="trailing" secondItem="63Z-Lb-ERm" secondAttribute="trailing" id="hTV-va-5xa"/>
+                            <constraint firstItem="GH6-2d-8Cm" firstAttribute="trailing" secondItem="zmK-UM-BXw" secondAttribute="trailing" id="jNS-45-6xa"/>
+                            <constraint firstItem="aln-5L-dAl" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="kcu-PI-gjC"/>
+                            <constraint firstItem="emf-NL-u3z" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="1.5" id="ldZ-2a-G9Z"/>
+                            <constraint firstItem="zmK-UM-BXw" firstAttribute="leading" secondItem="Zmz-XU-kQ5" secondAttribute="leading" id="nQ8-5y-B6Q"/>
+                            <constraint firstItem="aln-5L-dAl" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.74" id="nkY-eb-G1J"/>
+                            <constraint firstItem="BQ2-57-KEK" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.35" id="q1Z-gl-doA"/>
+                            <constraint firstItem="Zmz-XU-kQ5" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="qG8-0G-eVO"/>
+                            <constraint firstItem="63Z-Lb-ERm" firstAttribute="trailing" secondItem="BQ2-57-KEK" secondAttribute="trailing" id="qZs-N8-7Nz"/>
+                            <constraint firstItem="GH6-2d-8Cm" firstAttribute="leading" secondItem="zmK-UM-BXw" secondAttribute="leading" id="qla-ql-lcK"/>
+                            <constraint firstItem="UBw-id-pOa" firstAttribute="trailing" secondItem="3NE-BV-A8o" secondAttribute="trailing" id="r9c-vb-6sb"/>
+                            <constraint firstItem="uv0-yh-NSa" firstAttribute="trailing" secondItem="UBw-id-pOa" secondAttribute="trailing" id="srX-RM-Jpp"/>
+                            <constraint firstItem="ofq-E8-bQH" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" multiplier="0.5" id="tMQ-gW-z4J"/>
+                            <constraint firstItem="Pj2-jm-vuo" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.25" id="tSZ-ke-1J7"/>
+                            <constraint firstItem="uNb-C3-ABZ" firstAttribute="leading" secondItem="lWI-vI-hyY" secondAttribute="leading" id="ttC-4y-54a"/>
+                            <constraint firstItem="zmK-UM-BXw" firstAttribute="trailing" secondItem="Zmz-XU-kQ5" secondAttribute="trailing" id="u9a-cQ-1Gv"/>
+                            <constraint firstItem="aln-5L-dAl" firstAttribute="trailing" secondItem="biq-gi-Shh" secondAttribute="trailing" id="uWt-Jx-nel"/>
+                            <constraint firstItem="lWI-vI-hyY" firstAttribute="leading" secondItem="TXh-Vr-eLN" secondAttribute="leading" id="ufw-UZ-xA5"/>
+                            <constraint firstItem="Zmz-XU-kQ5" firstAttribute="trailing" secondItem="ofq-E8-bQH" secondAttribute="trailing" id="vBm-8W-B2s"/>
+                            <constraint firstItem="RWq-FW-74I" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.75" priority="999" id="vq1-2I-f1a"/>
+                            <constraint firstItem="biq-gi-Shh" firstAttribute="leading" secondItem="Izl-e1-t0o" secondAttribute="leading" id="xNT-8g-UOo"/>
+                            <constraint firstItem="uNb-C3-ABZ" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.45" id="y5x-aQ-Rkg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="UI Components" id="Vlf-iX-imC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+        <!--UI Components-->
+        <scene sceneID="pf9-Oq-KYe">
+            <objects>
+                <viewController storyboardIdentifier="UIComponents" id="yQt-Ix-NNJ" customClass="UIComponents" customModule="IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CN3-6M-vmO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Hfp-ho-5KS">
+                                <rect key="frame" x="8" y="111" width="377" height="699"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEi-T7-fPA">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <connections>
+                                            <action selector="btnButton:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="7Mx-zk-pis"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcD-vp-BY8">
+                                        <rect key="frame" x="0.0" y="28" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Text Field"/>
+                                        <connections>
+                                            <action selector="btnTextfield:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="MBM-Ax-VkP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnV-Mt-nBb">
+                                        <rect key="frame" x="0.0" y="56.000000000000007" width="377" height="25.333333333333336"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="IZh-GD-sQO"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Label"/>
+                                        <connections>
+                                            <action selector="btnlabel:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="f1g-c6-TWC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knv-b1-mVa">
+                                        <rect key="frame" x="0.0" y="84.333333333333343" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="TextView"/>
+                                        <connections>
+                                            <action selector="btnTextView:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="YvK-pC-hXk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6f-t3-qxw">
+                                        <rect key="frame" x="0.0" y="112.33333333333334" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Switch"/>
+                                        <connections>
+                                            <action selector="btnSwitch:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="mMN-wX-GOH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzE-z1-mAm">
+                                        <rect key="frame" x="0.0" y="140.33333333333334" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sllider"/>
+                                        <connections>
+                                            <action selector="btnSlider:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="Aap-RT-4ai"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1s-8c-bfL">
+                                        <rect key="frame" x="0.0" y="168.33333333333331" width="377" height="25.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Segmented Control"/>
+                                        <connections>
+                                            <action selector="btnSegmentedControl:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="f4W-BR-rzw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sy-Rn-5Gv">
+                                        <rect key="frame" x="0.0" y="196.66666666666669" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Progress View"/>
+                                        <connections>
+                                            <action selector="btnProgressView:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="qwC-a7-igm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBW-X0-JGV">
+                                        <rect key="frame" x="0.0" y="224.66666666666669" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Scroll View"/>
+                                        <connections>
+                                            <action selector="btnScrollView:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="5pJ-Lr-6B2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQy-hk-iMe">
+                                        <rect key="frame" x="0.0" y="252.66666666666669" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Page VC"/>
+                                        <connections>
+                                            <action selector="btnPageViewController:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="NUI-xB-bEV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFy-x5-Tz9">
+                                        <rect key="frame" x="0.0" y="280.66666666666669" width="377" height="25.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Page Control"/>
+                                        <connections>
+                                            <action selector="btnPageControl:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="fou-u4-6mG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9j-Mx-FNm">
+                                        <rect key="frame" x="0.0" y="309" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Stepper"/>
+                                        <connections>
+                                            <action selector="btnStepper:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="GKP-XO-xzb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxD-Qp-Dy5">
+                                        <rect key="frame" x="0.0" y="337" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Table View"/>
+                                        <connections>
+                                            <action selector="btnTableView:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="lDa-AL-yq0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCB-OK-FOS">
+                                        <rect key="frame" x="0.0" y="365" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Registration Page"/>
+                                        <connections>
+                                            <action selector="btnRegistrationPage:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="MKG-99-m98"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRz-c6-PXE">
+                                        <rect key="frame" x="0.0" y="393" width="377" height="25.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Collection View"/>
+                                        <connections>
+                                            <action selector="btnOptionTableView:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="FfO-vb-nHR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxM-l0-ich">
+                                        <rect key="frame" x="0.0" y="421.33333333333337" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Task Add Screen"/>
+                                        <connections>
+                                            <action selector="btnTaskAddScreen:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="z4E-4b-07K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFO-tf-xBp">
+                                        <rect key="frame" x="0.0" y="449.33333333333337" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Image Picker"/>
+                                        <connections>
+                                            <action selector="btnImagePicker:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="64k-pW-gqG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94S-PQ-yEb">
+                                        <rect key="frame" x="0.0" y="477.33333333333337" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Activity Indicator"/>
+                                        <connections>
+                                            <action selector="btnActivityIndicator:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="Lm5-ji-4t9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wox-ez-kIJ">
+                                        <rect key="frame" x="0.0" y="505.33333333333331" width="377" height="25.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Web View"/>
+                                        <connections>
+                                            <action selector="btnWebView:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="Wsh-dF-fGY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZL3-KG-PoW">
+                                        <rect key="frame" x="0.0" y="533.66666666666663" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Stack View"/>
+                                        <connections>
+                                            <action selector="btnStackView:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="xwf-ax-BeX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8i-TZ-civ">
+                                        <rect key="frame" x="0.0" y="561.66666666666663" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Tab Bar"/>
+                                        <connections>
+                                            <action selector="btnTabBar:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="pmN-7n-smF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiR-WR-f0l">
+                                        <rect key="frame" x="0.0" y="589.66666666666663" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Map View"/>
+                                        <connections>
+                                            <action selector="btnMapView:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="L8g-vd-ATu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elg-9C-GFQ">
+                                        <rect key="frame" x="0.0" y="617.66666666666663" width="377" height="25.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Navigation Controller"/>
+                                        <connections>
+                                            <action selector="btnNavigationController:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="18g-s7-w1r"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMP-Uu-tZI">
+                                        <rect key="frame" x="0.0" y="646" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Cricket Scoreboard"/>
+                                        <connections>
+                                            <action selector="btnCricketScoreBoard:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="pXi-kd-MSc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJw-pa-9kx">
+                                        <rect key="frame" x="0.0" y="674" width="377" height="25"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Book Parking Screen"/>
+                                        <connections>
+                                            <action selector="btnParkingBookingScreen:" destination="yQt-Ix-NNJ" eventType="touchUpInside" id="aCN-xI-cN3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UkS-OA-Hz7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UkS-OA-Hz7" firstAttribute="bottom" secondItem="Hfp-ho-5KS" secondAttribute="bottom" constant="8" id="EiD-AD-Xwi"/>
+                            <constraint firstItem="Hfp-ho-5KS" firstAttribute="leading" secondItem="UkS-OA-Hz7" secondAttribute="leading" constant="8" id="han-QW-h4h"/>
+                            <constraint firstItem="UkS-OA-Hz7" firstAttribute="trailing" secondItem="Hfp-ho-5KS" secondAttribute="trailing" constant="8" id="hlX-V4-Ckh"/>
+                            <constraint firstItem="Hfp-ho-5KS" firstAttribute="top" secondItem="UkS-OA-Hz7" secondAttribute="top" constant="8" id="pEt-HY-fPF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="UI Components" id="snc-kK-Zzf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYX-th-y7m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844" y="-36"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

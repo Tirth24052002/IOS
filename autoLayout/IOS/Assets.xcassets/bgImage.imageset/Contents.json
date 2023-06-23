@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "iPhone-12-dark-black-wallpaper.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
