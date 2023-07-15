@@ -12,14 +12,7 @@
 		AF0CFC302A246CB900F684A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0CFC2F2A246CB900F684A1 /* ViewController.swift */; };
 		AF0CFC332A246CB900F684A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0CFC312A246CB900F684A1 /* Main.storyboard */; };
 		AF0CFC352A246CBD00F684A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0CFC342A246CBD00F684A1 /* Assets.xcassets */; };
-		AF0CFC382A246CBD00F684A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0CFC362A246CBD00F684A1 /* LaunchScreen.storyboard */; };
-		AF0CFC412A249C0600F684A1 /* WelcomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0CFC3F2A249C0600F684A1 /* WelcomePageVC.swift */; };
-		AF0FD6502A2704B100143869 /* SizeClasses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0FD64F2A2704B100143869 /* SizeClasses.storyboard */; };
-		AF1C712F2A29BEE40025E0F9 /* Pago.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1C712E2A29BEE40025E0F9 /* Pago.storyboard */; };
-		AF427C182A25AF5500A83CA3 /* SignInScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF427C172A25AF5400A83CA3 /* SignInScreen.storyboard */; };
-		AF4D68DB2A25BEE900FDF011 /* ContentPriority.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4D68DA2A25BEE900FDF011 /* ContentPriority.storyboard */; };
-		AF56170E2A25D44100B6F8CE /* Screens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF56170D2A25D44100B6F8CE /* Screens.storyboard */; };
-		AF7EAC852A28951F0090E90F /* FoodItems.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7EAC832A2892CA0090E90F /* FoodItems.storyboard */; };
+		AFF8340D2A62ACCD006C85E1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AFF8340C2A62ACCD006C85E1 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,15 +22,7 @@
 		AF0CFC2F2A246CB900F684A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF0CFC322A246CB900F684A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF0CFC342A246CBD00F684A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AF0CFC372A246CBD00F684A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF0CFC392A246CBD00F684A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF0CFC3F2A249C0600F684A1 /* WelcomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageVC.swift; sourceTree = "<group>"; };
-		AF0FD64F2A2704B100143869 /* SizeClasses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SizeClasses.storyboard; sourceTree = "<group>"; };
-		AF1C712E2A29BEE40025E0F9 /* Pago.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pago.storyboard; sourceTree = "<group>"; };
-		AF427C172A25AF5400A83CA3 /* SignInScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInScreen.storyboard; sourceTree = "<group>"; };
-		AF4D68DA2A25BEE900FDF011 /* ContentPriority.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContentPriority.storyboard; sourceTree = "<group>"; };
-		AF56170D2A25D44100B6F8CE /* Screens.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Screens.storyboard; sourceTree = "<group>"; };
-		AF7EAC832A2892CA0090E90F /* FoodItems.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FoodItems.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF8340D2A62ACCD006C85E1 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,22 +56,22 @@
 		AF0CFC2A2A246CB900F684A1 /* IOS */ = {
 			isa = PBXGroup;
 			children = (
+				AFF8340A2A625BFC006C85E1 /* Web Services */,
 				AF0CFC2B2A246CB900F684A1 /* AppDelegate.swift */,
 				AF0CFC2D2A246CB900F684A1 /* SceneDelegate.swift */,
 				AF0CFC2F2A246CB900F684A1 /* ViewController.swift */,
-				AF0CFC3F2A249C0600F684A1 /* WelcomePageVC.swift */,
-				AF0CFC362A246CBD00F684A1 /* LaunchScreen.storyboard */,
 				AF0CFC312A246CB900F684A1 /* Main.storyboard */,
-				AF427C172A25AF5400A83CA3 /* SignInScreen.storyboard */,
-				AF4D68DA2A25BEE900FDF011 /* ContentPriority.storyboard */,
-				AF56170D2A25D44100B6F8CE /* Screens.storyboard */,
-				AF7EAC832A2892CA0090E90F /* FoodItems.storyboard */,
-				AF0FD64F2A2704B100143869 /* SizeClasses.storyboard */,
 				AF0CFC342A246CBD00F684A1 /* Assets.xcassets */,
-				AF1C712E2A29BEE40025E0F9 /* Pago.storyboard */,
 				AF0CFC392A246CBD00F684A1 /* Info.plist */,
 			);
 			path = IOS;
+			sourceTree = "<group>";
+		};
+		AFF8340A2A625BFC006C85E1 /* Web Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Web Services";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +90,9 @@
 			dependencies = (
 			);
 			name = IOS;
+			packageProductDependencies = (
+				AFF8340C2A62ACCD006C85E1 /* Alamofire */,
+			);
 			productName = autoLayout;
 			productReference = AF0CFC282A246CB900F684A1 /* IOS.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +121,9 @@
 				Base,
 			);
 			mainGroup = AF0CFC1F2A246CB900F684A1;
+			packageReferences = (
+				AFF8340B2A62ACCD006C85E1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = AF0CFC292A246CB900F684A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,15 +138,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF1C712F2A29BEE40025E0F9 /* Pago.storyboard in Resources */,
-				AF7EAC852A28951F0090E90F /* FoodItems.storyboard in Resources */,
-				AF0CFC382A246CBD00F684A1 /* LaunchScreen.storyboard in Resources */,
 				AF0CFC352A246CBD00F684A1 /* Assets.xcassets in Resources */,
-				AF427C182A25AF5500A83CA3 /* SignInScreen.storyboard in Resources */,
 				AF0CFC332A246CB900F684A1 /* Main.storyboard in Resources */,
-				AF0FD6502A2704B100143869 /* SizeClasses.storyboard in Resources */,
-				AF56170E2A25D44100B6F8CE /* Screens.storyboard in Resources */,
-				AF4D68DB2A25BEE900FDF011 /* ContentPriority.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +150,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF0CFC412A249C0600F684A1 /* WelcomePageVC.swift in Sources */,
 				AF0CFC302A246CB900F684A1 /* ViewController.swift in Sources */,
 				AF0CFC2C2A246CB900F684A1 /* AppDelegate.swift in Sources */,
 				AF0CFC2E2A246CB900F684A1 /* SceneDelegate.swift in Sources */,
@@ -181,14 +165,6 @@
 				AF0CFC322A246CB900F684A1 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AF0CFC362A246CBD00F684A1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF0CFC372A246CBD00F684A1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -386,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AFF8340B2A62ACCD006C85E1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AFF8340C2A62ACCD006C85E1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFF8340B2A62ACCD006C85E1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF0CFC202A246CB900F684A1 /* Project object */;
 }
