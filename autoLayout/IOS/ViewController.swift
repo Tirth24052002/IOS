@@ -14,7 +14,6 @@ struct UserRegister: Codable {
 }
 
 struct RegisterResponse: Codable {
-    
     let id: Int?
     let token: String?
     
@@ -29,6 +28,7 @@ struct RegisterResponse: Codable {
         token = try values.decodeIfPresent(String.self, forKey: .token)
     }
 }
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -64,6 +64,7 @@ class ViewController: UIViewController {
             }
         }
     }
+    
     func getUserInfoUsingAlamoFire() {
         if let url = URL(string: "https://reqres.in/api/users?page=2"){
             AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil, requestModifier: nil).response { (reponse) in
@@ -153,6 +154,7 @@ class ViewController: UIViewController {
         }
     }
 }
+
 struct Student{
     var id: Int
     var email: String
