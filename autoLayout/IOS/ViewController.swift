@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 
+// MARK: - Structure
 struct UserRegister: Codable {
     let email: String
     let password: String
@@ -29,6 +30,7 @@ struct RegisterResponse: Codable {
     }
 }
 
+// MARK: - View Controller
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -41,6 +43,7 @@ class ViewController: UIViewController {
         registerUserWithAlamoFire(usr: user)
     }
     
+    // MARK: - User register with Alamo fire
     func registerUserWithAlamoFire(usr: UserRegister) {
         if let url = URL(string: "https://reqres.in/api/register"){
             let parm = ["email": usr.email,
@@ -65,6 +68,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: - Function Getting User Info
     func getUserInfoUsingAlamoFire() {
         if let url = URL(string: "https://reqres.in/api/users?page=2"){
             AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil, requestModifier: nil).response { (reponse) in
@@ -87,6 +91,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: - Function User Registration
     func registerUser(user: UserRegister) {
         if let url = URL(string: "https://reqres.in/api/register") {
             var urlRequest = URLRequest(url: url)
@@ -112,8 +117,8 @@ class ViewController: UIViewController {
                 do {
                     let decoder = JSONDecoder()
                     let userResponse = try decoder.decode(RegisterResponse.self, from: responseData)
-                    print("is:\(userResponse.id)")
-                    print("token:\(userResponse.token)")
+                    print("is:\(userResponse.id ?? 0)")
+                    print("token:\(userResponse.token ?? "")")
 //                    let json = try JSONSerialization.jsonObject(with: responseData, options: [])
 //                    print("response: \(json)")
                 } catch let error {
@@ -125,6 +130,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: - Function get data from server
     func getDataFromSever() {
         if let url = URL(string: "https://reqres.in/api/users?page=2"){
             let urlRequest = URLRequest(url: url)
@@ -155,6 +161,7 @@ class ViewController: UIViewController {
     }
 }
 
+// MARK: - Student Model
 struct Student{
     var id: Int
     var email: String
