@@ -8,34 +8,12 @@
 import UIKit
 import Alamofire
 
-// MARK: - Structure
-struct UserRegister: Codable {
-    let email: String
-    let password: String
-}
-
-struct RegisterResponse: Codable {
-    let id: Int?
-    let token: String?
-    
-    enum CodingKeys: String, CodingKey {
-        case id = "id"
-        case token = "token"
-    }
-    
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        id = try values.decodeIfPresent(Int.self, forKey: .id)
-        token = try values.decodeIfPresent(String.self, forKey: .token)
-    }
-}
-
 // MARK: - View Controller
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // MARK: - URL  fiunction
+        // MARK: - URL  function
         //self.getDataFromSever()
         let user = UserRegister(email: "eve.holt@reqres.in",password: "pistol")
         //self.registerUser(user: user)
@@ -161,11 +139,3 @@ class ViewController: UIViewController {
     }
 }
 
-// MARK: - Student Model
-struct Student{
-    var id: Int
-    var email: String
-    var firstName: String
-    var lastName: String
-    var avatar: String
-}

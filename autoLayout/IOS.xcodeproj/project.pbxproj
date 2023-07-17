@@ -12,6 +12,9 @@
 		AF0CFC302A246CB900F684A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0CFC2F2A246CB900F684A1 /* ViewController.swift */; };
 		AF0CFC332A246CB900F684A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0CFC312A246CB900F684A1 /* Main.storyboard */; };
 		AF0CFC352A246CBD00F684A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0CFC342A246CBD00F684A1 /* Assets.xcassets */; };
+		AFA10DB32A6513CA00D91F77 /* UserRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA10DB22A6513CA00D91F77 /* UserRegister.swift */; };
+		AFA10DB52A6514C600D91F77 /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA10DB42A6514C600D91F77 /* RegisterResponse.swift */; };
+		AFA10DB82A65151400D91F77 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA10DB72A65151400D91F77 /* Student.swift */; };
 		AFF8340D2A62ACCD006C85E1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AFF8340C2A62ACCD006C85E1 /* Alamofire */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,9 @@
 		AF0CFC322A246CB900F684A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF0CFC342A246CBD00F684A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF0CFC392A246CBD00F684A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFA10DB22A6513CA00D91F77 /* UserRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegister.swift; sourceTree = "<group>"; };
+		AFA10DB42A6514C600D91F77 /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
+		AFA10DB72A65151400D91F77 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,22 +62,41 @@
 		AF0CFC2A2A246CB900F684A1 /* IOS */ = {
 			isa = PBXGroup;
 			children = (
-				AFF8340A2A625BFC006C85E1 /* Web Services */,
+				AFA10DB12A6513A200D91F77 /* Model */,
+				AFA10DB92A65153F00D91F77 /* View */,
+				AFA10DBA2A651EEC00D91F77 /* Controller */,
 				AF0CFC2B2A246CB900F684A1 /* AppDelegate.swift */,
 				AF0CFC2D2A246CB900F684A1 /* SceneDelegate.swift */,
-				AF0CFC2F2A246CB900F684A1 /* ViewController.swift */,
-				AF0CFC312A246CB900F684A1 /* Main.storyboard */,
 				AF0CFC342A246CBD00F684A1 /* Assets.xcassets */,
 				AF0CFC392A246CBD00F684A1 /* Info.plist */,
 			);
 			path = IOS;
 			sourceTree = "<group>";
 		};
-		AFF8340A2A625BFC006C85E1 /* Web Services */ = {
+		AFA10DB12A6513A200D91F77 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AFA10DB22A6513CA00D91F77 /* UserRegister.swift */,
+				AFA10DB42A6514C600D91F77 /* RegisterResponse.swift */,
+				AFA10DB72A65151400D91F77 /* Student.swift */,
 			);
-			path = "Web Services";
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFA10DB92A65153F00D91F77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF0CFC312A246CB900F684A1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFA10DBA2A651EEC00D91F77 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF0CFC2F2A246CB900F684A1 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +176,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF0CFC302A246CB900F684A1 /* ViewController.swift in Sources */,
+				AFA10DB82A65151400D91F77 /* Student.swift in Sources */,
 				AF0CFC2C2A246CB900F684A1 /* AppDelegate.swift in Sources */,
+				AFA10DB32A6513CA00D91F77 /* UserRegister.swift in Sources */,
+				AFA10DB52A6514C600D91F77 /* RegisterResponse.swift in Sources */,
 				AF0CFC2E2A246CB900F684A1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
