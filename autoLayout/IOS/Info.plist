@@ -2,6 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Poppins-Thin</string>
+		<string>Poppins-Black</string>
+		<string>Poppins-Thin</string>
+		<string>Poppins-Bold</string>
+		<string>Poppins-Medium</string>
+		<string>Poppins-Light</string>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Please allow to see current location</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -16,7 +31,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>SizeClasses</string>
+					<string>UIComponents</string>
 				</dict>
 			</array>
 		</dict>

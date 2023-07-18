@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Segmented ControlVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="UISegmentedControlVC" id="Y6W-OH-hqX" customClass="UISegmentedControlVC" customModule="IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1jB-q7-pSJ">
+                                <rect key="frame" x="49" y="642.33333333333337" width="295" height="32"/>
+                                <segments>
+                                    <segment title="" image="appleIcon"/>
+                                    <segment title="Koala"/>
+                                    <segment title="Elephant"/>
+                                    <segment title="Fox"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemOrangeColor"/>
+                                <connections>
+                                    <action selector="btnImageChange:" destination="Y6W-OH-hqX" eventType="valueChanged" id="IPD-hX-1FS"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lion" translatesAutoresizingMaskIntoConstraints="NO" id="BQR-pj-DH3">
+                                <rect key="frame" x="10" y="289" width="373" height="299"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1jB-q7-pSJ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="8Nz-Gr-3UM"/>
+                            <constraint firstItem="BQR-pj-DH3" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="AXx-sF-hM2"/>
+                            <constraint firstItem="BQR-pj-DH3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="230" id="Bt3-kd-pdC"/>
+                            <constraint firstItem="1jB-q7-pSJ" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="1.5" id="Wtv-wf-S0o"/>
+                            <constraint firstItem="BQR-pj-DH3" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="dPN-Qi-k0i"/>
+                            <constraint firstItem="BQR-pj-DH3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="ovv-ua-puO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BQR-pj-DH3" secondAttribute="trailing" constant="10" id="veT-rm-ATM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="BQR-pj-DH3" id="vdn-YH-FVW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appleIcon" width="32" height="32"/>
+        <image name="lion" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
