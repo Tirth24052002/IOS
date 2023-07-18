@@ -1,18 +1,19 @@
 //
-//  ViewController.swift
-//  autoLayout
+//  CustomSliderVC.swift
+//  IOS
 //
-//  Created by Tirth Purohit on 29/05/23.
+//  Created by Tirth Purohit on 17/07/23.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class CustomSliderVC: UIViewController {
+    
     let rangeSlider = RangeSlider(frame: .zero)
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        view.addSubview(rangeSlider)
+      super.viewDidLoad()
+      view.addSubview(rangeSlider)
         rangeSlider.addTarget(self, action: #selector(rangeSliderValueChanged(_:)),
                               for: .valueChanged)
         let time = DispatchTime.now()
@@ -24,19 +25,17 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        let margin: CGFloat = 20
-        let width = view.bounds.width - 2 * margin
-        let height: CGFloat = 30
-        
-        rangeSlider.frame = CGRect(x: 0, y: 0,
-                                   width: width, height: height)
-        rangeSlider.center = view.center
+      let margin: CGFloat = 20
+      let width = view.bounds.width - 2 * margin
+      let height: CGFloat = 30
+      
+      rangeSlider.frame = CGRect(x: 0, y: 0,
+                                 width: width, height: height)
+      rangeSlider.center = view.center
     }
-    
-    @objc func rangeSliderValueChanged(_ rangeSlider: RangeSlider) {
+      
+      @objc func rangeSliderValueChanged(_ rangeSlider: RangeSlider) {
         let values = "(\(rangeSlider.lowerValue) \(rangeSlider.upperValue))"
         print("Range slider value changed: \(values)")
-    }
+      }
 }
-
-
