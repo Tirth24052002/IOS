@@ -28,7 +28,7 @@ extension UpcomingBookingModel {
     static func getUserData() -> [UpcomingBookingModel] {
         return[UpcomingBookingModel("TAGB00134A",
                                  "07:00 AM",
-                                 "BV-5-hjS-4446666"),
+                                 "BV-5-hjS-446"),
                UpcomingBookingModel("TAGB00134B",
                                  "11:00 AM",
                                  "LE-5-S-854"),
